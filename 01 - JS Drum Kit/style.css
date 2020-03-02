@@ -1,6 +1,6 @@
 html{
   font-size: 10px;
-  background: url(https://i.imgur.com/) bottom center;
+  background-image: url("images/fallback-image.png") bottom center;
   background-size: cover;
 }
 
