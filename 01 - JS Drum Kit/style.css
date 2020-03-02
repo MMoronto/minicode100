@@ -1,6 +1,6 @@
 html{
   font-size: 10px;
-  background-image: url("images/fallback-image.png") bottom center;
+  background: url("images/fallback-image.png") bottom center;
   background-size: cover;
 }
 
