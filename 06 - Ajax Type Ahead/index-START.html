@@ -35,6 +35,14 @@ function findMatches(WordToMatch, cities) {
 
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
+  const html = matchArray.map(place => {
+    return `
+      <li>
+        <span class="name">${place.city}, ${place.state}</span>
+        <span class="population">${place.population}</span>
+      </li>
+    `;
+  })
   console.log(matchArray);
 }
 
