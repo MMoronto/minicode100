@@ -32,6 +32,10 @@ function findMatches(WordToMatch, cities) {
     return place.city.match(regex) || place.street.match(regex)
   });
 }
+  
+function numberWithCommas() {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
 
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
