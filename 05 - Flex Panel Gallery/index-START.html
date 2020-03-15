@@ -128,13 +128,39 @@
   </div>
 
   <script>
-    /*const panels = document.querySelectorAll('.panel');
+      (function (window) {
+    var panels = document.querySelectorAll('.panel')
 
-    function toggleOpen() {
-      this.classList.toggle('open');
+    function siblings() {
+      var thisElement = this;
+      // Return the shallow copy of array-like object. In this case NodeList
+      var parent = [].slice.call(thisElement.parentNode.children);
+      var siblings = parent.filter(function (element) {
+        return element !== thisElement;
+      });
+
+      return siblings;
     }
 
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));*/
+    function toggleOpen(event) {
+      this.classList.toggle('open');
+
+      siblings.call(this).forEach(function (el) {
+        el.classList.remove('open');
+      });
+    }
+
+    function toggleActive(event) {
+      if (event.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(function (panel) {
+      panel.addEventListener('click', toggleOpen);
+      panel.addEventListener('transitionend', toggleActive);
+    });
+    })(window);
   </script>
 
 
