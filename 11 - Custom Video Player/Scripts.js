@@ -15,11 +15,11 @@ const method = video.paused ? ‘play’: ‘pause’ ;
 video[method]();
 }
 
-
 function updateButton() {
-
+const icon = this.pause ? ‘ ▶️’ : ‘⏸’;
+console.log(icon);
+toggle.textContext = icon;
 }
-
 
 
 function skip() {
