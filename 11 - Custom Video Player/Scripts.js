@@ -23,12 +23,12 @@ toggle.textContext = icon;
 
 
 function skip() {
-
+ video.currentTime += parseFloat(this.dataset.skip);
 }
 
 
 functioin handleRangeUpdate() {
-
+ video[this.name] = this.value;
 }
 
 
