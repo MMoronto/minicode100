@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  background: #7A419B;
+  background: #7A4444;
   min-height: 100vh;
   background: linear-gradient(135deg, #7A4444 0%,#929999 48%,#7e6ae4 100%);
   background-size: cover;
