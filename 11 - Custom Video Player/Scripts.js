@@ -11,12 +11,12 @@ const ranges = player.querySelectorAll('.player__slider');
 /* Build out FUnctions */
 function togglePlay() {
 
-const method = video.paused ? ‘play’: ‘pause’ ;
+const method = video.paused ? ‘play’ ?: ‘pause’ ;
 video[method]();
 }
 
 function updateButton() {
-const icon = this.pause ? ‘ ▶️’ : ‘⏸’;
+const icon = this.paused ? ‘ ▶️’  : ‘⏸’;
 console.log(icon);
 toggle.textContext = icon;
 }
