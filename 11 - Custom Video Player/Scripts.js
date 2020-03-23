@@ -1,4 +1,4 @@
-/* Get Our Elements */
+/* Get Our Elements*/
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
@@ -10,20 +10,20 @@ const ranges = player.querySelectorAll('.player__slider');
 
 /* Build out FUnctions */
 function togglePlay() {
-
-const method = video.paused ? ‘play’ ?: ‘pause’ ;
-video[method]();
+  const method = video.paused ? ‘play’: ‘pause’ ;
+  video[method]();
 }
 
 function updateButton() {
-const icon = this.paused ? ‘ ▶️’  : ‘⏸’;
-console.log(icon);
-toggle.textContext = icon;
+  const icon = this.paused ? ‘>>’ : ‘||’;
+  console.log(icon);
+  toggle.textContext = icon;
 }
 
 
 function skip() {
- video.currentTime += parseFloat(this.dataset.skip);
+  //console.log(this.dataset.skip);
+  video.currentTime += parseFloat(this.dataset.skip);
 }
 
 
@@ -59,6 +59,3 @@ progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
-
-
-
