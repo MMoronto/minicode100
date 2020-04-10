@@ -28,7 +28,12 @@ const sortedBooks = books.sort(function(a,b) {
     return -1;
   }
 });
-
+  
+document.querySelector('#books').innerHTML =
+  sortedBooks
+    .map(book => `<li>${book}</li>`)
+    .join('')
+  
 console.log(sortedBooks);
 
 </script>
