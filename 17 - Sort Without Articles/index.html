@@ -7,6 +7,39 @@
 <body>
 
   <style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: url("img1.jpg");
+    background-size: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #books {
+    list-style: inside square;
+    font-size: 20px;
+    background: #efffff;
+    width: 500px;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+
+  #books li {
+    border-bottom: 1px solid #efefef;
+    padding: 20px;
+  }
+
+  #books li:last-child {
+    border-bottom; 0;
+  }
+
+  a {
+    color: #ffc600;
+    text-decoration: line-through;
+  }
   </style>
 
   <ul id="books"></ul>
