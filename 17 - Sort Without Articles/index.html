@@ -6,8 +6,31 @@
 </head>
 <body>
 
-  <style></style>
+  <style>
+  </style>
 
-<script></script>
+  <ul id="books"></ul>
+
+<script>
+  const books = ["A Feast for Crows", "Abbadon's Gate", "The Narnia Chronicles",
+  "The crab with the Golden Claws", "King Ottokar's Scepter",
+  "A Game of Thrones", "The Hobbit", "Destination Moon", "Tiamat's Wrath",
+"A Clash of Kings", "Leviathan Wakes", "The Butcher of Anderson Station"];
+
+function strip(bookName) {
+  return bookName.replace(/^(a |the |an )/i, '').trim();
+}
+
+const sortedBooks = books.sort(function(a,b) {
+  if(a > b) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+console.log(sortedBooks);
+
+</script>
 </body>
 </html>
