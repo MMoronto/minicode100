@@ -6,5 +6,7 @@ const snap = document.querySelector('.snap');
 
 function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio: false})
-    .then(localMediaStream)
+    .then(localMediaStream => {
+      console.log(localMediaStream);
+    });
 }
