@@ -47,7 +47,7 @@ function takePhoto() {
   // link.href = data;
   // link.setAttribute('download', 'handsome');
   // link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
-  // strip.insertBefo9re(link, strip.firstChild);
+  // strip.insertBefore(link, strip.firstChild);
 }
 
 getVideo();
