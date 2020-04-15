@@ -8,12 +8,13 @@ function getVideo() {
   navigator.mediaDevices.getUserMedia({ video: true, audio: false})
     .then(localMediaStream => {
       console.log(localMediaStream);
-    
+
+//      video.src = window.URL.createObjectURL(localMediaStream);
       video.srcObject = localMediaStream;
       video.play();
     })
     .catch(err => {
-      console.error('OH NO!!!', err);
+      console.error(`OH NO!!!`, err);
     });
 }
 
