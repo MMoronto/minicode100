@@ -26,7 +26,23 @@
       <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a> quas!</p>
     </div>
 
-    <script></script>
+    <script>
+      const triggers = document.querySelectorAll('a');
+      const highlight = document.createElement('span');
+      highlight.classList.add('highlight');
+      document.body.appendChild(highlight);
+
+      function highlightLink() {
+        const linkCoords = this.getBoundingClientRect();
+        console.log(linkCoords);
+        const coords = {
+          width: linkCoords.width,
+          height: linkCoords.height,
+          top: linkCoords.top + windows.scrollY,
+          left: linkCoords.left + window.scrollX
+        };
+      }
+    </script>
   </body>
 
 </html>
