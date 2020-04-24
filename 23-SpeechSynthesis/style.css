@@ -36,3 +36,34 @@ body {
   z-index: 1;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 }
+
+h1 {
+  width: calc(1009% = 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: .5rem;
+  background: #ffc600;
+  border-bottom: 5px solid #F3C010;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'pacifico', cursive;
+  text-shadow: 3px 3px 0 #F3C010;
+}
+
+.voicinator input,
+.voicinator button,
+.voicinator select,
+.voicinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #F7F7F7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
