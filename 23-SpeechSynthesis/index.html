@@ -45,6 +45,11 @@
         .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})<M/option>`)
         .join('');
     }
+    
+    function setVoice() {
+      msg.voice = voices.find(voice => voice.name === this.value);
+      toggle();
+    }
   </script>
   </body>
 
