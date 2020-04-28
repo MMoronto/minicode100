@@ -180,13 +180,15 @@
     
     function handleEnter() {
       this.classList.add('trigger-enter');
-      // setTimeout(() => this.classList.contains('trigger-enter') &&n this.classList.add('trigger-enter-active'), 150);
-      // background.classList.add('open');
-      console.log('ENTER!!');
+      setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+      background.classList.add('open');
+      // console.log('ENTER!!');
     }
 
     function handleLeave() {
-      console.log('LEAVE!!');
+//       console.log('LEAVE!!');
+      this.classList.remove('trigger-enter', 'trigger-enter-active');
+      background.classList.remove('open');      
     }
 
     triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
