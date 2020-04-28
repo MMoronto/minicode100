@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  background-size: cover;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.items {
+
+}
+
+.items.active {
+
+}
+
+.item {
+
+}
