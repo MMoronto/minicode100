@@ -42,7 +42,10 @@
 
     slider.addEventListener('mousedown', () => {
       isDown = true;
-      slider.classList.add('active');      
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+      //console.log(startX);      
     });
 
     slider.addEventListener('mouseleave', () => {
@@ -57,7 +60,7 @@
 
     slider.addEventListener('mousemove', () => {
       if(!isDown) return; // stop the fn from running
-      console.count(isDown);      
+      //console.count(isDown);      
     });
 
     
