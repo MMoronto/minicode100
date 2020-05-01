@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Click and Drag</title>
+    <title>Video Speed Controller</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -21,6 +21,11 @@
     speed.addEventListener('mousemove', function(e) {
       const y = e.pageY - this.offsetTop;
       const percent = y / this.offsetHeight;
+      const min = 0.4;
+      const max = 4;
+      const height = Math.round(percent * 100) + '%';
+      bar.style.height = height;
+            
       console.log(percent);
     });
   </script>
