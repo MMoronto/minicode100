@@ -1,5 +1,5 @@
 let countdown;
-const player = document.querySelector('.display__time-left');
+const timerDisplay = document.querySelector('.display__time-left');
 const endTime = player.querySelector('.display__end-time');
 const buttons = document.querySelectorAll('[data-time]');
 
@@ -15,7 +15,7 @@ function timer(seconds) {
   countdown = setInterval(() => {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
     // check if we should stop
-    if(secondsLeft <= 0) {
+    if(secondsLeft < 0) {
       clearInterval(countdown);
       return;
     }
@@ -27,8 +27,7 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
-  const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${
-    remainderSeconds}`;
+  const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
   document.title = display;
   timerDisplay.textContent = display;
 }
