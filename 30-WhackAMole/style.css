@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+
+}
+
+.score {
+
+}
+
+.game {
+
+}
+
+.hole {
+
+}
+
+.hole:after {
+
+}
+
+.mole {
+
+}
+
+.hole.up .mole {
+  
+}
