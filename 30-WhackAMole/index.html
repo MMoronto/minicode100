@@ -34,7 +34,7 @@
 
   <script>
     const holes = document.querySelectorAll('.hole');
-    const scorboard = document.querySelector('.score');
+    const scoreBoard = document.querySelector('.score');
     const moles = document.querySelectorAll('.mole');
     let lastHole;
     let timeUp = false;
@@ -67,8 +67,15 @@
     function startGame() {
       scoreBoard.textContent = 0;
       timeUp = false;
+      peep();
+      setTimeout(() => timeUp = true, 1000)
     }
 
+    function bonk(e) {
+      console.log(e);
+    }
+
+    moles.forEach(mole => mole.addEventListener('click', bonk));
 
   </script>
   </body>
