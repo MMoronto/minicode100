@@ -55,3 +55,20 @@ li {
   width: 100%;
   height: 100%;
 }
+
+/* SOCIAL PANEL CSS */
+.social-panel-cntainer {
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+  transform: translateX(-10px);
+}
+
+.social-panel {
+  
+}
