@@ -10,7 +10,7 @@ get_meal_btn.addEventListener('click', () => {
 });
 
 const createMeal = (meal) => {
-  const ingredients = []
+  const ingredients = [];
   // Get all ingredients from the object. Up to 20
   for(let i=1; i<=20; i++) {
     if(meal[`strIngredient${i}`]) {
@@ -23,7 +23,7 @@ const createMeal = (meal) => {
 
   const newInnerHTML = `
       <div class="row">
-          <div class="columns fibve">
+          <div class="columns five">
               <img src="${meal.strMealThumb}" alt="Meal Image">
               ${meal.strCategory ? `<p><strong>Category:</strong> ${meal.strCategory}</p>` : ''}
               ${meal.strArea ? `<p><strong>Area:</strong> ${meal.strArea}</p>` : ''}
