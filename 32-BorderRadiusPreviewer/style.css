@@ -11,3 +11,34 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.container {
+  position: relative;
+  font: 1.125em/ 1.25 segoe script, comic sans ms, cursive;
+}
+
+.container::before {
+  position: absolute;
+  top: -1.5em;
+  right: -1.5em;
+  bottom: -1.5em;
+  left: -1.5em;
+  background: linear-gradient(#ccc 0.125em, transparent 0) 50% n0.6875em/ 17.5em repeat-y, linear-gradient(90deg, #ccc 0.125em,
+    transparent 0) 0.6875em 50%/ 19em 17.5em repeat-x;
+    content: "";
+}
+
+#blob {
+  box-sizing: border-box;
+  border: solid .5em transparent;
+  width: 17.5em;
+  height: 17.5em;
+  border-radius: var(--rx00) var(--rx01) var(--rx11) var(--rx10)/var(--ry00) var(--ry01) var(--ry11) var(--ry10);
+}
