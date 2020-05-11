@@ -180,7 +180,7 @@ output:before {
   content: ": ";
 }
 output:after {
-  counter-reset: val val(--val);
+  counter-reset: val var(--val);
   content: counter(val) "%";
 }
 
