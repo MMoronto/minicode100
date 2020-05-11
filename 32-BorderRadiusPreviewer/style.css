@@ -169,3 +169,30 @@ text-align: center;
 transition: opacity 0.65s;
 pointer-events: auto;
 }
+
+span {
+  width: 100%;
+}
+
+var {
+  font: italic 1.25em/1 times news roman, serif;
+}
+
+output {
+  color: yellow;
+  font: 1em/ 1.25 consolas, monaco, monospace;
+}
+output:before {
+  content: ": ";
+}
+output:after {
+  counter-reset: val val(--val);
+  content: counter(val) "%";
+}
+
+pre {
+  padding: .5em;
+  background: #333;
+  color: #ddd;
+  font: 1em/ 1.25 consolas, monaco, monospace;
+}
