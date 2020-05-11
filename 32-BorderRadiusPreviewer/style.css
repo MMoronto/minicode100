@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -23,15 +22,13 @@ section {
   position: relative;
   font: 1.125em/ 1.25 segoe script, comic sans ms, cursive;
 }
-
 .container::before {
   position: absolute;
   top: -1.5em;
   right: -1.5em;
   bottom: -1.5em;
   left: -1.5em;
-  background: linear-gradient(#ccc 0.125em, transparent 0) 50% 0.6875em/ 17.5em repeat-y, linear-gradient(90deg, #ccc 0.125em,
-    transparent 0) 0.6875em 50%/ 19em 17.5em repeat-x;
+  background: linear-gradient(#ccc 0.125em, transparent 0) 50% 0.6875em/ 17.5em repeat-y, linear-gradient(90deg, #ccc 0.125em, transparent 0) 0.6875em 50%/ 19em 17.5em repeat-x;
     content: "";
 }
 
@@ -42,8 +39,7 @@ section {
   height: 17.5em;
   border-radius: var(--rx00) var(--rx01) var(--rx11) var(--rx10)/var(--ry00) var(--ry01) var(--ry11) var(--ry10);
   transform: scale(0.9875);
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/17_05_a_amur_leopard_18.jpg) 50%/cover padding-box,
-  linear-gradient(#ff8a00, #da1b60) border-box;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/17_05_a_amur_leopard_18.jpg) 50%/cover padding-box, linear-gradient(#ff8a00, #da1b60) border-box;
 }
 
 .iso {
@@ -58,8 +54,7 @@ section {
   width: 17.5em;
   height: 1.5em;
   --rot: calc(var(--ax)*90deg);
-  transform: translate(calc(var(--h)*var(--ax)*1.5em-50%), calc(-1*(1 - var(--v))*(1 - var(--ax))*1.5em - 50%)) rotate(var(--rot))
-  translate(50%, 50%) scalex(var(--sf));
+  transform: translate(calc(var(--h)*var(--ax)*1.5em-50%), calc(-1*(1 - var(--v))*(1 - var(--ax))*1.5em - 50%)) rotate(var(--rot)) translate(50%, 50%) scalex(var(--sf));
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -74,7 +69,6 @@ input {
   filter: grayscale(calc(1 - var(--flag))) Contrast(calc(.1 + .9*var(--flag))) Brightness(calc(1.75 - .75*var(--flag)));
   transition: filter 0.65s;
 }
-
 input::-webkit-slider-runnable-track, input::-webkit-slider-thumb, input {
   -webkit-appearance: none;
 }
