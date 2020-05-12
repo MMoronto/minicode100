@@ -54,7 +54,7 @@ section {
   width: 17.5em;
   height: 1.5em;
   --rot: calc(var(--ax)*90deg);
-  transform: translate(calc(var(--h)*var(--ax)*1.5em-50%), calc(-1*(1 - var(--v))*(1 - var(--ax))*1.5em - 50%)) rotate(var(--rot)) translate(50%, 50%) scalex(var(--sf));
+  transform: translate(calc(var(--h)*var(--ax)*1.5em - 50%), calc(-1*(1 - var(--v))*(1 - var(--ax))*1.5em - 50%)) rotate(var(--rot)) translate(50%, 50%) scalex(var(--sf));
   mix-blend-mode: multiply;
   pointer-events: none;
 }
