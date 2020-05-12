@@ -28,7 +28,7 @@ section {
   right: -1.5em;
   bottom: -1.5em;
   left: -1.5em;
-  background: linear-gradient(#ccc 0.125em, transparent 0) 50% 0.6875em/ 17.5em repeat-y, linear-gradient(90deg, #ccc 0.125em, transparent 0) 0.6875em 50%/ 19em 17.5em repeat-x;
+  background: linear-gradient(#ccc 0.125em, transparent 0) 50% 0.6875em/ 17.5em 19em repeat-y, linear-gradient(90deg, #ccc 0.125em, transparent 0) 0.6875em 50%/ 19em 17.5em repeat-x;
     content: "";
 }
 
