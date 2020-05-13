@@ -19,7 +19,7 @@ function update(e) {
           H = +getComputedStyle(_TG).getPropertyValue('--h');
 
     let val = +_TG.value;
-    _BLOB.stylesetProperty(`--r${DIMS[AX]${V}${H}}`, `${val}%`);
+    _BLOB.style.setProperty(`--r${DIMS[AX]}${V}${H}`, `${val}%`);
     _TG.parentNode.style.setProperty(`--val`, val);
 
     code()
