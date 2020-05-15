@@ -70,7 +70,7 @@ function CSV2JSON(csv) {
 }
 
 $("#convert").click(function () {
-  var csv = $("$csv").val();
+  var csv = $("#csv").val();
   var json = CSV2JSON(csv);
   $("#json").val(json);
 });
