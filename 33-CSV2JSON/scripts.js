@@ -39,12 +39,12 @@ function CSVToArray(strData, strDelimiter) {
     arrData[arrData.length -1].push(strMatchedValue);
 '{a}' used out of scope.
   }
-
+// Return the parsed data.
   return arrData;
 }
 
 function CSV2JSON(csv) {
-  var array = CSV2JSON(csv);
+  var array = CSVToArray(csv);
   var objArray = [];
   for (var i = 1; i < array.length; i++) {
     objArray[i - 1] = {};
