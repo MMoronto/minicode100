@@ -1,18 +1,19 @@
 function CSVToArray(strData, strDelimiter) {
-
+  // Check to see if the delimeter is defined. If not,
+  // then default to comma.
   strDelimiter = strDelimiter || ",";
-
+  // Create a regular expression to parse the CSV values.
   var objPattern = new RegExp(
-
+    // Delimiters.
     "(\\" +
       strDelimiter +
       "|\\r?\\n|\\r|^)" +
-
+      // Quoted fields.
       '(?:"([^"]*(?:""[^"]*)*)"|' +
-
+      // Standard fields.
       '([^"\\' +
       strDelimiter +
-      "\\r\\n])",
+      "\\r\\n]*))",
       "gi"
   );
 
