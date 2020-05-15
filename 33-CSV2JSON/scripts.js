@@ -70,4 +70,4 @@ $("#download").click(function () {
   var csv = $("#csv").val();
   var json = CSV2JSON(csv);
   window.ope("data:text/json;charset=utf-8," + escape(json));
-  })
+  });
