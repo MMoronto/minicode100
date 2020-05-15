@@ -42,3 +42,26 @@ function CSVToArray(strData, strDelimiter) {
 
   return arrData;
 }
+
+function CSV2JSON(csv) {
+  var array = CSV2JSON(csv);
+  var objArray = [];
+  for (var i = 1; i < array.length; i++) {
+    objArray[i - 1] = {};
+    for (var k = 0; k < array[0].length && k < array[i].length; k++) {
+      var key = array[0][k];
+      objArray[i - 1][key] = array[i][k];
+    }
+  }
+
+  var json = JSON.stringify(objArray);
+  var str = json.replace(/},/g, "},\r\n");
+
+  return str;
+}
+
+$("#convert").click(function () {
+  var csv = $("$csv").val();
+  var json = CSV2JSON(csv);
+  $("#json").val(json);
+});
