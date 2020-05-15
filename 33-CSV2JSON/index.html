@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSV2JSON</title>
+  <title>CSV to JSON</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
+  <p>CSV to JSON Converter</p>
+    <hr />
+    <p>Paste Your CSV here:</p>
+    <textarea id="csv" class="text">"Id","UserName"
+"1","Funkadelic"
+"2","That nigga Jigga"
+"1","George Clinton"</textarea>
+    <br />
+    <button id="convert">Convert to JSON</button>
+    &nbsp;&nbsp;
+    <button id="download">Download JSON</button>
+    <textarea id="json" class="text"></textarea>
   <script src="scripts.js"></script>
 </body>
 </html>
