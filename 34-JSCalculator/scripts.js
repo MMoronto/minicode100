@@ -27,10 +27,26 @@ TODO:
     operator; // Batman
 
     // When: Number is clicked. Get the current number selected
-    var setNum = function() {};
+    var setNum = function() {
+      if (restNum) { // If a result was displayed, reset number
+        theNum = this.getAttribute("data-num");
+        restNum = "";
+      } else { // Otherwise, add digit to previous number (this is a string!)
+        theNum += this.getAttribute("data-num");
+      }
+
+      viewer.innerHTML = theNum; // Display current number
+      
+    };
 
     // When: Operator is clicked. Pass number to oldNum and save operator
-    var displayNum = function() {};
+    var moveNum = function() {
+      oldNum = theNum;
+      theNum = "";
+      operator = this.getAttribute("data-ops");
+
+      equals.setAttribute("data-result", ""); //Reset result in the attr
+    };
 
     // When: Equals is clicked. Calculate result
     var displayNum = function() {
