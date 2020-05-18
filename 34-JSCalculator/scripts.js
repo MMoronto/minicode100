@@ -61,6 +61,26 @@ TODO:
         default:
           resultNum = theNum;
       }
+
+      // If NaN or Infinity returned
+      if (!isFinite(resultNum)) {
+        if (isNaN(resultNum)) { // If result is not a number; set off by, eg, double-clicking operators
+          resultNum = "You broke it!";
+        } else {
+          resultNum = "Look at what you've done";
+          el('#calculator').classList.add("broken"); //Break calculator
+          el('#reset').classList.add("show"); // And show reset button
+        }
+      }
+
+      // Display result, finally!
+      viewer.innerHTML = resultNum;
+      equals.setAttribute("data-result", resultNum);
+
+      // Now reset oldNum & keep result
+      oldNum = 0;
+      theNum = resultNum;
+      
     };
 
     //When: Clear button is pressed. Clear everything
