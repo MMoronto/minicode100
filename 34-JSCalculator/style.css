@@ -19,3 +19,52 @@ h1 {
   font-weight: 300;
   margin: 0;
  }
+
+ /* Gradient text only on Webkit */
+ .warning {
+   background: -webkit-linear-gradient(45deg, #c97874 10%, #463042 90%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #8c5059;
+   font-weight: 400;
+   margin: 0 auto 6em;
+   max-width: 9em;
+ }
+
+ .calculator {
+   font-size: 28px;
+   margin: 0 auto;
+   width: 10em;
+
+   &::before,
+   &::after {
+     content: " ";
+     display: both;
+   }
+
+   &::after {
+     clear: both;
+   }
+ }
+
+ /* Calculator after dividing by zero */
+ .broken {
+   animation: broken 2s;
+   transform: translate3d(0,-2000px,0);
+   opacity: 0;
+ }
+
+ .viewer {
+   color: #c97874;
+   float:left;
+   line-height: 3em;
+   text-align: right;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   width: 7.5em;
+   height: 3em;
+ }
+
+ button {
+   
+ }
