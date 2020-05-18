@@ -41,10 +41,14 @@ TODO:
     /* The click events */
 
     // Add click event to numbers
-    for (var i = 0, l = nums.length; i < l; i++) {}
+    for (var i = 0, l = nums.length; i < l; i++) {
+      nums[i].onclick = setNum;
+    }
 
     // Add click event to operators
-    for (var i = 0, l = ops.length; i < l; i++) {}
+    for (var i = 0, l = ops.length; i < l; i++) {
+      ops[i].onclick = moveNum;
+    }
 
     // Add click event to equal sign
     equals.onclick = displayNum;
@@ -53,6 +57,8 @@ TODO:
     el("#clear").onclick = clearAll;
 
     // Add click event to reset button
-    el("#reset").onclick = function() {};
+    el("#reset").onclick = function() {
+      window.location = window.location;
+    };
     
 }());
