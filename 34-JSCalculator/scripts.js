@@ -33,10 +33,43 @@ TODO:
     var displayNum = function() {};
 
     // When: Equals is clicked. Calculate result
-    var displayNum = function() {};
+    var displayNum = function() {
+
+      // Convert string input to numbers
+      oldNum = parseFloat(oldNum);
+      theNum = parseFloat(theNum);
+
+      // Perform operation
+      switch (operator) {
+        case "plus":
+          resultNum = oldNum + theNum;
+          break;
+
+        case "minus":
+          reesultNum = oldNum - theNum;
+          break;
+
+        case "times":
+          resultNum = oldNum * theNum;
+          break;
+
+        case "divided by":
+          resultNum = oldNum / theNum;
+          break;
+
+          // If equal is pressed without an operator, keep number and continue
+        default:
+          resultNum = theNum;
+      }
+    };
 
     //When: Clear button is pressed. Clear everything
-    var clearAll = function() {};
+    var clearAll = function() {
+      oldNum = "";
+      theNum = "";
+      viewer.innerHTML = "0";
+      equals.setAttribute("data-result", resultNum);
+    };
 
     /* The click events */
 
