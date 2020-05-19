@@ -62,7 +62,7 @@ TODO:
           break;
 
         case "minus":
-          reesultNum = oldNum - theNum;
+          resultNum = oldNum - theNum;
           break;
 
         case "times":
