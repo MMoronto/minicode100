@@ -39,7 +39,7 @@ h1 {
    &::before,
    &::after {
      content: " ";
-     display: both;
+     display: table;
    }
 
    &::after {
