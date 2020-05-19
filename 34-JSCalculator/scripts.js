@@ -30,7 +30,7 @@ TODO:
     var setNum = function() {
       if (restNum) { // If a result was displayed, reset number
         theNum = this.getAttribute("data-num");
-        restNum = "";
+        resultNum = "";
       } else { // Otherwise, add digit to previous number (this is a string!)
         theNum += this.getAttribute("data-num");
       }
