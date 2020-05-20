@@ -6,7 +6,7 @@ selectMonth = document.getElementById("month");
 
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-monthAnYear = document.getElementById("monthAndYear");
+monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
 function next() {
