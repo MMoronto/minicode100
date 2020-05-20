@@ -1,6 +1,6 @@
 today = new Date();
 currentMonth = today.getMonth();
-currentYear = tody.getYear();
+currentYear = tody.getFullYear();
 selectYear = document.getElementById("year");
 selectMonth = document.getElementById("month");
 
