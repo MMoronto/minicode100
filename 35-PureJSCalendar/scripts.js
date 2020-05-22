@@ -1,12 +1,12 @@
-today = new Date();
-currentMonth = today.getMonth();
-currentYear = tody.getFullYear();
-selectYear = document.getElementById("year");
-selectMonth = document.getElementById("month");
+let today = new Date();
+let currentMonth = today.getMonth();
+let currentYear = tody.getFullYear();
+let selectYear = document.getElementById("year");
+let selectMonth = document.getElementById("month");
 
-months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-monthAndYear = document.getElementById("monthAndYear");
+let monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
 function next() {
@@ -30,6 +30,7 @@ function jump() {
 function showCalendar(month, year) {
 
   let firstDay = (new Date(year, month)).getDay();
+  let daysInMonth = 32 - new Date(year, month, 32).getDate();  
 
   tbl = document.getElementById("calendar-body"); // body of the calendar
 
