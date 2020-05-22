@@ -55,7 +55,7 @@ function showCalendar(month, year) {
         cell.appendChild(cellText);
         row.appendChild(cell);
       }
-      else if (date > daysInMonth(month, year)) {
+      else if (date > daysInMonth) {
         break;
       }
 
