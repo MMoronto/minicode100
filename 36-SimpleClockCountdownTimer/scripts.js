@@ -2,14 +2,7 @@
 loadEventListeners();
 
 function loadEventListeners() {
-  //ui variables
-  clearInterval(startTimer);
-
-  if(typeof(dates) == 'undefined'){
-    date = new Date(newYear).getTime();
-  }else{
-    date = new Date(dates).getTime();
-  }
+  document.addEventListener('DOMContentLoaded', function() {calcTime(); });
 };
 
 var timeTo = document.getElementsById('time-to').value,
@@ -19,4 +12,17 @@ var timeTo = document.getElementsById('time-to').value,
     startTimer = '';
 
 // calculate date, hour, minute and second
-function calcTime(dates) {}
+function calcTime(dates) {
+  //ui variables
+  clearInterval(startTimer);
+
+  if(typeof(dates) == 'undefined'){
+    date = new Date(newYear).getTime();
+  }else{
+    date = new Date(dates).getTime();
+  }
+
+function updateTimer(date) {}
+
+startTimer = setInterval(function() {updateTimer(date); }, 1000);
+}
