@@ -1,7 +1,16 @@
 // load event listeners
 loadEventListeners();
 
-function loadEventListeners() {};
+function loadEventListeners() {
+  //ui variables
+  clearInterval(startTimer);
+
+  if(typeof(dates) == 'undefined'){
+    date = new Date(newYear).getTime();
+  }else{
+    date = new Date(dates).getTime();
+  }
+};
 
 var timeTo = document.getElementsById('time-to').value,
     date,
