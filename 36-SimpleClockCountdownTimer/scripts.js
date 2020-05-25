@@ -38,8 +38,16 @@ function calcTime(dates) {
     document.querySelector('.clock-hours').innerHTML = hours;
     document.querySelector('.clock-minutes').innerHTML = minutes;
     document.querySelector('.clock-seconds').innerHTML = seconds;
-    
+
+    if(now >= date){
+      clearInterval(startTimer);
+      document.querySelectore('.clock-day').innerHTML = 'D';
+      document.querySelector('.clock-hours').innerHTML = 'O';
+      document.querySelector('.clock-minutes').innerHTML = 'N';
+      document.querySelector('.clock-seconds').innerHTML = 'E';
+    }
   }
 
   startTimer = setInterval(function() {updateTimer(date); }, 1000);
+  
 }
