@@ -13,6 +13,16 @@
   margin-right: 20px;  
 }
 
-.scroll {}
+.scroll {
+  position: relative;
+  padding: 10px 20px;  
+}
 
-.box {}
+.box {
+  transform: translateX(var(--position));
+  background: var(--color);
+  border-radius: var(--radius);
+  width: 100px;
+  height: 100px;
+  transition: width 2s;  
+}
