@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic CSS Variables</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="inputContainer">
+    <label for="location">Location</label>
+    <input type="range" name="location" id="location" min="0" max="10" value="0" oninput="changeValue('position', this.value)">
+  </div>
+  <div class="inputContainer">
+    <label for="radius">Radius</label>
+    <input type="range" name="radius" id="radius" min="0" max="50" value="0" oninput="changeValue('radius', this.value)">
+  </div>
+  <div class="inputContainer">
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color" min="0" max="50" value="0" oninput="changeValue('color', this.value)">
+  </div>
+  <div class="container scroll">
+    <div class="box" id="box"></div>
+  </div> 
+</div>
+
+<script src="scripts.js" ></script>
+
+</body>
+</html>
