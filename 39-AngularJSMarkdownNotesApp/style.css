@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
 * {
   box-sizing: border-box;
 }
@@ -15,10 +18,20 @@ body {
   height: auto;
 }
 
-div[contenteditable] {}
+div[contenteditable] {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 20px 10px;
+  min-height: 300px;
+  background: #f9f9f9;
 
-pre, code {
-  background: #ededed;
+  pre, code {
+    background: #ededed;
+  }  
 }
 
 div[contenteditable]:focus {
