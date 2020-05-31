@@ -25,6 +25,8 @@
     // Delete Note
     $scope.delete = function (i) {
       var r = confirm("Are you sure you want to delete this note?");
+      if (r == true)
+        $scope.notes.splice(i, 1);      
     };
 
     // Update Note
