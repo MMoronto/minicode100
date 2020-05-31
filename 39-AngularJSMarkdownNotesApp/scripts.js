@@ -15,6 +15,11 @@
     // Add New Note
     $scope.addNote = function () {
       $scope.newNote = {};
+      $scope.newNote.createdOn = Date.now();
+      $scope.newNote.text = ' ';
+      $scope.newNote.edit = 'true';
+      $scope.notes.push($scope.newNote);
+      $scope.newNote = {}; 
     };
 
     // Delete Note
