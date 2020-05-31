@@ -21,10 +21,10 @@
         <i class="fa fa-pencil fa-lg" ng-if="note.edit == true"></i>
         <i class="fa fa-trash fa-lg" ng-click="delete(notes.length - $index - 1)"></i></span>
 
-        <div>{{ note.text}}</div>
+        <div class="markdown-body" ng-model="note.text" ng-change="update(notes.length - $index - 1, note.text)" ng-focus="note.edit = true" ng-blur="note.edit = false" markdown-editable contenteditable="true">{{ note.text}}</div>
     </div>
   </div>
-
+</div>
 <script src="scripts.js" ></script>
 
 </body>
