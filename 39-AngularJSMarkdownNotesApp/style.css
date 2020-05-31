@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 580px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  background: #fdfdfd;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+div[contenteditable] {}
+
+pre, code {
+  background: #ededed;
+}
+
+div[contenteditable]:focus {
+  font-family: 'Source Code Pro', courier, monospace;
+  font-size: 1em;
+}
+
+.header {}
+
+.note {}
+
+.date {}
+
+.icons {}
+
+.fa-trash-o, .fa-plus-circle {}
+
+.fa-check {}
+
+.fa-trash-o {}
+
+.fa-pencil {}
+
+.fa-plus-circle {}
