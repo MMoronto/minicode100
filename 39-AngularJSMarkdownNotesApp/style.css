@@ -39,9 +39,15 @@ div[contenteditable]:focus {
   font-size: 1em;
 }
 
-.header {}
+.header {
+  margin: 5px 10px 0;
+  color: #d46e58;
+  display: inline-block;  
+}
 
-.note {}
+.note {
+  
+}
 
 .date {}
 
