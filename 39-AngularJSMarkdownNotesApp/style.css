@@ -57,11 +57,17 @@ div[contenteditable]:focus {
   overflow: hidden;  
 }
 
-.date {}
+.date {
 
-.icons {}
+}
 
-.fa-trash-o, .fa-plus-circle {}
+.icons {
+
+}
+
+.fa-trash-o, .fa-plus-circle {
+
+}
 
 .fa-check {}
 
