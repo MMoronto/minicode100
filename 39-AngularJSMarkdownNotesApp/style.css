@@ -75,10 +75,12 @@ div[contenteditable]:focus {
 }
 
 .fa-trash-o, .fa-plus-circle {
-
+   cursor: pointer;
 }
 
-.fa-check {}
+.fa-check {
+   Color: #fafafa;
+}
 
 .fa-trash-o {}
 
