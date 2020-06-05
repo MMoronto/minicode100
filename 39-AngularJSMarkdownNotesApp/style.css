@@ -67,8 +67,11 @@ div[contenteditable]:focus {
   color:#71CBD0;
 }
 
-.icons {
-
+.icons { 
+  position:absolute;
+  right:0;
+  top:0;
+  padding:10px;
 }
 
 .fa-trash-o, .fa-plus-circle {
