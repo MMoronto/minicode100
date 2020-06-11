@@ -79,11 +79,25 @@ div[contenteditable]:focus {
 }
 
 .fa-check {
-   Color: #fafafa;
+   Color: #92D788;
 }
 
-.fa-trash-o {}
+.fa-trash-o {
+  color: #C2474B;
 
-.fa-pencil {}
+  &:hover {
+    color:darken(#C2474B,20);
+  }
+}
 
-.fa-plus-circle {}
+.fa-pencil {
+  color:#DBC394;
+}
+
+.fa-plus-circle {
+  color:#71CBD0;
+
+  &:hover {
+    color:darken(#71CBD0,20);
+  }
+}
