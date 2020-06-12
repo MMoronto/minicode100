@@ -1,0 +1,59 @@
+/* ---VARIABLES--- */
+/* ---GLOBAL--- */
+:root {
+  font-size: 10px
+}
+
+
+body {
+  color: #43425D;
+  margin: auto;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  height: 100%;
+}
+
+a {
+  color: #3B86FF;
+  text-decoration: none;
+}
+
+h1 {}
+
+/* ---HEADER--- */
+.header {}
+
+.header h1 {}
+
+/* ---STATUS--- */
+.statusContainer {
+
+}
+
+.status {}
+
+.status_name {}
+
+.status_flag {}
+
+.status_flag--error {}
+
+/* ---STATUS BUTTON--- */
+.buttonContainer {}
+
+.statusButton {}
+
+.statusButton:hover {}
+
+/* ---FOOTER--- */
+.footer {}
+
+.footer h2 {}
+
+
+.footer a {}
+
+.footer a:hover {}
+
+/* ---MEDIA QUERIES--- */
