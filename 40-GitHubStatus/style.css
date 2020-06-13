@@ -139,3 +139,31 @@ h1 {
 
 
 /* ---MEDIA QUERIES--- */
+@media (min-width: 600px) {
+  :root {
+    font-size: 15px;
+  }
+  .statusButton {
+    width: 50vw;
+  }
+  .status {
+    padding: 0 10vw;
+  }
+  .footer {
+    padding 5vh 25vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .statusContainer {
+    margin: 0 10vw;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17);
+  }
+  .status {
+    padding: 0 5vw;
+  }
+  .statusButton {
+    width: 30vw;
+  }
+}
