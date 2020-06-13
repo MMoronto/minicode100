@@ -79,18 +79,63 @@ h1 {
           justify-content: center;
 }
 
-.statusButton {}
+.statusButton {
+  font-size: 1.8rem;
+  color: #3B86FF;
+  border: 1px solid #3B86FF;
+  background: none;
+  font-family: 'Source Sans Pro', sans-sans-serif;
+  border-radius: 4px;
+  width: 70vw;
+  margin-top: 30px;
+  padding: 8px 12px;
+  -webkit-transition: all; 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
-.statusButton:hover {}
+.statusButton:hover {
+  color: #fff;
+  background: #3B86FF;
+}
 
 /* ---FOOTER--- */
-.footer {}
+.footer {
+  border-top: 5px solid #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction:  column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5vh 15vw;
+  margin-top: 5vh;
+  margin-bottom: 0;
+}
 
-.footer h2 {}
+.footer h2 {
+  font-size: 2rem;
+}
 
 
-.footer a {}
+.footer a {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  border-bottom: 2px solid #3B86FF;
+  -webkit-transform: all 0.5s;
+  transform: all 0.5s;
+}
 
-.footer a:hover {}
+.footer a:hover {
+  color: #1062E5;
+  border-bottom-color: #1062E5;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 
 /* ---MEDIA QUERIES--- */
