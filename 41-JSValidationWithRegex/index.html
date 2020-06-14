@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Native form validation with CSS & Regex</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <form>
+
+    <h1>Native form validation with CSS & Regex</h1>
+
+    <label>Name</label>
+    <input type="text" pattern=".{5,}">
+    <span data-validation-text>Must be 5 chars or more</span>
+
+    <label>Email</label>
+    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$">
+    <span data-validation-text>Must be a valid email</span>
+
+    <label>Phione</label>
+    <input typr="text" pattern="([0-9]|\s){2,}">
+    <span data-validation-text>Must be 5 chars or more, only numbers and spaces allowed</span>
+  </form>
+  <!-- <script src="scripts.js" ></script> -->
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red !important;
+}
+
+input:invalid:not(:placeholder-shown) + [data-validation-text] {
+  color: red !important;
+  display: block;
+}
+
+[data-validation-text] {
+  display: none;
+}
+
+body,
+html {
+  background-color: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {}
+
+label {}
+
+input {}
+
+label {}
+
+span {}
+
+h1 {}
