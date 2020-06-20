@@ -60,6 +60,8 @@ body {
         }
       }
       #countdown {
-        
+       color: #ff778d:inherit;
+        display: flex;
+         
       }
 }
