@@ -44,5 +44,114 @@ $(() => {
   function startSession(){
     sessionNum++;
     countType = "session";
+    $options.slideUp(143);
+    $controls.removeClass().addClass("started");
+    $title.fadeOut(43, function(){
+      $(this).html("Session " + sessionNum).fadeIn();
+    });
+    $audio.animate({volume: 1}, 1000);
+    start(remainingTime || sessionLength);
+  }
+  function startBreak(){
+    countType = "break";
+    $title.fadeOut(43, function(){
+      $(this).html("Breajk " + sessionNum).fadeIn();
+    });
+    $audio.animate({volume: 0}, 5000);
+    start(remaining || breakLength);
+  }
+  function Start(timeLeft){
+    clearInterval(countdown);
+    countdown = setInterval(() => {
+      timeLeft--;
+      remainingTime = timeLeft;
+      let minleft = Math.floor(timeLeft / 60),
+        secLeft = timeLeft - minLeft * 60;
+      updateMinutes(minLeft);
+      updateSeconds(secLeft < 10 ? "0" + secLeft : secLeft);
+      if (timeleft < 1){
+        if (countType === "session"){
+          startBreak(breakLength);
+        } else {
+          startSession();
+        }
+      }
+    }, 1000);
+  }
+  function pause(){
+    sessionNum--;
+    $audio.animate({volume: 0}, 1000);
+    clearInterval(countdown);
+    $options.slideDown(143);
+    $controls.removeClass().addClass("paused");
+    $title.fadOut(43, function(){
+      $(this).html("Paused").fadeIn();
+    });
+  }
+  function reset(){
+    clearInterval(countdown);
+    updateMinutes(sessionLength / 60);
+    updateSeconds("00");
+    countType = undefined;
+    $controls.removeClass().addClass("reset");
+    $title.html("Ready?");
+    remainingTime = sessionLength;
+  }
+  function incrSession(){
+    let num = Number($sessionInput.val());
+    num = num + (num === sessionMax ? 0 : 1);
+    sessionLength = num * 60;
+    updateSession(num);
+    updateMinutes(num);
+    updateSeconds("00");
+    reset();
+  }
+  function decrSession(){
+    let num = Number($sessionInput.val());
+    num = num - (num === sessionMin ? 0 : 1);
+    sessionLength = num * 60;
+    updateSession(num);
+    updateMinutes(num);
+    updateSeconds("00");
+    reset();
+  }
+  function incrBreak(){
+    let num = Number($breakInput.val());
+    num = num + (num === breakMax ? 0 : 1);
+    breakLength = num * 60;
+    updateBreak(num);
+    reset();
+  }
+  function decrBreak(){
+    let num = Number($breakInput.val());
+    num = num - (num === breakMin ? 0 : 1);
+    breakLength = num * 60;
+    updateBreak(num);
+    reset();
+  }
+  function updateMinutes(num){
+    $minutes.text(num);
+  }
+  function updateSeconds(num){
+    $seconds.text(num);
+  }
+  function updateSession(num){
+    num = num < sessionMin? sessionMin : num > sessionMax ? sessionMax : num;
+    $sessionInput.val(num).blur();
+    updateMinutes(num);
+    updateSeconds("00");
+    sessionLength = num * 60;
+    reset();
+  }
+  function audioSelect(e){
+    $theme.removeClass("selected");
+    $(e.target).addClass("selected")
+    switch(e.target.id){
+      case "forest": $audio.attr("src",""); break;
+      case "ocean": $audio.attr("src",""); break;
+      case "rainy": $audio.attr("src",""); break;
+      case "peace": $audio.attr("src",""); break;
+      case "cafet": $audio.attr("src",""); break;
+    }
   }  
 });
