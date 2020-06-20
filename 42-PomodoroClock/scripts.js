@@ -24,5 +24,25 @@ $(() => {
       sessionNum = 0,
       countdown,
       countType,
-      remainingTime = sessionLength;      
+      remainingTime = sessionLength;
+
+  init();
+
+  function init(){
+    $audio.prop("volume", 0);
+    $incrSession.click(() => incrSession());
+    $decrSession.click(() => decrSession());
+    $incrBreak.click(() => incrBreak());
+    $decrBreak.click(() => decrBreak());
+    $sessionInput.on("change", e => updateSessioin(e.target.value));
+    $breakInput.on("change", e => updateBreak(e.target.value));
+    $start.click(() => {if (countType === "break"){ startBreak(); } else {startSession(); } });
+    $pause.click(() => pause());
+    $reset.click(() => reset());
+    $theme.click(() => audioSelect(e));
+  }
+  function startSession(){
+    sessionNum++;
+    countType = "session";
+  }  
 });
