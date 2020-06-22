@@ -147,11 +147,11 @@ $(() => {
     $theme.removeClass("selected");
     $(e.target).addClass("selected")
     switch(e.target.id){
-      case "forest": $audio.attr("src",""); break;
-      case "ocean": $audio.attr("src",""); break;
-      case "rainy": $audio.attr("src",""); break;
-      case "peace": $audio.attr("src",""); break;
-      case "cafet": $audio.attr("src",""); break;
+      case "forest": $audio.attr("src","image/photo1"); break;
+      case "ocean": $audio.attr("src","image/photo2"); break;
+      case "rainy": $audio.attr("src","image/photo3"); break;
+      case "peace": $audio.attr("src","image/photo4"); break;
+      case "cafet": $audio.attr("src","image/photo5"); break;
     }
   }  
 });
