@@ -52,12 +52,12 @@ h1 {
           align-items: center;
 }
 
-.status_name {
+.status__name {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.status_flag {
+.status__flag {
   font-size: 1.3rem;
   background: rgba(105, 228, 166, 0.2);
   padding: 8px 12px;
@@ -65,7 +65,7 @@ h1 {
   text-transform: capitalize;
 }
 
-.status_flag--error {
+.status__flag--error {
   background: rgba(255, 101, 101, 0.2);
 }
 
