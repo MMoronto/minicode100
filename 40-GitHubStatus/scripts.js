@@ -8,24 +8,24 @@ function updateStatus() {
     for(let i = 0; i < result.length; i++) {
       if(i == 3) continue;
       if(i < 3) {
-        let flag = status[i].querySelector(".status_flag");
+        let flag = status[i].querySelector(".status__flag");
         if(result[i].status !== "operational"){
-            flag.classList.add("status_flag--error");
+            flag.classList.add("status__flag--error");
         }
         else {
-            flag.classList.remove("status_flag--error");
+            flag.classList.remove("status__flag--error");
         }
 
         flag.innerHTML = result[i].status;
 
       }
       else {
-          let flag = status[i -1].querySelector(".status_flag");
+          let flag = status[i -1].querySelector(".status__flag");
           if(result[i].status !== "operational"){
-              flag.classList.add("status_flag--error");
+              flag.classList.add("status__flag--error");
           }
           else {
-              flag.classList.remove("status_flag--error");
+              flag.classList.remove("status__flag--error");
           }
           flag.innerHTML = result[i].status;
       }
