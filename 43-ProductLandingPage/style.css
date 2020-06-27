@@ -1,3 +1,24 @@
+$color-red: #cc615f;
+$color-grey: #1c262b;
+$color-grey--light: #29363e;
+
+$color-orange: #e6ac5e;
+$color-blue: #007ece;
+$color-green: #8fca53;
+$color-purple: #68647c;
+$color-gold: #efb05a;
+
+
+$color-primary: $color-blue;
+
+$bp-s: 43.75em; //700px;
+$bp-xs: 34.375em; //550px;
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+
+
 * {
   box-sizing: border-box;
 }
