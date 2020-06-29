@@ -37,11 +37,21 @@ body {
   color: #141414;
 }
 
-a{}
+a{
+  text-decoration: none;
 
-img{}
+  &:hover{
+    text-decoration: none;
+  }  
+}
+
+img{
+ max-width: 100%;
+}
 
 .btn{}
+
+&:hover{}
 
 .container{}
 
