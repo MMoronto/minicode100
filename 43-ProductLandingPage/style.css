@@ -81,11 +81,26 @@ img{
   }  
 }
 
-&:hover{}
+.container{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
 
-.container{}
+header{
+  color: white;
+  background: $color-primary;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 
-header{}
+  @media (max-width: $bp-s){}
+
+  h1{}
+  h2{}
+}
 
 section{}
 .col{}
