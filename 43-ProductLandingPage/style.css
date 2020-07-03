@@ -119,7 +119,16 @@ header{
 
 section{}
 .col{}
-.col-7{}
+.col-7{
+  @extend .col;
+  width: 64%;
+  
+  @media (max-width: $bp-s){
+    width: 100%;
+    margin: 0;
+  }
+
+}
 .col-3{}
 .col-5{}
 
