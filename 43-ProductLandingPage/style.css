@@ -117,18 +117,46 @@ header{
   }
 }
 
-section{}
+section{
+background: #fff;
+  color: $color-grey;
+  padding: 3.5rem 0;
+
+  @media (max-width: $bp-s){
+    padding: 2rem 0;
+}
+  
+&.section--primary{
+  background: $color-primary;
+  color: #fff;
+}
+&.section--primary--alt{
+  background: desaturate(lighten($color-primary,15%),10%);
+  color: #fff;
+}
+&.section--primary--light{
+  background: rgba($color-primary,.1);//desaturate(lighten(mix($color-primary,white),10%),10%);
+}
+
+&.section--grey{
+  background: $color-grey;
+  color: #fff;
+}
+&.section--grey--light{
+  background: $color-grey--light;
+  color: #fff;
+}
+
 .col{}
 .col-7{
-  @extend .col;
-  width: 64%;
-  
-  @media (max-width: $bp-s){
-    width: 100%;
-    margin: 0;
-  }
+@extend .col;
+width: 64%;
 
+@media (max-width: $bp-s){
+  width: 100%;
+  margin: 0;
 }
+
 .col-3{}
 .col-5{}
 
