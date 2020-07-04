@@ -147,7 +147,9 @@ background: #fff;
   color: #fff;
 }
 
-.col{}
+.col{
+  
+ }
 .col-7{
 @extend .col;
 width: 64%;
@@ -157,11 +159,44 @@ width: 64%;
   margin: 0;
 }
 
-.col-3{}
-.col-5{}
+.col-3{
 
-.details{}
-.details-img--ball{}
+  @extend .col;
+  width: 29%;
+
+  @media (max-width: $bp-s){
+    width: 100%;
+    margin: 0;
+  }
+}
+.col-5{
+  
+  @extend .col;
+  width: 30%;
+
+  @media (max-width: $bp-xs){
+    width: 60%;
+    margin: 0;
+  }
+}
+
+.details{
+ 
+  text-align: left;
+  
+  h3{
+    font-size: 2rem;
+    text-align: left;
+  } 
+}
+.details-img--ball{
+  
+}
+  @media (max-width: $bp-s){
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+  }
 .features{}
 
 blockquote{}
