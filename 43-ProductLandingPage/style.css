@@ -310,6 +310,42 @@ footer{
     }
   }
 
-.text--center{}
-.text--left{}
-.bg-image{}
+.text--center{
+  text-align: center; 
+}
+.text--left{
+  text-align: left;
+}
+.bg-image{
+  background: $color-primary;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  //text-shadow: 2px 0 5px black;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #333 url('http://orbotix.wpengine.netdna-cdn.com/wp-content/uploads/2013/07/Faster-4H5B55491.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px);
+    opacity: .8;
+    transform: scale(1.1);
+  }
+  
+  &.bg-image-2:before{
+    opacity: .6;
+    background-image:url('http://orbotix.wpengine.netdna-cdn.com/wp-content/uploads/2013/07/Kids3.jpg'); 
+    background-position: center center;
+  }
+}
