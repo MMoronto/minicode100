@@ -36,4 +36,19 @@ circles.forEach(circle => {
 	circle.addEventListener('click', () => {
 		circle.style.backgroundColor = activeColor;
 	});
-}); 
+});
+
+// Randomize functionality
+randomize.addEventListener('click', () => {});
+
+// Clear functionality
+clear.addEventListener('click', () => {});
+
+function getRandomColor() {}
+
+function createDateEl(date) {}
+
+function createEmptySpot() {}
+
+//from stackoverfllow???
+function addDays(date, days) {}
