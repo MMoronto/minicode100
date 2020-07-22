@@ -173,3 +173,20 @@ p {
 	right: 0;
 	top: 40px;
 }
+
+.action_btn:active {
+	transform: scale(0.9);
+}
+
+.action_btn:focus {
+	outline: 0;
+}
+
+.randomize {
+	background-color: var(--mood-color-2);
+}
+
+.clear {
+	background-color: #888;
+	top: 80px;
+}
