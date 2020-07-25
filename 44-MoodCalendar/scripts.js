@@ -95,10 +95,18 @@ circles.forEach(circle => {
 });
 
 // Randomize functionality
-randomize.addEventListener('click', () => {});
+randomize.addEventListener('click', () => {
+  circles.forEach(circle => {
+		circle.style.backgroundColor = getRandomColor();
+	});
+});
 
 // Clear functionality
-clear.addEventListener('click', () => {});
+clear.addEventListener('click', () => {
+  circles.forEach(circle => {
+		circle.style.backgroundColor = defaultColor;
+	}); 
+});
 
 function getRandomColor() {}
 
