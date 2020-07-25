@@ -24,9 +24,43 @@ const moods = document.querySelectorAll('.mood');
 const randomize = document.querySelector('#randomize');
 const clear = document.querySelector('#clear'); 
 
-moods.forEach(mood => {});
+moods.forEach(mood => {
+  mood.addEventListener('click', () => {
+	// if is already selected, deselect it
+	if (mood.classList.contains('selected')) {
+		mood.classList.remove('selected');
+		activeColor = defaultColor;
+	} else {
+		moods.forEach(mood => {
+			mood.classList.remove('selected');
+		});
 
-const getAllDays = year => {};
+		mood.classList.add('selected');
+		activeColor = getComputedStyle(mood).getPropertyValue('color');
+	}
+	});	
+});
+
+const getAllDays = year => {
+  // First day of the year - 1st January
+	const firstDay = new Date(`January 1 ${year}`);
+	// Last day of the year - 31th December - used to stop adding days to the array
+	const lastDay = new Date(`December 31 ${year}`);
+
+	// Add first day
+	const days = [firstDay];
+
+	// Used to keep track of the day
+	let lastDayInArray = firstDay;
+
+	// Loop while there are new days to be added in the current year
+	while (lastDayInArray.getTime() !== lastDay.getTime()) {
+		days.push(addDays(lastDayInArray, 1));
+		lastDayInArray = days[days.length - 1];
+	}
+
+	return days;
+};
 
 const dates = getAllDays(currentYear);
 
