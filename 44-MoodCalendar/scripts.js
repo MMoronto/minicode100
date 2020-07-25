@@ -108,11 +108,30 @@ clear.addEventListener('click', () => {
 	}); 
 });
 
-function getRandomColor() {}
+function getRandomColor() {
+	return colors[Math.floor(Math.random() * 5)];
+}
 
-function createDateEl(date) {}
+function createDateEl(date) {
+  const day = date.getDate();
+	const dateEl = document.createElement('div');
+	dateEl.classList.add('days');
+	dateEl.innerHTML = `<span class="circle">${day}</span>`;
 
-function createEmptySpot() {}
+	return dateEl;
+}
+
+function createEmptySpot() {
+  const emptyEl = document.createElement('div');
+	emptyEl.classList.add('days');
+
+	return emptyEl;
+}
 
 //from stackoverfllow???
-function addDays(date, days) {}
+function addDays(date, days) {
+  var result = new Date(date);
+	result.setDate(result.getDate() + days);
+	return result; 
+}
+
