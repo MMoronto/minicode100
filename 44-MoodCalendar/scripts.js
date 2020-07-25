@@ -67,12 +67,24 @@ const dates = getAllDays(currentYear);
 let monthsHTML = '';
 
 // Loop over the months and create a div for each month
-months.forEach((month, idx) => {});
+months.forEach((month, idx) => {
+	monthsHTML += `<div class="months month_${idx}">
+		<h3>${month}</h3>
+		<div class="week_days_container">
+			${weekDays
+				.map(day => `<div class="week_days">${day}</div>`)
+				.join('')}
+			</div>
+			<div class="days_container"></div>
+		</div>`;
+});
 
 calendar.innerHTML = monthsHTML;
 
 // Loop over each day and
-dates.forEach(date => {});
+dates.forEach(date => {
+	
+});
 
 // Add click event to all the .circles
 const circles = document.querySelectorAll('.circle');
