@@ -4,6 +4,51 @@ const field = [];
 const size = 20;
 const purple = 'rgba(140, 82, 255, 1)';
 
+function setup() {
+  createCanvas(window.innerWidth, window.innerHeight);
+  for (let x = 0; x < nr_of_particles; x++) {}
+
+  createField();
+  background(lilac);
+
+  drawText();
+}
+
+function draw() {
+  particles.forEach(particle => {
+    particle.update();
+    particle.draw();
+    particle.setForceFormField(field);
+  });
+  if (frameCount % 10 === 0) {
+    drawText();
+  }
+}
+
+function drawText() {
+  fill('rgma(255,255,255, 0.1)');
+  strokeWeight(0);
+  textSize(width / 12);
+  textAlign(CENTER);
+  textFont('Arial');
+  text('#minicode100100Project', width / 2, height / 2);
+}
+
+class Particle {
+  constructor() {}
+
+  applyForce(force) {}
+
+  update() {}
+
+  draw() {}
+
+  checkEdges() {}
+
+  setForceFromField(field) {}
+}
+
+function createField() {}
 
 
 
