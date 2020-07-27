@@ -35,11 +35,26 @@ function drawText() {
 }
 
 class Particle {
-  constructor() {}
+  constructor() {
+    this.pos = createVector(random(width), random(height));
+		this.prevPos = this.pos.copy();
+		this.vel = createVector(0, 0);
+		this.acc = createVector(0, 0);
+		this.maxSpeed = 3;
+  }
 
-  applyForce(force) {}
-
-  update() {}
+  applyForce(force) {
+		this.acc.add(force);
+  }
+	
+  update() {
+    this.vel.add(this.acc);
+		this.vel.limit(this.maxSpeed);
+		this.prevPos = this.pos.copy();
+		this.pos.add(this.vel);
+		this.acc.mult(0);
+		this.checkEdges();    
+  }
 
   draw() {}
 
