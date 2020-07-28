@@ -34,7 +34,7 @@ function drawText() {
   textSize(width / 12);
   textAlign(CENTER);
   textFont('Arial');
-  text('#minicode100100Project', width / 2, height / 2);
+  text('#minicode100Project', width / 2, height / 2);
 }
 
 class Particle {
