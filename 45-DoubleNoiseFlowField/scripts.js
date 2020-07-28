@@ -6,7 +6,9 @@ const purple = 'rgba(140, 82, 255, 1)';
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  for (let x = 0; x < nr_of_particles; x++) {}
+  for (let x = 0; x < nr_of_particles; x++) {
+    particles.push(new Particle());  
+  }
 
   createField();
   background(lilac);
@@ -20,6 +22,7 @@ function draw() {
     particle.draw();
     particle.setForceFormField(field);
   });
+	
   if (frameCount % 10 === 0) {
     drawText();
   }
@@ -91,9 +94,22 @@ class Particle {
 	}
 }
 
-function createField() {}
-
-
+function createField() {
+  const rows = Math.floor(width / size);
+	const cols = Math.floor(height / size);
+	let x_noise = 0;
+	for (let i = 0; i < rows; i++) {
+		let y_noise = 0;
+		for (let j = 0; j < cols; j++) {
+			const angle = noise(x_noise, y_noise) * TWO_PI * 10;
+			const vec = p5.Vector.fromAngle(angle);
+			vec.setMag(0.3);
+			field.push(vec);
+			y_noise += 0.1;
+		}
+		x_noise += 0.1;
+	}
+}
 
 // SOCIAL PANEL JS
 const floating_btn = document.querySelector('.floating-btn');
