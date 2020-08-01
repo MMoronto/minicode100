@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Press Start 2P';
+	margin: 0;
+}
