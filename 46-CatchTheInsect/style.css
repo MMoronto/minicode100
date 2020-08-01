@@ -11,3 +11,55 @@ body {
 	font-family: 'Press Start 2P';
 	margin: 0;
 }
+
+a {}
+
+h1 {}
+
+.screen {}
+
+.screen.up {}
+
+.btn {}
+
+.btn:hover {}
+
+.btn:active {}
+
+.insects_list {}
+
+.insects_list li {}
+
+.choose_insect_btn {}
+
+.choose_insect_btn:hover {}
+
+.choose_insect_btn:active {}
+
+.choose_insect_btn img {}
+
+.game_container {}
+
+#time,
+#score {}
+
+@media screen and (max-width: 480px) {}
+
+#time {}
+
+#score {}
+
+#annoying_message {}
+
+#annoying_message.visible {}
+
+.insect {}
+
+.insect.catched {}
+
+.insect img {}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {}
+
+.social-panel-container.visible {} 
