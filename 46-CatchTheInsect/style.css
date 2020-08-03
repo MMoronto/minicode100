@@ -79,11 +79,20 @@ h1 {
 	height: 150px;  
 }
 
-.choose_insect_btn:hover {}
+.choose_insect_btn:hover {
+  background-color: #fff;
+	color: #516dff;
+}
 
-.choose_insect_btn:active {}
+.choose_insect_btn:active {
+	background-color: rgba(255, 255, 255, 0.7);
+}
 
-.choose_insect_btn img {}
+.choose_insect_btn img {
+  object-fit: contain;
+	width: 100px;
+	height: 100px;  
+}
 
 .game_container {}
 
