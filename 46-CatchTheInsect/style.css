@@ -57,11 +57,27 @@ h1 {
 	opacity: 0.7;  
 }
 
-.insects_list {}
+.insects_list {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+}
 
-.insects_list li {}
+.insects_list li {
+	margin: 10px;
+}
 
-.choose_insect_btn {}
+.choose_insect_btn {
+  background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Press Start 2P';
+	width: 150px;
+	height: 150px;  
+}
 
 .choose_insect_btn:hover {}
 
