@@ -94,22 +94,59 @@ h1 {
 	height: 100px;  
 }
 
-.game_container {}
+.game_container {
+	position: relative;
+}
 
 #time,
-#score {}
+#score {
+  top: 20px;
+	position: absolute;
+}
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+  #time,
+	#score {
+		font-size: 12px;
+	}
+}
 
-#time {}
+#time {
+	left: 20px;
+}
 
-#score {}
+#score {
+	right: 20px;
+}
 
-#annoying_message {}
+#annoying_message {
+  line-height: 1.6;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transition: transform 0.4s ease-in;
+	transform: translate(-50%, -150%);
+	opacity: 0;
+	text-align: center;
+	width: 100%;
+}
 
-#annoying_message.visible {}
+#annoying_message.visible {
+  transform: translate(-50%, 100%);
+	opacity: 1;
+}
 
-.insect {}
+.insect {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transform: translate(-50%, -50%) scale(1);
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	transition: transform 0.3s ease-out;  
+}
 
 .insect.catched {}
 
