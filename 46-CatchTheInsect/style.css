@@ -148,9 +148,15 @@ h1 {
 	transition: transform 0.3s ease-out;  
 }
 
-.insect.catched {}
+.insect.catched {
+	transform: translate(-50%, -50%) scale(0);
+}
 
-.insect img {}
+.insect img {
+  object-fit: contain;
+	width: 100px;
+	height: 100px;  
+}
 
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
