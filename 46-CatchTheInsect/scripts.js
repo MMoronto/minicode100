@@ -13,7 +13,15 @@ start_btn.addEventListener("click", () => {});
 
 choose_insect_btns.forEach(btn => {});
 
-function increaseTIme(){}
+function increaseTIme(){
+  let m = Math.floor(seconds / 60);
+  let s = seconds % 60;
+  m = m < 10 ? `0${m}` : m;
+  s = s < 10 ? `0${s}` : s;
+  timeEL.innerHTML = `Time: ${m}:${s}`;
+
+  seconds++;  
+}
 
 function addInsects(){}
 
