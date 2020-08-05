@@ -9,3 +9,20 @@ let seconds = 0;
 let score = 0;
 let selected_insect = {};
 
+start_btn.addEventListener("click", () => {});
+
+choose_insect_btns.forEach(btn => {});
+
+function increaseTIme(){}
+
+function addInsects(){}
+
+function createInsects(){}
+
+function catchInsects(){}
+
+function increaseScore(){}
+
+function startGame(){}
+
+function getRandomLocation(){}
