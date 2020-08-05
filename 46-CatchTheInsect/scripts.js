@@ -29,7 +29,13 @@ function createInsects(){}
 
 function catchInsects(){}
 
-function increaseScore(){}
+function increaseScore(){
+  score++;
+  if (score > 19) {
+    annoying_message.classList.add('visible');
+  }
+  scoreEl.innerHTML = 'Score: ${score}';  
+}
 
 function startGame(){}
 
