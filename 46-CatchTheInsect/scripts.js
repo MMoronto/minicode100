@@ -35,12 +35,27 @@ function increaseTIme(){
   s = s < 10 ? `0${s}` : s;
   timeEL.innerHTML = `Time: ${m}:${s}`;
 
-  seconds++;  
+  seconds++;
+}  
+
+function addInsects(){
+  setTimeout(createInsect, 1000);
+  setTimeout(createInsect, 1500);
 }
 
-function addInsects(){}
+function createInsects(){
+    const insect = document.createElement('div');
+    const { x, y } = getRandomLocation();
+    insect.classList.add('insect');
+    insect.style.left = `${x}px`;
+    insect.style.top = `${y}px`;
+    insect.innerHTML = `<img src="${selected_insect.src}" arc="${
+      selected_insect.alt
+    }" style="transform: rotation(${Math.random() * 360}deg)"/>`;
+    insect.addEventListener('click', catchInsect);
 
-function createInsects(){}
+    game_container.appendChild(insect);
+}
 
 function catchInsects(){}
 
