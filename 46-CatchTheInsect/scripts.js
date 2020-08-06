@@ -57,7 +57,14 @@ function createInsects(){
     game_container.appendChild(insect);
 }
 
-function catchInsects(){}
+function catchInsects(){
+  increaseScore();
+  this.classList.add('catched');
+  setTimeout(() => {
+    this.remove();
+  }, 2000);
+  addInsects();  
+}
 
 function increaseScore(){
   score++;
