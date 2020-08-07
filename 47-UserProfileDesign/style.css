@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #516dff;
+	color: #fff;
+	flex-direction: column;
+	font-family: 'Arial';
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+a {}
+
+h1 {}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {}
+
+.social-panel-container.visible {}
