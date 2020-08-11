@@ -8,7 +8,7 @@
 
 
 body {
-  background-color: #516dff;
+  background-color: #982ddd;
 	color: #fff;
 	flex-direction: column;
 	font-family: 'Press Start 2P';
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-	color: #fff;
+	color: #jjk;
 }
 
 h1 {
@@ -158,7 +158,3 @@ h1 {
 	height: 100px;  
 }
 
-/* SOCIAL PANEL CSS */
-.social-panel-container {}
-
-.social-panel-container.visible {} 
