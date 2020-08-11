@@ -9,15 +9,14 @@ root {}
 
 
 body {
-  background-color: #516dff;
-	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
-	color: #fff;
-	flex-direction: column;
-	font-family: 'Arial';
-	height: 100vh;
-	margin: 0;
-	overflow: hidden;
-	text-align: center;
+	background-color: #D9C4B1;
+  	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
+	font-family: 'Roboto';
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .user-profile-container {}
