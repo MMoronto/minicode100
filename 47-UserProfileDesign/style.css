@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
+root {}
+
 
 body {
   background-color: #516dff;
+	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
 	color: #fff;
 	flex-direction: column;
 	font-family: 'Arial';
@@ -14,9 +20,21 @@ body {
 	text-align: center;
 }
 
-a {}
+.user-profile-container {}
 
-h1 {}
+.user-profile {}
+
+.user-profile h3 {}
+
+.user-profile p {}
+
+.user-info {}
+
+.user-info h3 {}
+
+.user-info small {}
+
+.follow-btn {}
 
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
