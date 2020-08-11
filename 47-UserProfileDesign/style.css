@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
-root {}
+root {
+	 --light-col: #ff8c66;
+	--dark-col: #ff6633;
+	--second-col: #e63900; 
+}
 
 
 body {
-	background-color: #D9C4B1;
+	background-color: #ff8c66;
   	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
 	font-family: 'Roboto';
 	position: relative;
@@ -47,7 +51,11 @@ body {
 	text-transform: uppercase;	
 }
 
-.user-profile p {}
+.user-profile p {
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 5px 0 10px;	
+}
 
 .user-info {}
 
