@@ -20,30 +20,30 @@ choose_insect_btns.forEach(btn => {
     const alt = img.getAttribute('alt');
     selected_insect = {
       src,
-      alt 
+      alt
     };
     screens[1].classList.add('up');
     setTimeout(createInsect, 1000);
-    startGame();        
+    startGame();
   });
 });
 
-function increaseTIme(){
+function increaseTime(){
   let m = Math.floor(seconds / 60);
   let s = seconds % 60;
   m = m < 10 ? `0${m}` : m;
   s = s < 10 ? `0${s}` : s;
-  timeEL.innerHTML = `Time: ${m}:${s}`;
+  timeEl.innerHTML = `Time: ${m}:${s}`;
 
   seconds++;
-}  
+}
 
 function addInsects(){
   setTimeout(createInsect, 1000);
   setTimeout(createInsect, 1500);
 }
 
-function createInsects(){
+function createInsect(){
     const insect = document.createElement('div');
     const { x, y } = getRandomLocation();
     insect.classList.add('insect');
@@ -51,19 +51,19 @@ function createInsects(){
     insect.style.top = `${y}px`;
     insect.innerHTML = `<img src="${selected_insect.src}" arc="${
       selected_insect.alt
-    }" style="transform: rotation(${Math.random() * 360}deg)"/>`;
+    }" style="transform: rotate(${Math.random() * 360}deg)"/>`;
     insect.addEventListener('click', catchInsect);
 
     game_container.appendChild(insect);
 }
 
-function catchInsects(){
+function catchInsect(){
   increaseScore();
   this.classList.add('catched');
   setTimeout(() => {
     this.remove();
   }, 2000);
-  addInsects();  
+  addInsects();
 }
 
 function increaseScore(){
@@ -71,11 +71,11 @@ function increaseScore(){
   if (score > 19) {
     annoying_message.classList.add('visible');
   }
-  scoreEl.innerHTML = 'Score: ${score}';  
+  scoreEl.innerHTML = `Score: ${score}`;
 }
 
 function startGame(){
-  setInterval(increaseTime, 1000);  
+  setInterval(increaseTime, 1000);
 }
 
 function getRandomLocation(){
