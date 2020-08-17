@@ -1,8 +1,8 @@
 const poke_container = document.getElementById('poke_container');
 const pokemons_number = 150;
 const colors = {
-  fire: '#FDDFDF',
-	grass: '#DEFDE0',
+	fire: '#F78787',
+	grass: '#6EF777',
 	electric: '#FCF7DE',
 	water: '#DEF3FD',
 	ground: '#f4e7da',
