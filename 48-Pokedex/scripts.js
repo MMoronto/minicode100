@@ -40,7 +40,20 @@ function createPokemonCard(pokemon) {
 	const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 	const color = colors[type];
   
-	pokemonEl.style.backgroundColor = color;	
+	pokemonEl.style.backgroundColor = color;
+	
+	const pokeInnerHTML = `
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+  `;
+	
+pokemon.innerHTML = pokeInnerHTML;
+	
+poke_container. appendChild(pokemonEl);
 }
 
 fetchPokemons();
