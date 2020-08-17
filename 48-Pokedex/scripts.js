@@ -35,7 +35,12 @@ function createPokemonCard(pokemon) {
   	const pokemonEl = document.createElement('div');
 	pokemonEl.classList.add('pokemon');
 
-	const poke_types = pokemon.types.map(type => type.type.name);	
+	const poke_types = pokemon.types.map(type => type.type.name);
+	const type = main_types.find(type => poke_types.indexOf(type) > -1);
+	const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+	const color = colors[type];
+  
+	pokemonEl.style.backgroundColor = color;	
 }
 
 fetchPokemons();
