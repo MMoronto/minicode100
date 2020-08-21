@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff8c66;
+	font-family: 'Holtwood One SC';
+  margin: 0;
+}
+
+.hidden-big {
+  display: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  margin: 0 auto 50px;
+	max-width: 1200px;
+}
+
+.row {
+
+}
+
+.box {
+
+}
+
+.row.small .box {
+  min-height: 200px;
+}
+
+.row.mid .box {
+  min-height: 200px;
+}
+
+.box.dark {
+
+}
+
+.box:first-of-type {
+  background-color: #c0c0c0;
+	color: #fff;
+}
+
+.box:last-of-type {
+  background-color: #c0c0c0;
+	color: #fff;
+}
+
+.heading {
+
+}
+
+.subheading {
+
+}
+
+.row.mild .subheading {
+
+}
+
+.name {
+
+}
+
+.box:first-of-type .name,
+.box:first-of-type .heading {
+  right: 10px;
+}
+
+.box:last-of-type .name,
+.box:last-of-type .heading {
+  left: 10px;
+}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {}
+
+.social-panel-container.visible {}
