@@ -80,6 +80,25 @@ body {
   left: 10px;
 }
 
+.number {
+
+}
+
+.movies {
+
+}
+
+.movies li {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
 
