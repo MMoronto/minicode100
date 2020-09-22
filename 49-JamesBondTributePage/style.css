@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -25,11 +24,23 @@ body {
 }
 
 .row {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .box {
-
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  width: 500px;
+  min-height: 500px;
+  position: relative;
 }
 
 .row.small .box {
@@ -41,25 +52,36 @@ body {
 }
 
 .box.dark {
-
+  background-color: #c0c0c0;
+  color: #fff;
 }
 
 .box:first-of-type {
-  background-color: #c0c0c0;
-	color: #fff;
+  background-position: top left;
+  text-align: right;
 }
 
 .box:last-of-type {
-  background-color: #c0c0c0;
-	color: #fff;
+  background-position: top right;
 }
 
 .heading {
-
+  letter-spacing: 2px;
+  font-size: 60px;
+  position: absolute;
+  top: 50px;
+  margin: 0;
 }
 
 .subheading {
-
+  font-family: 'Lora';
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
 }
 
 .row.mild .subheading {
