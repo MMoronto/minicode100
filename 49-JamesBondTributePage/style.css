@@ -85,11 +85,15 @@ body {
 }
 
 .row.mild .subheading {
-
+  top: 70%;
 }
 
 .name {
-
+  letter-spacing: 2px;
+  font-size: 48px;
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
 }
 
 .box:first-of-type .name,
