@@ -196,7 +196,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-
+	.row, .box {
+		width: 100%;
+	}
 }
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
