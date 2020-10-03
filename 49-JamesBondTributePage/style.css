@@ -136,7 +136,63 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .hidden-big {
+    display: inline;
+  }
 
+  .hidden-small {
+    display: none;
+  }
+
+  .box {
+    order: 2;
+    min-height: auto;
+  }
+
+  .box.dark {
+    order: 1;
+    min-height: 300px;
+  }
+
+  .heading {
+    font-size: 40px;
+    text-align: center;
+    right: 0 !important;
+    top: 20px;
+    width: 100%;
+  }
+  
+  .subheading {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .number {
+    font-size: 200px;
+  }
+  
+  .name {
+    line-height: 1;
+    left: 50% !important;
+    right: auto !important;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .movies {
+    text-align: center;
+  }
+
+  .row.small .box {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .row.mid .box {
+    min-height: 100px;
+  }
 }
 
 @media screen and (max-width: 500px) {
