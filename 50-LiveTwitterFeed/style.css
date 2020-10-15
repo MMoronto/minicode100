@@ -60,6 +60,32 @@ h2 small {
   }
 }
 
+.tw-left {
+
+}
+
+.tw-left img {
+  
+}
+
+.tw-right {
+  
+}
+
+.name {
+
+}
+
+.name > span {
+
+}
+
+.text {
+  font-size: 15px;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
 
