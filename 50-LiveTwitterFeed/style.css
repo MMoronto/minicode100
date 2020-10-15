@@ -61,23 +61,26 @@ h2 small {
 }
 
 .tw-left {
-
+  padding: 15px 20px;
 }
 
 .tw-left img {
-  
+  border-radius: 50%;
+  max-width: 50px;  
 }
 
 .tw-right {
-  
+  padding: 10px 10px 10px 0;
+  flex: 1;  
 }
 
 .name {
-
+  margin: 0;
 }
 
 .name > span {
-
+  font-size: 15px;
+  color: rgb(136, 153, 166);
 }
 
 .text {
