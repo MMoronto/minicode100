@@ -25,7 +25,10 @@ h2, h3 {
 }
 
 h2 small {
-
+	display: block;
+	font-size: 14px;
+	margin-top: 7px;
+	font-style: italic;
 }
 
 .tweets-container {
