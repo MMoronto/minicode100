@@ -21,7 +21,19 @@ const dummyTweets = [
 ];
 const tweets = [];
 
-const getTweets = () => {}
+const getTweets = () => {
+  fetch('https://twitter.com/MMoronto')
+    .then(res => res.json())
+    .then(res => {
+      if(res.error) {
+        clearInterval(tweetsInterval);
+        tweets_container.innerHTML = '';
+        dummyTweets.sort(() => -1).forEach(tweet => createTweet(tweet));
+      } else {
+        res.sort(() => -1).forEach(tweet => createTweet(tweet))
+      }
+    });
+}
 
 const createTweet = (tweet) => {}
 
