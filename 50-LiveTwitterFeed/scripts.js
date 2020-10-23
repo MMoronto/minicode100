@@ -66,7 +66,10 @@ const updateTimes = () => {
 	});
 }
 
-function tweetsInterval() {}
+function tweetsInterval() {
+	updateTimes();
+	getTweets();
+}
 
 getTweets();
 setInterval(tweetsInterval, 5000);
