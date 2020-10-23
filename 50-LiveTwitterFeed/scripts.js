@@ -59,7 +59,12 @@ const createTweet = (tweet) => {
   }
 }
 
-const updateTimes = () => {}
+const updateTimes = () => {
+	const tweetsTimes = document.querySelectorAll('.time');
+	tweetsTimes.forEach(tweetEl => {
+		tweetEl.innerText = moment(tweetEl.getAttribute('data-time')).fromNow()
+	});
+}
 
 function tweetsInterval() {}
 
