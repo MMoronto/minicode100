@@ -35,7 +35,29 @@ const getTweets = () => {
     });
 }
 
-const createTweet = (tweet) => {}
+const createTweet = (tweet) => {
+  if(!tweets.find(tw => tw.text === tweet.text)) {
+    const tweetEl = document.createElement('li');
+    tweetEl.classList.add('tweet');
+    const tweetInnerHTML = `
+      <div class="tw-left">
+        <img src="${tweet.userImage}" alt="img" />
+      </div>
+      <div class="tw-right">
+        <h4 class="name">
+          ${tweet.userName} 
+          <span class="handle">${tweet.userScreen} ·</span> 
+          <span class="time" data-time="${tweet.created}">${moment(tweet.created).fromNow()}</span>
+        </h4>
+        <p class="text">${tweet.text.replace(/\n/g, '<br />')}</p>
+      </div>`;
+
+    tweetEl.innerHTML = tweetInnerHTML;
+    tweets_container.prepend(tweetEl);
+    
+    tweets.push(tweet);
+  }
+}
 
 const updateTimes = () => {}
 
