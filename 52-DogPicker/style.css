@@ -27,9 +27,33 @@ body {
   text-decoration: blink;
 }
 
-.container {}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  position: relative;
+  max-width: 90vw;
+  width: 800px;   
+}
 
-.container .or {}
+.container .or {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ff416c;
+  display: flex;
+  font-size: 1.3em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+  padding: 10px;
+  margin: 0;
+  height: 50px;
+  width: 50px;  
+}
 
 .container .name {}
 
