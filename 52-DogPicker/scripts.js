@@ -96,9 +96,29 @@ class App extends React.Component {
 
         return (
             <div className='main'>
-                <h1 className='text-center'></h1>
-                <div className='container text-center'></div>
-                <h2></h2>
+                <h1 className='text-center'>Which is your favorite?</h1>
+                <div className='container text-center'>
+                    <div className='img-container'>
+                        <img src={dog1.image} alt=''/>
+                        <h3 className='name'>{dog1.name}</h3>
+                        <button 
+                              className='choose-btn'
+                              onClick={() => this.favoriteDog(dog1.id)}>
+                            This!
+                        </button>
+                    </div>
+                    <h3 className='or'>OR</h3>
+                    <div className='img-container'>
+                        <img src={dog2.image} alt=''/>
+                        <h3 className='name'>{dog2.name}</h3>
+                        <button 
+                              className='choose-btn'
+                              onClick={() => this.favoriteDog(dog2.id)}>
+                            That!
+                        </button>                    
+                    </div>
+                </div>
+                <h2>Leaderboard - Top 10</h2>
                 <table class='leaderboard'></table>
             </div>
           );
