@@ -62,7 +62,30 @@ class App extends React.Component {
       this.setState({ idx1, idx2});
     };
 
-    getMedal = idx => {};
+    getMedal = idx => {
+        switch (idx) {
+            case 0;
+                return (
+                    <p className='place place-1'>
+                      <i className='fas fa-medal'></i>
+                    </p>
+                  );
+            case 1;
+                return (
+                    <p className='place place-2'>
+                      <i className='fas fa-medal'></i>
+                    </p>
+                  );
+            case 2;
+                return (
+                    <p className='place place-3'>
+                      <i className='fas fa-medal'></i>
+                    </p>
+                  );
+            default:
+                return <p className='place'>{idx + 1}</p>;                                  
+        }
+    };
 
     render() {}
 
