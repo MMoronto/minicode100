@@ -49,6 +49,19 @@ favoriteDog = id => {
     this.getDogs();
 };
 
+getRandomDogs = () => {
+    const { dogs } = this.state;
+
+    if (!dogs) {
+      return;
+    }
+
+    const idx1 = Math.floor(Math.random() * dogs.length);
+    const idx2 = Math.floor(Math.random() * dogs.length);
+
+    this.setState({ idx1, idx2});
+};
+
 }
 
 
