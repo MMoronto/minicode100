@@ -39,6 +39,15 @@ getDogs = () => {
   });
 };
 
+favoriteDog = id => {
+    const {databse, dogs } = this.state;
+    const dog = dogs.find(d => d.id == id);
+
+    // increase the likes??
+    database.child(id).update({ likes: dog.likes + 1 });
+    this.getRandomDogs();
+    this.getDogs();
+};
 
 }
 
