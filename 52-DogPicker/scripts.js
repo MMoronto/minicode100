@@ -87,7 +87,22 @@ class App extends React.Component {
         }
     };
 
-    render() {}
+    render() {
+        const { dogs, idx1, idx2 } = this.state;
+        const dog1 = dogs[idx1];
+        const dog2 = dogs[idx2];
+
+        if (dogs.length === 0 || !idx1 || !idx2) return <h1>Loading data...</h1>;
+
+        return (
+            <div className='main'>
+                <h1 className='text-center'></h1>
+                <div className='container text-center'></div>
+                <h2></h2>
+                <table class='leaderboard'></table>
+            </div>
+          );
+    }
 
 }
 
