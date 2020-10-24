@@ -22,7 +22,10 @@ body {
   margin: 0 auto 30px; 
 }
 
-.text-center {}
+.text-center {
+  text-align: center;
+  text-decoration: blink;
+}
 
 .container {}
 
