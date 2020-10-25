@@ -18,7 +18,7 @@ let radiusArr = ['100%', '0%', '0%', '0%'];
 radiusCB.forEach((checkbox, idx) => {
     checkbox.addEventListener('change', (e) => {
         radiusArr[idx] = e.target.checked ? '100%' : '0%';
-        createTitles();
+        createTiles();
     });
 });
 
@@ -32,7 +32,7 @@ colorsEl.addEventListener('change', (e) => {
     createTiles();
 });
 
-function createTitles() {
+function createTiles() {
     // Clear everything
     container.innerHTML = '';
 
@@ -41,7 +41,7 @@ function createTitles() {
     const itemsRow = items;
     const itemsCol = items;
     const rowSize = width / itemsRow;
-    const cilSize = height / itemsCol;
+    const colSize = height / itemsCol;
 
     for(let i=0; i< itemsRow; i++) {
         const parentEl = document.createElement('div');
@@ -51,7 +51,13 @@ function createTitles() {
             el.classList.add('element');
             el.style.width = `${size}px`;
             el.style.height = `${size}px`;
+            el.style.background = colors[Math.floor(Math.random() * colors.length)];
+            el.style.borderRadius = radius;
+            el.style.tyransform = `rotatye(${Math.floor(Math.random() * 4) * 90}deg)`
+            parentEl.appendChild(el);
         }
         container.appendChild(parentEl);
     }
 }
+
+createTiles();
