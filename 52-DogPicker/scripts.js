@@ -125,11 +125,13 @@ class App extends React.Component {
                             .sort((a, b) => b.likles - a.likes)
                             .slice(0, 10)
                             .map((dog, idx) => (
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                <tr key={dog.id}>
+                                    <td>{this.getMedal(idx)}</td>
+                                    <td>
+                                        <img src={dog.image} alt={dog.id} />
+                                    </td>
+                                    <td className='name'>{dog.name}</td>
+                                    <td>{dog.likes}</td>
                                 </tr>
                                 ))}
                     </tbody>
