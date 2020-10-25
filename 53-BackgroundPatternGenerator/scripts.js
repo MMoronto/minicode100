@@ -5,9 +5,9 @@ const colorsEl = document.getElementById('colors');
 
 const colorsObj = {
   'purplish': ['purple', 'violet', 'lavender', 'pink'],
-  'redish': ['red', 'orange', 'yellow'],
-  'greenish': ['green', 'olive', 'aquamarine', 'teal'],
-  'brownish': ['brown', 'tan', 'khaki'],
+  'redish': ['red', 'salmon', 'crimson', 'maroon'],
+  'greenish': ['green', 'olive', 'chartreuse', 'teal'],
+  'brownish': ['brown', 'sienna', 'khaki', 'chocolate'],
   'blueish': ['blue', 'aquamarine', 'cyan', 'navy']
 }
 
