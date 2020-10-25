@@ -119,7 +119,21 @@ class App extends React.Component {
                     </div>
                 </div>
                 <h2>Leaderboard - Top 10</h2>
-                <table class='leaderboard'></table>
+                <table class='leaderboard'>
+                    <tbody>
+                        {dogs
+                            .sort((a, b) => b.likles - a.likes)
+                            .slice(0, 10)
+                            .map((dog, idx) => (
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                ))}
+                    </tbody>
+                </table>
             </div>
           );
     }
