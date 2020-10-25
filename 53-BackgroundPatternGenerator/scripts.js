@@ -4,11 +4,11 @@ const itemsEl = document.getElementById('items');
 const colorsEl = document.getElementById('colors');
 
 const colorsObj = {
-  'purplish': ['purple', 'violet', 'lavender'],
-  'redish': ['red'],
-  'greenish': ['green'],
-  'brownish': ['brown'],
-  'blueish': ['blue']
+  'purplish': ['purple', 'violet', 'lavender', 'pink'],
+  'redish': ['red', 'orange', 'yellow'],
+  'greenish': ['green', 'olive', 'aquamarine', 'teal'],
+  'brownish': ['brown', 'tan', 'khaki'],
+  'blueish': ['blue', 'aquamarine', 'cyan', 'navy']
 }
 
 let colors = [...colorsObj.purplish];
