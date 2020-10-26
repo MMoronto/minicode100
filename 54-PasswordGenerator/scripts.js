@@ -61,10 +61,19 @@ function generatePassword(lower, upper, number, symbol, length) {
     return finalPassword;
 }
 
-function getRandomLower() {}
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
 
-function getRandomUpper() {}
+function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
 
-function getRandomNumber() {}
+function getRandomNumber() {
+    return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
 
-function getRandomSymbol() {}
+function getRandomSymbol() {
+    const symbols = '!@#$%^&*(){}[]=<>/,.'
+    return symbols[Math.floor(Math.random() * symbols.length)];
+}
