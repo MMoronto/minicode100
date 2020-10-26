@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+
+p {}
+
+
+h2 {}
+
+input[type=checkbox] {}
+
+.container {}
+
+.result-container {}
+
+.result-container #result {}
+
+.result-container .btn {}
+
+.btn {}
+
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {}
+
+.social-panel-container.visible {}
