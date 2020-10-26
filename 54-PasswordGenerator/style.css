@@ -4,7 +4,17 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    background-color: #6b92a4;
+    color: #fff;
+    display: flex;
+    font-family: 'Helvetica', sans-serif;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;  
+}
 
 
 p {}
