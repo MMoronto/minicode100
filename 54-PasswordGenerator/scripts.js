@@ -5,7 +5,7 @@ const lowercaseEl = document.getElelementById('lowercase');
 const numberscaseEl = document.getElelementById('numbers');
 const symbolsEl = document.getElelementById('symbols');
 const generateEl = document.getElelementById('generate');
-const clipboardEl = document.getElelementById('clipboard');
+const clipboard = document.getElelementById('clipboard');
 
 const randomFunc = {
     lower: getRandomLower, 
