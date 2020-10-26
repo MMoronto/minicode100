@@ -24,6 +24,12 @@ input[type=checkbox] {}
 
 .btn {}
 
+.btn-large {}
+
+.setting {}
+
+@media screen and (max-width: 400px) {}
+
 
 /* SOCIAL PANEL CSS */
 .social-panel-container {}
