@@ -7,9 +7,26 @@ const symbolsEl = document.getElelementById('symbols');
 const generateEl = document.getElelementById('generate');
 const clipboardEl = document.getElelementById('clipboard');
 
-const randomFunc = {}
+const randomFunc = {
+    lower: getRandomLower, 
+    upper: getRandomUpper, 
+    number: getRandomNumber, 
+    symbol: getRandomSymbol
+}
 
-clipboard.addEventListener('click', () => {});
+clipboard.addEventListener('click', () => {
+    const textarea = document.createElement('textarea');
+    const password = resultEl.innerText;
+
+    if(!password) { return; }
+
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+    alert('password copied to clipboard');
+});
 
 generate.addEventListener('click', () => {});
 
