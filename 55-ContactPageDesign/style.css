@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+:root {};
+
+body {};
+
+.contact-container {};
+
+.contact-container h2 {};
+
+.contact-container p {};
+
+.contact-container form {};
+
+.contact-container .wrapper{};
+
+.contact-container .wrapper-big {};
+
+.contact-container input, .contact-container textarea {};
+
+.contact-container input:focus, .contact-container textarea:focus {};
+
+.contact-container input:focus, .gradient-bg, .contact-container textarea:focus + .gradient-bg {};
+
+.contact-container .gradient-bg {};
+
+.contact-container button{};
+
+@media screen and (max-width: 600px) {};
 
 
 /* SOCIAL PANEL CSS */
