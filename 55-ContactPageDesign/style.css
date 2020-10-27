@@ -4,33 +4,44 @@
   box-sizing: border-box;
 }
 
-:root {};
+:root {
+  --color-green-1: #99e600;
+  --color-blur-1: #006699;  
+}
 
-body {};
+body {
+    background: linear-gradient(to right, var(--color-green-1), var(--color-blue-1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muli';
+    overflow: hidden;
+    in-height: 100vh;
+}
 
-.contact-container {};
+.contact-container {}
 
-.contact-container h2 {};
+.contact-container h2 {}
 
-.contact-container p {};
+.contact-container p {}
 
-.contact-container form {};
+.contact-container form {}
 
-.contact-container .wrapper{};
+.contact-container .wrapper{}
 
-.contact-container .wrapper-big {};
+.contact-container .wrapper-big {}
 
-.contact-container input, .contact-container textarea {};
+.contact-container input, .contact-container textarea {}
 
-.contact-container input:focus, .contact-container textarea:focus {};
+.contact-container input:focus, .contact-container textarea:focus {}
 
-.contact-container input:focus, .gradient-bg, .contact-container textarea:focus + .gradient-bg {};
+.contact-container input:focus, .gradient-bg, .contact-container textarea:focus + .gradient-bg {}
 
-.contact-container .gradient-bg {};
+.contact-container .gradient-bg {}
 
-.contact-container button{};
+.contact-container button{}
 
-@media screen and (max-width: 600px) {};
+@media screen and (max-width: 600px) {}
 
 
 /* SOCIAL PANEL CSS */
