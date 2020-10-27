@@ -50,15 +50,39 @@ body {
     max-width: 100%;  
 }
 
-.contact-container .wrapper{}
+.contact-container .wrapper{
+    position: relative;
+    margin: 10px 0;
+    height: 44px;
+    width: 100%;  
+}
 
-.contact-container .wrapper-big {}
+.contact-container .wrapper-big {
+    height: 80px;
+}
 
-.contact-container input, .contact-container textarea {}
+.contact-container input, .contact-container textarea {
+    border: none;
+    border-radius: 4px;
+    font-family: 'Muli';
+    font-size: 14px;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
 
-.contact-container input:focus, .contact-container textarea:focus {}
+.contact-container input:focus, .contact-container textarea:focus {
+    outline: 0;
+}
 
-.contact-container input:focus, .gradient-bg, .contact-container textarea:focus + .gradient-bg {}
+.contact-container input:focus, .gradient-bg, .contact-container textarea:focus + .gradient-bg {
+    background: linear-gradient(to right, var(--color-green-1), var(--color-blue-1));
+}
 
 .contact-container .gradient-bg {}
 
