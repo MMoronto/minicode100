@@ -84,9 +84,28 @@ body {
     background: linear-gradient(to right, var(--color-green-1), var(--color-blue-1));
 }
 
-.contact-container .gradient-bg {}
+.contact-container .gradient-bg {
+    background: #999;
+    border-radius: 4px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: 9;
+}
 
-.contact-container button{}
+.contact-container button{
+    background: linear-gradient(to right, var(--color-green-1), var(--color-blue-1));
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 51, 102, 0.5);
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;  
+}
 
 @media screen and (max-width: 600px) {}
 
