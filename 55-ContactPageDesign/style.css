@@ -16,7 +16,7 @@ body {
     align-items: center;
     font-family: 'Muli';
     overflow: hidden;
-    in-height: 100vh;
+    min-height: 100vh;
 }
 
 .contact-container {}
