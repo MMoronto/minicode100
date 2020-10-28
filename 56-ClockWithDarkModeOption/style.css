@@ -45,21 +45,59 @@ html.dark {
     top: 100px;
 }
 
-.toggle:focus {}
+.toggle:focus {
+    outline: 0;
+}
 
-.clock-container {}
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.clock {}
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
 
-.needle {}
+.needle {
+    background-color: var(--primary-color);
+    transition: all 0.5s ease-in;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+    width: 3px;
+    height: 65px;
+}
 
-.needle.hour {}
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
 
-.needle.minute {}
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
 
-.needle.second {}
+.needle.second {
+    background-color: #e74c3c;
+    height: 100px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
 
-.center-point {}
+.center-point {
+    background-color: #e74c3c;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .center-point::after {}
 
