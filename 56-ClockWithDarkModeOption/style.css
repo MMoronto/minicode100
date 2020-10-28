@@ -4,6 +4,40 @@
   box-sizing: border-box;
 }
 
+:root {}
 
+html {}
+
+body {}
+
+html.dark {}
+
+html.dark {}
+
+.toggle {}
+
+.toggle:focus {}
+
+.clock-container {}
+
+.clock {}
+
+.needle {}
+
+.needle.hour {}
+
+.needle.minute {}
+
+.needle.second {}
+
+.center-point {}
+
+.center-point::after {}
+
+.time {}
+
+.date {}
+
+.date .circle {}
 
 /* SOCIAL PANEL CSS */
