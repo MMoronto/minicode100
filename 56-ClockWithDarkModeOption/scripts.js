@@ -43,5 +43,5 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 
 setTime();
 
-setinterval(setTime, 1000);
+setInterval(setTime, 1000);
 
