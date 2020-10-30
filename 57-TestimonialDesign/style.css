@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,7 +17,7 @@ body {
     margin: 0;    
 }
 
-.testimonial-container {
+.testimonials-container {
     color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
@@ -71,6 +72,7 @@ body {
     width: 50px;
     height: 50px;
 }
+
 
 
 /* SOCIAL PANEL CSS */
