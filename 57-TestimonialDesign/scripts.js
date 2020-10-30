@@ -27,7 +27,23 @@ const testimonials = [{
 
 addTestimonial(0);
 
-authorsEl.forEach((author, idx) => {});
+authorsEl.forEach((author, idx) => {
+    author.addEventListener('click', (e) => {
+        addTestimonial(idx);
+        author.classList.add('selected');
+    })
+});
 
-function addTestiomonial(idx) {};
+function addTestiomonial(idx) {
+    const testimonial = testimonials[idx];
+
+    nameEl.innerHTML = testimonial.name;
+    textEl.innerHTML = testimonial.text;
+    container.style.background = testimonial.color;
+    container.style.boxShadow = `0 35px 10px -20px ${testimonial.color.substring(0, testimonial.color.length-4)}0.9)`;
+
+    authorsEl.forEach(author => {
+        author.classList.remove('selected');
+    });
+}
 
