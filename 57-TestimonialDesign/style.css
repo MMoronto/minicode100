@@ -65,5 +65,12 @@ body {
     transform: scale(1.2);
 }
 
+.author img {
+    transition: all 0.3s ease-in;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
 
 /* SOCIAL PANEL CSS */
