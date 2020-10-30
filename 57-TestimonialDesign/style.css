@@ -32,5 +32,38 @@ body {
     font-size: 50px;    
 }
 
+.text {
+    line-height: 30px;
+    margin: 40px 0 20px;
+    min-height: 150px;
+    max-width: 600px;
+    text-align: justify;
+    word-spacing: 5px;    
+}
+
+.name {
+    align-self: flex-end;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.authors-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.author {
+    margin: 30px 30px 0;
+    cursor: pointer;
+}
+
+.author.selected img {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
 
 /* SOCIAL PANEL CSS */
