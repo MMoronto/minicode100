@@ -53,12 +53,30 @@ body {
     text-align: center;    
 }
 
-.love .grey-text {}
+.love .grey-text {
+    display: block;
+    color: #aaa;
+    font-size: 12px;    
+}
 
-.fa-redo {}
+.fa-redo {
+    margin-left: 10px;
+}
 
-.heart {}
+.heart {
+    position: absolute;
+    color: #E7273F;
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fly 3s linear forwards;    
+}
 
-@keyframes fly {}
+@keyframes fly {
+    to {
+        transform: translate(-50%, -50px);
+    }
+}
 
 /* SOCIAL PANEL CSS */
