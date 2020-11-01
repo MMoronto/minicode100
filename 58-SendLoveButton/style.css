@@ -37,9 +37,21 @@ body {
     outline: none;
 }
 
-.love .icon-container {}
+.love .icon-container {
+    background-color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #eee;
+    color: #E7273F;
+    padding: 20px 25px;
+    position: relative;    
+}
 
-.love .text {}
+.love .text {
+    padding: 0 25px;
+    flex: 1;
+    text-align: center;    
+}
 
 .love .grey-text {}
 
