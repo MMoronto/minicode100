@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+body {}
 
+.love {}
+
+.love:focus {}
+
+.love .icon-container {}
+
+.love .text {}
+
+.love .grey-text {}
+
+.fa-redo {}
+
+.heart {}
+
+@keyframes fly {}
 
 /* SOCIAL PANEL CSS */
