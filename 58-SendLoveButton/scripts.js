@@ -9,7 +9,11 @@ love_btns.forEach(love_btn => {
         createHearts(love_btn.querySelector('.icon-container'));
     });
 
-    love_btn.addEventListener('mouseup', (e) => {});
+    love_btn.addEventListener('mouseup', (e) => {
+        love_btn.style.background = '#E7273F';
+        love_btn.style.color = '#fff';
+        love_btn.querySelector('.text').innerHTML = 'THANK YOU! <i ></i>'
+    });
 })
 
 function createHearts(container) {}
