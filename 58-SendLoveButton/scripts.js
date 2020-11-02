@@ -16,4 +16,7 @@ love_btns.forEach(love_btn => {
     });
 })
 
-function createHearts(container) {}
+function createHearts(container) {
+    // create 7 hearts
+    for(let i=0; i<5; i++) {}
+}
