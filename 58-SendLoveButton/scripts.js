@@ -25,6 +25,11 @@ function createHearts(container) {
             heart.innerHTML = '<i class="fas fa-heart"></i>';
             heart.style.left = Math.random() * 100 + '%';
             heart.style.top = Math.random() * 100 + '%';
+            heart.style.fontSize = Math.random() * 20 + 5 + 'px';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            container.appendChild(heart);
+
+            setTimeout(() => {}, 3000);
         }, i * 100)
     }
 }
