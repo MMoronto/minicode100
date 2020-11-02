@@ -19,6 +19,12 @@ love_btns.forEach(love_btn => {
 function createHearts(container) {
     // create 7 hearts
     for(let i=0; i<5; i++) {
-        setTimeout(() => {}, i * 100)
+        setTimeout(() => {
+            const heart = document.createElement('span');
+            heart.classList.add('heart');
+            heart.innerHTML = '<i class="fas fa-heart"></i>';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.top = Math.random() * 100 + '%';
+        }, i * 100)
     }
 }
