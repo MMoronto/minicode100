@@ -6,15 +6,15 @@
 }
 
 body {
-    background: #D3CCE3;
-    background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);
-    background: linear-gradient(to bottom, #E9E4F0, #D3CCE3);
+    background: #85758E;
+    background: -webkit-linear-gradient(to bottom, #E9E4F0, #85758E);
+    background: linear-gradient(to bottom, #E9E4F0, #85758E);
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin: 0;    
+    margin: 0;
 }
 
 .testimonials-container {
@@ -25,12 +25,12 @@ body {
     padding: 70px 50px 50px;
     transition: all 0.3s ease-in;
     margin: 20px;
-    max-width: 100%;    
+    max-width: 100%;
 }
 
 .fa-quote-left {
     color: rgba(0, 0, 0, 0.15);
-    font-size: 50px;    
+    font-size: 50px;
 }
 
 .text {
@@ -39,7 +39,7 @@ body {
     min-height: 150px;
     max-width: 600px;
     text-align: justify;
-    word-spacing: 5px;    
+    word-spacing: 5px;
 }
 
 .name {
