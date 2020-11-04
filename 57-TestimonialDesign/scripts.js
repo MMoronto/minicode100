@@ -18,11 +18,11 @@ const testimonials = [{
 },{     
   text: 'Morakinyo has helped my company get through several sticky situations with very tight deadlines. I am so glad he is an available resource for our development team.',     
   name: 'Shelly Lambert',
-  color: 'rgba(165, 94, 234,1.0)'   
+  color: 'rgba(94, 77, 111,1.0)'   
 },{     
   text: 'Morakinyo has been a very valuable resource for my organisation. He is very knowledgeble and gets things done quickly and with suerior quality',     
   name: 'Barry Weitcz',     
-  color:'rgba(32, 191, 107,1.0)'    
+  color:'rgba(77, 111, 77,1.0)'    
 }];
 
 addTestimonial(0);
