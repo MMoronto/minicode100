@@ -6,15 +6,15 @@ const textEl = document.querySelector('.text');
 const testimonials = [{     
   text: 'I have worked with him on several occasions. He is very attentive to details and exceeds expectations consistently.',     
   name: 'Kedar Shah',     
-  color: 'rgba(235, 59, 90,1.0)'
+  color: 'rgba(151, 72, 72,1.0)'
 },{     
   text: 'An old and trusted collegue recommended Morakinyo\'s services. I have worked with him since and I have never been dissapointed. I can\'t recommend him enough.',     
   name: 'Rajar Kapoor',     
-  color: 'rgba(250, 130,49,1.0)'  
+  color: 'rgba(151, 112, 72,1.0)'  
 },{     
   text: 'Professional, very knowlegeable and dependable. I highly recommend Morakinyo.',     
   name: 'Kelly Kavanaugh',     
-  color: 'rgba(75,123, 236,1.0)'   
+  color: 'rgba(73,99, 125,1.0)'   
 },{     
   text: 'Morakinyo has helped my company get through several sticky situations with very tight deadlines. I am so glad he is an available resource for our development team.',     
   name: 'Shelly Lambert',
