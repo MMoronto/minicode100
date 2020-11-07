@@ -27,9 +27,14 @@ body {
     text-align: center;
 }
 
-.panel-container strong {}
+.panel-container strong {
+    line-height: 20px;
+}
 
-.panel-container p {}
+.panel-container p {
+    margin: 25px 0;
+    line-height: 20px;
+}
 
 .ratings-container {}
 
