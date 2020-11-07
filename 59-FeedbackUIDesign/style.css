@@ -5,6 +5,30 @@
     box-sizing: border-box;
 }
 
+body {}
+
+.panel-container {}
+
+.panel-container strong {}
+
+.panel-container p {}
+
+.ratings-container {}
+
+.rating {}
+
+.rating.active, .rating:hover {}
+
+.rating img {}
+
+.rating small {}
+
+.rating.active small, .rating:hover small {}
+
+.btn {}
+
+.fa-heart {}
+
 
 /* SOCIAL PANEL CSS */
 
