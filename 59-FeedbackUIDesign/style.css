@@ -48,7 +48,14 @@ body {
 
 .rating.active small, .rating:hover small {}
 
-.btn {}
+.btn {
+	background-color: #302D2B;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 12px 30px;
+}
 
 .fa-heart {}
 
