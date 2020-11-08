@@ -36,7 +36,10 @@ body {
     line-height: 20px;
 }
 
-.ratings-container {}
+.ratings-container {
+    display: flex;
+    margin: 20px 0;
+}
 
 .rating {}
 
