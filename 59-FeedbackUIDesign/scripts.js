@@ -1,4 +1,4 @@
-const ratingsEl = document.getElelementById('.rating');
+const ratingsEl = document.querySelectorAll('.rating');
 const sendBtn = document.querySelector('#send');
 const panel = document.querySelector('#panel');
 
@@ -12,6 +12,13 @@ ratingsEl.forEach(el => {
     });
 });
 
-sendBtn.addEventListener('click', () => {});
+sendBtn.addEventListener('click', () => {
+    panel.innerHTML = `
+    <i class="fas fa-heart"></i>
+    <strong>Thank you, Mobola!</strong>
+    <p>We shall incorporate your feedback into our customer support improvement process.</p>
+    <button class="btn">Done</button>
+    `;
+});
 
 
