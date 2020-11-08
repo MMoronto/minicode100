@@ -4,4 +4,6 @@ const panel = document.querySelector('#panel');
 
 ratingsEl.forEach(el => {});
 
+sendBtn.addEventListener('click', () => {});
+
 
