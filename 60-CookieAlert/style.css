@@ -14,7 +14,23 @@ body {
     margin: 0;   
 }
 
+.popup {}
 
+.popup p {}
+
+.btn-container {}
+
+.btn {}
+
+.btn:active {}
+
+.btn:focus {}
+
+.btn.ghost {}
+
+.btn.ghost span {}
+
+.popup img {}
 
 /* SOCIAL PANEL CSS */
 
