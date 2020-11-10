@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #FEF9F2;
-    font-family: 'Monserrat', sans-serif;
+    background-color: #ffcc66;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;    
+    font-family: 'Muli', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;   
 }
 
 
