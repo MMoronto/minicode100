@@ -5,7 +5,9 @@ btnContainer.style.flexDirection = 'row';
 
 trickBtn.addEventListener('mouseover', (e) => {
     const currentDir = btnContainer.style.flexDirection;
-    if(currentDir === 'row') {} else {
+    if(currentDir === 'row') {
+        btnContainer.style.flexDirection = 'row-reverse';
+    } else {
         btnContainer.stle.fleDirections = 'row';
     }
 })
