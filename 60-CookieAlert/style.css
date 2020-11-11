@@ -23,9 +23,15 @@ body {
 	max-width: 500px;
 }
 
-.popup p {}
+.popup p {
+    color: #555;
+}
 
-.btn-container {}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .btn {}
 
