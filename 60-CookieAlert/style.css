@@ -33,7 +33,18 @@ body {
     justify-content: center;
 }
 
-.btn {}
+.btn {
+    background-color: #ffcc66;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    /*color: #fff;*/
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+    position: relative;
+    margin: 10px;
+}
 
 .btn:active {}
 
