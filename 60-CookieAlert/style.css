@@ -46,11 +46,20 @@ body {
     margin: 10px;
 }
 
-.btn:active {}
+.btn:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
 
-.btn:focus {}
+.btn:focus {
+    outline: none;
+}
 
-.btn.ghost {}
+.btn.ghost {
+    background-color: #fff;
+    color: #ffbb99;
+    box-shadow: none;
+}
 
 .btn.ghost span {}
 
