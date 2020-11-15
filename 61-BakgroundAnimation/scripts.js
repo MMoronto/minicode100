@@ -22,7 +22,15 @@ function createBlocks(animation) {
             block.style.width = b_width + 'px';
             block.style.height = b_height + 'px';
 
-            switch(animation) {}
+            switch(animation) {
+                case 'fall': {}
+
+                case 'random': {}
+
+                case 'oval': {}
+
+                case 'middle': {}
+            }
 
             block.style.backgroundPosition = `${-b_width * j}px ${-b_height * i}px`;
             row.push(block);
