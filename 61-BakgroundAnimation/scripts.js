@@ -5,3 +5,13 @@ const blocks = [];
 const b_width = Math.ceil(window.innerWidth / BLOCKS_NR);
 const b_height = Math.ceil(window.innerHeight / BLOCKS_NR);
 
+createBlocks('random');
+
+animation.addEventLiostener('change', (e) => {});
+
+function createBlocks(animation) {}
+
+function animateBlocks(animation) {}
+
+function cleanUp() {}
+
