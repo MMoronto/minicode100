@@ -10,7 +10,15 @@ body {
     margin: 0;
 }
 
-.settings {}
+.settings {
+    background-color: #1B1464;
+    color: #fff;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
 
 .settings select {}
 
