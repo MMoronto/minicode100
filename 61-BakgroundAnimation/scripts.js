@@ -7,9 +7,17 @@ const b_height = Math.ceil(window.innerHeight / BLOCKS_NR);
 
 createBlocks('random');
 
-animation.addEventLiostener('change', (e) => {});
+animation.addEventListener('change', (e) => {
+    const animation = e.target.value;
+    cleanUp();
+    createBlocks(animation)
+});
 
-function createBlocks(animation) {}
+function createBlocks(animation) {
+    for(let i=0; i<BLOCKS_NR; i++) {}
+
+    setTimeout(() => {animateBlocks(animation) }, 1000);
+}
 
 function animateBlocks(animation) {}
 
