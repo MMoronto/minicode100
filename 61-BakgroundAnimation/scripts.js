@@ -16,7 +16,18 @@ animation.addEventListener('change', (e) => {
 function createBlocks(animation) {
     for(let i=0; i<BLOCKS_NR; i++) {
         const row = [];
-        for(let j=0; j<BLOCKS_NR; j++) {}
+        for(let j=0; j<BLOCKS_NR; j++) {
+            const block = document.createElement('div');
+            block.classList.add('block');
+            block.style.width = b_width + 'px';
+            block.style.height = b_height + 'px';
+
+            switch(animation) {}
+
+            block.style.backgroundPosition = `${-b_width * j}px ${-b_height * i}px`;
+            row.push(block);
+            app.appendChild(block);
+        }
         blocks.push(row);
     }
 
