@@ -14,7 +14,11 @@ animation.addEventListener('change', (e) => {
 });
 
 function createBlocks(animation) {
-    for(let i=0; i<BLOCKS_NR; i++) {}
+    for(let i=0; i<BLOCKS_NR; i++) {
+        const row = [];
+        for(let j=0; j<BLOCKS_NR; j++) {}
+        blocks.push(row);
+    }
 
     setTimeout(() => {animateBlocks(animation) }, 1000);
 }
