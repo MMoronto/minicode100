@@ -41,7 +41,11 @@ function createBlocks(animation) {
                     break;
                 }
 
-                case 'middle': {}
+                case 'middle': {
+                    block.style.top = '50vh';
+                    block.style.left = '50vw';
+                    break;
+                }
             }
 
             block.style.backgroundPosition = `${-b_width * j}px ${-b_height * i}px`;
