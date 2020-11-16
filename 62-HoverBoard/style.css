@@ -30,6 +30,9 @@ body {
     transition: 2s ease;
 }
 
-.square:hover {}
+.square:hover {
+    transition-duration: 0s;
+}
+
 
 /* SOCIAL PANEL CSS */
