@@ -65,13 +65,25 @@ function animateBlocks(animation) {
             block.style.left = (b_width * j) + 'px';
 
             switch(animation) {
-                case 'fall': {}
+                case 'fall': {
+                    block.style.transitionDelay = Math.random() * 1000 + 'ms';
+                    break;
+                }
 
-                case 'random': {}
+                case 'random': {
+                    block.style.transitionDelay = Math.random() * 1000 + 'ms';
+                    break;
+                }
 
-                case 'oval': {}
+                case 'oval': {
+                    block.style.transitionDelay = (i * BLOCKS_NR + j * BLOCKS_NR) + 'ms';
+                    break;
+                }
 
-                case 'middle': {}
+                case 'middle': {
+                    block.style.transitionDelay = (i * BLOCKS_NR + j ) * 20 + 'ms';
+                    break;
+                }
             }
         });
     })
