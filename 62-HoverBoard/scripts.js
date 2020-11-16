@@ -6,11 +6,11 @@ for(let i=0; i<SQUARES_NR; i++) {
     const square = document.createElement('div');
     square.classList.add('square');
 
-    square.addEventLister('mouseover', () => {
+    square.addEventListener('mouseover', () => {
         setColorToEl(square);
     });
 
-    square.addEventLister('mouseout', () => {
+    square.addEventListener('mouseout', () => {
         removeColorFromEl(square);
     });
 
