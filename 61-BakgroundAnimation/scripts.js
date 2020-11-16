@@ -58,7 +58,9 @@ function createBlocks(animation) {
     setTimeout(() => {animateBlocks(animation) }, 1000);
 }
 
-function animateBlocks(animation) {}
+function animateBlocks(animation) {
+    blocks.forEach((row, i) => {})
+}
 
 function cleanUp() {}
 
