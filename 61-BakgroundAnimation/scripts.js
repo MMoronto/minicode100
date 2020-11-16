@@ -90,7 +90,11 @@ function animateBlocks(animation) {
 }
 
 function cleanUp() {
-    blocks.forEach((row, i) => {});
+    blocks.forEach((row, i) => {
+        row.forEach((block, j) => {
+            block.remove();
+        })
+    });
 
     blocks.splice(0, blocks.length);
 }
