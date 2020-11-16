@@ -23,11 +23,23 @@ function createBlocks(animation) {
             block.style.height = b_height + 'px';
 
             switch(animation) {
-                case 'fall': {}
+                case 'fall': {
+                    block.style.top = -b_height + 'px';
+                    block.style.left = j * b_width + 'px';
+                    break;
+                }
 
-                case 'random': {}
+                case 'random': {
+                    block.style.top = Math.random() * window.innerHeight + 'px';
+                    block.style.left = Math.random() * window.innerWidth + 'px';
+                    break;
+                }
 
-                case 'oval': {}
+                case 'oval': {
+                    block.style.top = '100vh';
+                    block.style.left = '100vw';
+                    break;
+                }
 
                 case 'middle': {}
             }
