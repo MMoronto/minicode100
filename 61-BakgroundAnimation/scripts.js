@@ -60,7 +60,12 @@ function createBlocks(animation) {
 
 function animateBlocks(animation) {
     blocks.forEach((row, i) => {
-        row.forEach((block, j) => {});
+        row.forEach((block, j) => {
+            block.style.top = (b_height * i) + 'px';
+            block.style.left = (b_width * j) + 'px';
+
+            switch(animation) {}
+        });
     })
 }
 
