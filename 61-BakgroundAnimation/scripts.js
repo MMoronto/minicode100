@@ -89,5 +89,10 @@ function animateBlocks(animation) {
     })
 }
 
-function cleanUp() {}
+function cleanUp() {
+    blocks.forEach((row, i) => {});
+
+    blocks.splice(0, blocks.length);
+}
+
 
