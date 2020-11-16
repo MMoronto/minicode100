@@ -59,7 +59,9 @@ function createBlocks(animation) {
 }
 
 function animateBlocks(animation) {
-    blocks.forEach((row, i) => {})
+    blocks.forEach((row, i) => {
+        row.forEach((block, j) => {});
+    })
 }
 
 function cleanUp() {}
