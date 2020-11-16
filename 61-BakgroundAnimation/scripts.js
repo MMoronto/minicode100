@@ -64,7 +64,15 @@ function animateBlocks(animation) {
             block.style.top = (b_height * i) + 'px';
             block.style.left = (b_width * j) + 'px';
 
-            switch(animation) {}
+            switch(animation) {
+                case 'fall': {}
+
+                case 'random': {}
+
+                case 'oval': {}
+
+                case 'middle': {}
+            }
         });
     })
 }
