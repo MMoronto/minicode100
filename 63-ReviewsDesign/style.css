@@ -6,7 +6,11 @@
 
 body {
     background: linear-gradient(to right, #9796f0, #fbc7d4);
-    color: #333
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Muli';
     height: 100vh;
     margin: 0;
