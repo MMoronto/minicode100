@@ -34,7 +34,7 @@ body {
     margin: 5px 0;
 }
 
-.revikew:hover {
+.review:hover {
     border: 1px solid #ddd;
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.7);    
 }
