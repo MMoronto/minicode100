@@ -14,5 +14,12 @@ body {
     margin: 0;
 }
 
+.checkbox label {}
+
+.checkbox label .ball {}
+
+.checkbox #ckb {}
+
+.checkbox #ckb.active:not(:checked) + label {}
 
 /* SOCIAL PANEL CSS */
