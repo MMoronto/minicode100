@@ -28,7 +28,16 @@ body {
     transition: background-color 1s ease-in;
 }
 
-.checkbox label .ball {}
+.checkbox label .ball {
+	background-color: #f1f1f1;
+	border-radius: 50%;
+   	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+}
 
 .checkbox #ckb {}
 
