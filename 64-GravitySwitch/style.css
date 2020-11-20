@@ -39,7 +39,9 @@ body {
 	height: 40px;
 }
 
-.checkbox #ckb {}
+.checkbox #ckb {
+    display: none;
+}
 
 .checkbox #ckb.active:not(:checked) + label {}
 
