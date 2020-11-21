@@ -65,10 +65,20 @@ body {
 .checkbox #ckb.active:not(:checked) + label .ball {
     animation: moveBallLeft 1.5s ease-in forwards;
 }
+@keyframes moveBallLeft {
+    0%, 25% {
+        transform: translateX(100px);
+    }
 
-@keyframes moveBallLeft {}
+    50%, 100% {
+        transform: translateX(0px);
+    }
+}
 
-.checkbox #ckb.active:checked + label
+.checkbox #ckb.active:checked + label {
+    background-color: #4cd137;
+    animation: check 1.5s ease-in forwards;
+}
 
 @keyframes check {}
 
