@@ -60,4 +60,6 @@ body {
 
 .checkbox #ckb.active:checked + label .ball {}
 
+@keyframes moveBallRight {}
+
 /* SOCIAL PANEL CSS */
