@@ -43,6 +43,9 @@ body {
     display: none;
 }
 
-.checkbox #ckb.active:not(:checked) + label {}
+.checkbox #ckb.active:not(:checked) + label {
+	background-color: red;
+	animation: uncheck 1.5s ease-in forwards;
+}
 
 /* SOCIAL PANEL CSS */
