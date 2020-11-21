@@ -44,8 +44,20 @@ body {
 }
 
 .checkbox #ckb.active:not(:checked) + label {
-	background-color: red;
-	animation: uncheck 1.5s ease-in forwards;
+    background-color: red;
+    animation: uncheck 1.5s ease-in forwards;
 }
+
+@keyframes uncheck {}
+
+.checkbox #ckb.active:not(:checked) + label .ball {}
+
+@keyframes moveBallLeft {}
+
+.checkbox #ckb.active:checked + label
+
+@keyframes check {}
+
+.checkbox #ckb.active:checked + label .ball {}
 
 /* SOCIAL PANEL CSS */
