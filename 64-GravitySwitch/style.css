@@ -48,9 +48,23 @@ body {
     animation: uncheck 1.5s ease-in forwards;
 }
 
-@keyframes uncheck {}
+@keyframes uncheck {
+    0% {
+        transform: rotate(0deg);
+    }
 
-.checkbox #ckb.active:not(:checked) + label .ball {}
+    25%, 50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.checkbox #ckb.active:not(:checked) + label .ball {
+    animation: moveBallLeft 1.5s ease-in forwards;
+}
 
 @keyframes moveBallLeft {}
 
