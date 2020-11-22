@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    background: linear-gradient(to right, #75bce6, #fbc7d4, #fff6f0);
     color: #333;
     display: flex;
     flex-direction: column;
@@ -13,8 +13,15 @@ body {
     justify-content: center;
     font-family: 'Muli';
     height: 100vh;
-    margin: 0;
 }
+
+h1 {}
+
+.overlay {}
+
+.line {}
+
+@keyframes grow {}
 
 
 
