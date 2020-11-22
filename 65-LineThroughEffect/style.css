@@ -41,7 +41,11 @@ h1 {
     z-index: 2;
 }
 
-@keyframes grow {}
+@keyframes grow {
+	to {
+		width: 68vw;
+	}
+}
 
 
 
