@@ -42,19 +42,23 @@ h2 {
 }
 
 .line {
-    background-color: #fff;
-    border-radius: 50px;
+    background-color: lavender;
+    border-radius: 30px;
     position: absolute;
     top: 50%;
     left: -1vw;
     transform: translateY(-50%);
-    height: 2vw;
+    height: 1.25vw;
     width: 0;
     animation: grow 3s linear forwards;
     z-index: 2;
 }
 
-@keyframes grow {}
+@keyframes grow {
+    to {
+        width: 95vw;
+    }
+}
 
 
 /* SOCIAL PANEL CSS */
