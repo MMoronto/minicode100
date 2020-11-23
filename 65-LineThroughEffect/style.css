@@ -12,13 +12,26 @@ body {
 }
 
 h1 {
-    font-size: 10vw;
+    font-size: 9vw;
     font-weight: bold;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+h2 {
+    font-size: 6vw;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
     text-align: center;
     z-index: 1;
     width: 100%;
@@ -41,12 +54,7 @@ h1 {
     z-index: 2;
 }
 
-@keyframes grow {
-	to {
-		width: 68vw;
-	}
-}
-
+@keyframes grow {}
 
 
 /* SOCIAL PANEL CSS */
