@@ -5,7 +5,7 @@ const newEl = document.createElement('h1');
 newEl.innerHTML = `
     ${textArr.map(letter => `<span class="letter" style="${randomVisibility()}">${letter}</span>`).join('')}
 `;
-newEl.classList.add('overLay');
+newEl.classList.add('overlay');
 
 document.body.appendChild(newEl);
 
