@@ -5,14 +5,17 @@
 }
 
 body {
-    background-color: orange;
+    background-color: #e2e2e2;
     display: flex;
+    font-family: 'Muli';
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    text-align: center;
 }
 
+.key {}
 
 /* SOCIAL PANEL CSS */
