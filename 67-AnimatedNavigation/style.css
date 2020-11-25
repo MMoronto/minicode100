@@ -14,6 +14,30 @@ body {
     margin: 0;
 }
 
+nav {}
 
+nav.active {}
+
+nav ul {}
+
+nav.active ul {}
+
+nav ul li {}
+
+nav.active ul li {}
+
+nav ul a {}
+
+.icon {}
+
+.icon.focus {}
+
+.icon .line {}
+
+.icon .line2 {}
+
+nav.active .icon .line1 {}
+
+nav.active .icon .line2 {}
 
 /* SOCIAL PANEL CSS */
