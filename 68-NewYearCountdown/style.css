@@ -18,9 +18,18 @@ body {
     text-align: center;
 }
 
-.fa-snowflake {}
+.fa-snowflake {
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
 
-@keyframes fall {}
+@keyframes fall {
+    to {
+        transform: translateY(105vh); 
+    }
+}
 
 .countdown-container {}
 
