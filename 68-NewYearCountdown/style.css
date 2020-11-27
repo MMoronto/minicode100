@@ -31,9 +31,16 @@ body {
     }
 }
 
-.countdown-container {}
+.countdown-container {
+    display: flex;
+}
 
-.time {}
+.time {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    margin: 0 15px;
+}
 
 .time h1 {}
 
