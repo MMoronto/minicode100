@@ -18,6 +18,16 @@ body {
     text-align: center;
 }
 
+.fa-snowflake {}
 
+@keyframes fall {}
+
+.countdown-container {}
+
+.time {}
+
+.time h1 {}
+
+.time small {}
 
 /* SOCIAL PANEL CSS */
