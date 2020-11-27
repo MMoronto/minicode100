@@ -4,3 +4,12 @@ const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
+
+
+setInterval(updateCountdown, 1000)
+setInterval(createSnowFlake, 50)
+
+
+function updateCountdown() {}
+
+function createSnowFlake() {}
