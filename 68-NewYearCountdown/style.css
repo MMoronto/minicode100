@@ -42,8 +42,12 @@ body {
     margin: 0 15px;
 }
 
-.time h1 {}
+.time h1 {
+    margin-bottom: 0;
+}
 
-.time small {}
+.time small {
+    color: #ccc;
+}
 
 /* SOCIAL PANEL CSS */
