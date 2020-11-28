@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a3c2c2;
+    background-image: linear-gradient(to bottom, #EAFBFF 0%, #EAFBFF 50%, #a3c2c2 50%, #a3c2c2 100%);
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* SOCIAL PANEL CSS */
