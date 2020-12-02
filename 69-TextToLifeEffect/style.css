@@ -14,9 +14,13 @@ body {
 }
 
 .text-to-life {
-    background: url('https://media.giphy.com/media/U8mf1vmVzEMmOqU4D8/giphy.gif') no-repeat;
+    background: url('https://media.giphy.com/media/M52wyuahvQfJK/giphy.gif') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    font-size: 5px;
+    line-height: 5px;
+    margin: 0;
 }
 
 /* SOCIAL PANEL CSS */
