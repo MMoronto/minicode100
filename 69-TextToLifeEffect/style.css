@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
-.text-to-life {}
+.text-to-life {
+    background: url('https://media.giphy.com/media/U8mf1vmVzEMmOqU4D8/giphy.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* SOCIAL PANEL CSS */
