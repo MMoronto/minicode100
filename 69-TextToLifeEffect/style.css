@@ -7,11 +7,12 @@
 
 body {
     background-color: #a3c2c2;
-    background-image: linear-gradient(to bottom, #EAFBFF 0%, #EAFBFF 50%, #a3c2c2 50%, #a3c2c2 100%);
+    background-image: linear-gradient(to bottom, #EAFBFF 0%, #EAFBFF 50% );
     font-family: 'Muli', sans-serif;
     height: 100vh;
     margin: 0;
 }
 
+.text-to-life {}
 
 /* SOCIAL PANEL CSS */
