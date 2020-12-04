@@ -30,9 +30,27 @@ body {
     text-align: right;
 }
 
-.middle {}
+.middle {
+    color: rgb(0, 117, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.middle button {}
+.middle button {
+    background-color: maroon;
+    border: 2px solid #ecf0f1;
+    border-radius: 50%
+    cursor: pointer;
+    color: rgb(0, 117, 235);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    text-transform: rotate(90deg);
+}
 
 .middle button:active {}
 
