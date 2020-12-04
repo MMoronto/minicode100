@@ -23,7 +23,11 @@ function calculate() {
 
   fetch(`https://api.exchangerate-api.com/v4/latest/${from_currency}`)
       .then(res => res.json())
-      .then(res => {})
+      .then(res => {
+      const rate = res.rates[to_currency];
+      rateEl.innerText = `1 ${from_currency} = ${rate} ${to_currency}`
+      to_ammountEl.value = (from_amountEl.value * rate).toFixed(2);
+      })
 }
 
 calculate();
