@@ -17,6 +17,13 @@ exchange.addEventListener('click', () => {
   calculate();
 });
 
-function calculate() {}
+function calculate() {
+  const from_currency = from_currencyEl.value;
+  const to_currency = to_currencyEl.value;
+
+  fetch(`https://api.exchangerate-api.com/v4/latest/${from_currency}`)
+      .then(res => res.json())
+      .then(res => {})
+}
 
 calculate();
