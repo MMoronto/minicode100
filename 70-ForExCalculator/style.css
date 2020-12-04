@@ -15,6 +15,20 @@ body {
     margin: 0;
 }
 
+.currency {}
 
+.currency select {}
+
+.currency input {}
+
+.middle {}
+
+.middle button {}
+
+.middle button:active {}
+
+.middle .rate {}
+
+select:focus, input:focus, button:focus {}
 
 /* SOCIAL PANEL CSS */
