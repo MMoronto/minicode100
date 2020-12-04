@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #EAFBFF 0%, #EAFBFF 50%, #a3c2c2 50%, #a3c2c2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+/* SOCIAL PANEL CSS */
