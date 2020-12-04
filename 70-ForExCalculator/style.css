@@ -52,10 +52,26 @@ body {
     text-transform: rotate(90deg);
 }
 
-.middle button:active {}
+.middle button:active {
+    transform: rotate(90deg) scale(0.9);
+}
 
-.middle .rate {}
+.middle .rate {
+    background-color: #fff;
+    border: 2px solid #ecf0f1;
+    border-radius: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 10px;
+    margin: 30px 15px 30px 25px;
+}
 
-select:focus, input:focus, button:focus {}
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
 
 /* SOCIAL PANEL CSS */
