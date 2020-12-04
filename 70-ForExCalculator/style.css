@@ -15,11 +15,20 @@ body {
     margin: 0;
 }
 
-.currency {}
+.currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .currency select {}
 
-.currency input {}
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+    text-align: right;
+}
 
 .middle {}
 
