@@ -14,13 +14,31 @@ body {
     margin: 0;
 }
 
-.panda {}
+.panda {
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    height: 170px;
+    width: 170px;
+}
 
-.panda .ear {}
+.panda .ear {
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+}
 
-.panda .ear.left {}
+.panda .ear.left {
+    left: 0;
+}
 
-.panda .ear.right {}
+.panda .ear.right {
+    right: 0;
+}
 
 .panda .eye {}
 
