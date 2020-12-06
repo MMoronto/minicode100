@@ -14,5 +14,25 @@ body {
     margin: 0;
 }
 
+.panda {}
+
+.panda .ear {}
+
+.panda .ear.left {}
+
+.panda .ear.right {}
+
+.panda .eye {}
+
+.panda .eye.left {}
+
+.panda .eye.right {}
+
+.panda .eye .eye-roll {}
+
+.panda .eye {}
+
+.panda .mouth {}
+
 
 /* SOCIAL PANEL CSS */
