@@ -1,0 +1,9 @@
+const width= window.innerWidth;
+
+
+
+
+
+
+
+
