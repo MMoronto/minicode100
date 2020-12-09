@@ -6,7 +6,12 @@ const colLength = Math.floor(width / 30) - 1;
 console.log(width, height, rowLength, colLength);
 
 for(let i=0; i<rowLength; i++) {
+    const row = document.createElement('div');
+    row.classList.add('row');
 
+    for(let j=0; j,colLength; j++) {}
+
+    document.body.appendChild(row);
 }
 
 function isTheWinner() {}
