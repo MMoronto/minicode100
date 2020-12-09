@@ -22,7 +22,10 @@ body {
 	transform: translateX(-50%);
 } 
 
-.row {}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
 
 ..row:nth-of-type(odd) {}
 
