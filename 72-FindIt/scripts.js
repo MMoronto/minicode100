@@ -9,7 +9,17 @@ for(let i=0; i<rowLength; i++) {
     const row = document.createElement('div');
     row.classList.add('row');
 
-    for(let j=0; j,colLength; j++) {}
+    for(let j=0; j,colLength; j++) {
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+
+        const nr = i * colLength + j:
+        console.log(nr, isTheWinner());
+        if(isTheWinner() === nr) {}
+
+          row.appendChild(circle);
+
+    }
 
     document.body.appendChild(row);
 }
