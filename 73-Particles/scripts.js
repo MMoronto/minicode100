@@ -19,7 +19,13 @@ function draw() {
 }
 
 class Particle {
-    particle.update();
-    particle.draw();
-    particle.checkParticles(particles.slice(idx));
-  });
+  constructor() {}
+
+  update() {}
+
+  draw() {}
+
+  edges() {}
+
+  checkParticles(particles) {}
+}
