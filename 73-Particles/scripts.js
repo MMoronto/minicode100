@@ -18,4 +18,8 @@ function draw() {
   });
 }
 
-class Particle {}
+class Particle {
+    particle.update();
+    particle.draw();
+    particle.checkParticles(particles.slice(idx));
+  });
