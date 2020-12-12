@@ -8,6 +8,10 @@ function setup() {
   }
 }
 
-function draw() {}
+function draw() {
+  background(20);
+
+  particles.forEach((particle, idx) => {});
+}
 
 class Particle {}
