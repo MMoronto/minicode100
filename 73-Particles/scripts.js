@@ -47,5 +47,7 @@ class Particle {
     }
   }
 
-  checkParticles(particles) {}
+  checkParticles(particles) {
+    particles.forEach(particle => {})
+  }
 }
