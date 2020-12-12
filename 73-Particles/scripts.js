@@ -31,7 +31,11 @@ class Particle {
   }
 
 
-  draw() {}
+  draw() {
+    noStroke();
+    fill('rgba(255, 255, 255, 0.5)');
+    circle(this.pos.x, this.pos.y, this.size * 2);
+  }
 
   edges() {}
 
