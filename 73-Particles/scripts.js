@@ -50,7 +50,11 @@ class Particle {
   checkParticles(particles) {
     particles.forEach(particle => {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
-      id(d < 120) {}
+      id(d < 120) {
+        const alpha = map(d, 0, 120, 0, 0.25)
+        stroke(`rgba(225, 225, 225, ${alpha})`);
+        line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y)
+      }
     });
   }
 }
