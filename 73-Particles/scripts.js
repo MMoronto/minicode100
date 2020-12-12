@@ -37,7 +37,11 @@ class Particle {
     circle(this.pos.x, this.pos.y, this.size * 2);
   }
 
-  edges() {}
+  edges() {
+    if(this.pos.x < 0 || this.pos.x > width) {}
+
+    if(this.pos.y < 0 || this.pos.y > height) {}
+  }
 
   checkParticles(particles) {}
 }
