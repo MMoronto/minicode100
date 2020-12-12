@@ -19,9 +19,17 @@ function draw() {
 }
 
 class Particle {
-  constructor() {}
+  constructor() {
+    this.pos = createVector(random(width), random(height));
+    this.vel = createVector(random(-2, 2), random(-2, 2));
+    this.size = 5;
+  }
 
-  update() {}
+  update() {
+    this.pos.add(this.vel);
+    this.edges();
+  }
+
 
   draw() {}
 
