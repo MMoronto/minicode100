@@ -48,6 +48,9 @@ class Particle {
   }
 
   checkParticles(particles) {
-    particles.forEach(particle => {})
+    particles.forEach(particle => {
+      const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
+      id(d < 120) {}
+    });
   }
 }
