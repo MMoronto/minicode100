@@ -1,7 +1,7 @@
 const particles = [];
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-
+  
   const particlesLength = Math.min(Math.floor(window.innerWidth / 10), 100);
   for(let i=0; i<particlesLength; i++) {
     particles.push(new Particle());
@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
   background(20);
-
+  
   particles.forEach((particle, idx) => {
     particle.update();
     particle.draw();
@@ -24,35 +24,42 @@ class Particle {
     this.vel = createVector(random(-2, 2), random(-2, 2));
     this.size = 5;
   }
-
+  
   update() {
     this.pos.add(this.vel);
     this.edges();
   }
-
-
+  
   draw() {
     noStroke();
-    fill('rgba(255, 255, 255, 0.5)');
+    fill('rgba(1, 1, 86, 0.5)');
     circle(this.pos.x, this.pos.y, this.size * 2);
   }
-
+  
   edges() {
     if(this.pos.x < 0 || this.pos.x > width) {
       this.vel.x *= -1;
     }
-
+    
     if(this.pos.y < 0 || this.pos.y > height) {
       this.vel.y *= -1;
     }
+    
+   // if(this.pos.x > width) {
+   //   this.pos.x = 0;
+   // }
+    
+   // if(this.pos.y > height) {
+   //   this.pos.y = 0;
+   // }
   }
-
+  
   checkParticles(particles) {
     particles.forEach(particle => {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
-      id(d < 120) {
+      if(d < 120) {
         const alpha = map(d, 0, 120, 0, 0.25)
-        stroke(`rgba(225, 225, 225, ${alpha})`);
+        stroke(`rgba(1, 1, 86, ${alpha})`);
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y)
       }
     });
