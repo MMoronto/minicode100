@@ -13,7 +13,15 @@ body {
     margin: 0;
 }
 
-.loading-container {}
+.loading-container {
+    background-color: #000;
+    border: 3px solid green;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    width: 400px;
+    max-width: 100%;    
+}
 
 .loading-container::after {}
 
