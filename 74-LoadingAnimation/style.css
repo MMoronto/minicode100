@@ -23,9 +23,30 @@ body {
     max-width: 100%;    
 }
 
-.loading-container::after {}
+.loading-container::after {
+    background-color: #000;
+    content: '';
+    position: absolute;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center left;
+    animation: grow 5s linear infinite;
+}
 
-@keyframes grow {}
+@keyframes grow {
+    to {
+        transform: scaleX(1);
+    }
+}
 
-h1 {}
+h1 {
+    margin: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* SOCIAL PANEL CSS */
