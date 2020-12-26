@@ -1,0 +1,23 @@
+{
+  "name": "75-maponapage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MMoronto/minicode100/75-MapOnAPage"
+  },
+  "author": "MMoronto",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^6.4.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
