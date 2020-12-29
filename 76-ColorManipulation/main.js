@@ -22,20 +22,37 @@ import {Raster as RasterSource, Stamen} from 'ol/source';
   * @param {Array<number>} pixel A pixel in RGB space.
   * @return {Array<number>} A pixel in HCL space.
   */
-  function rgb2hcl(pixel) {
-     var red = rgb2xyz(pixel[0]);
-     var green = rgb2xyz(pixel[1]);
-     var blue = rgb2xyz(pixel[2]);
+ function rgb2hcl(pixel) {
+    var red = rgb2xyz(pixel[0]);
+    var green = rgb2xyz(pixel[1]);
+    var blue = rgb2xyz(pixel[2]);
 
-     var x = xyz2lab();
-     var y = xyz2lab();
-     var z = xyz2lab();
+    var x = xyz2lab(
+      (0.4124564 * red + 0.3575761 * green + 0.1804375 * blue) / Xn
+      );
+    var y = xyz2lab(
+      (0.2126729 * red + 0.7151522 * green + 0.072175 * blue) / Xn
+      );
+    var z = xyz2lab(
+      (0.0193339 * red + 0.119192 * green + 0.9503041 * blue) / Xn
+      );
 
-     var l = 116 * y - 16;
-     var a = 500 * (x - y);
-     var b = 200 * (y - z);
-  }
+    var l = 116 * y - 16;
+    var a = 500 * (x - y);
+    var b = 200 * (y - z);
 
+    var c = Math.sqrt(a * a + b * b);
+    var h = Math.atan2(b, a);
+    if (h < 0) {
+      h += twoPi;
+    }
+
+    pixel[0] = h;
+    pixel[1] = c;
+    pixel[2] = l;
+
+    return pixel;
+ }
 
 var map = new Map({
   layers: [
