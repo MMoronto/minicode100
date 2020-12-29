@@ -17,6 +17,25 @@ import {Raster as RasterSource, Stamen} from 'ol/source';
  var t3 = t1 * t1 * t1;
  var twoPi = 2 * Math.PI;
 
+ /**
+  * Convert an RGB pixel into an HCL pixel.
+  * @param {Array<number>} pixel A pixel in RGB space.
+  * @return {Array<number>} A pixel in HCL space.
+  */
+  function rgb2hcl(pixel) {
+     var red = rgb2xyz(pixel[0]);
+     var green = rgb2xyz(pixel[1]);
+     var blue = rgb2xyz(pixel[2]);
+
+     var x = xyz2lab();
+     var y = xyz2lab();
+     var z = xyz2lab();
+
+     var l = 116 * y - 16;
+     var a = 500 * (x - y);
+     var b = 200 * (y - z);
+  }
+
 
 var map = new Map({
   layers: [
