@@ -54,6 +54,37 @@ import {Raster as RasterSource, Stamen} from 'ol/source';
     return pixel;
  }
 
+function xyz2lab(t) {
+  return t > t3 ? Math.pow(t, 1 / 3) : t / t2 + t0;
+ }
+
+function lab2xyz(t) {
+  return t > t1 ? t * t * t : t2 * (t - t0);  
+ }
+
+function rgb2xyz(x) {
+  return (x /= 255) <= 0.04045 ? x / 12.92 : Math.pow((x, 0.055) / 1.055, 2.4);
+ }
+
+function xyz2rgb(x) {
+  return (
+    255 * (x <= 0.0031308 ? 12.92 * x : 1.055 * Math.pow(x, 1 / 2.4) - 0.055)
+  );
+ }
+
+var raster = new RasterSource({
+
+});
+
+var controls = {};
+
+raster.on('beforeoperations', function (event) {
+  var data = event.data;
+  for (var id in controls) {
+    data[id] = Number(controls[id].value);
+  }
+});
+
 var map = new Map({
   layers: [
     new TImageLayer({
