@@ -133,6 +133,15 @@ var map = new Map({
   }),
 });
 
-
-
+var controlIds = ['hue', 'chroma', 'lightness'];
+controlIds.forEach(function (id) {
+  var control = document.getElementById(id);
+  var output = document.getElementById(id + 'Out');
+  control.addEventListener('input', function() {
+    output.innerText = control.value;
+    raster.changed();
+  });
+  output.innerText = control.value;
+  controls[id] = control;
+});
 
