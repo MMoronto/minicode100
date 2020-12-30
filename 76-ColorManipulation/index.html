@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Color Manipulation</title>
     <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
-    <script src="./libs/v6.5.0-dist/ol.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="stylesheet" href="./libs/v6.5.0-dist/ol.css" type="text/css">
   </head>
-<body>
-    <div id="map" class="map"></div>
+  <body>
+    <script src="./libs/v6.5.0-dist/ol.js"></script>
     <script src="main.js"></script>
+    <div id="map" class="map"></div>
     <table class="controls">
       <tr>
         <td><label for="hue">hue</label></td>
@@ -25,7 +26,7 @@
         <td><label for="lightness">lightness</label></td>
         <td><input id="lightness" type="range" min="0" max="100" value="100"/></td>
         <td><span id="lightnessOut"></span> %</td>
-      </tr>            
+      </tr>
     </table>
-</body>
+  </body>
 </html>
