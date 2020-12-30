@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Color Manipulation</title>
-  <script src="https://unpkg.com/elm-pep"></script>
-    <style>
-      .map {
-        height: 400px;
-        width: 100%;
-      }
-      table.controls td {
-        padding 2px 5px;
-      }
-      table.controls td:nth-child(3) {
-        text-align: right;
-        min-width: 4.5em;
-      }
-    </style>  
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Color Manipulation</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css">
+  </head>
 <body>
     <div id="map" class="map"></div>
     <table class="controls">
