@@ -148,22 +148,26 @@ raster.on('beforeoperations', function (event) {
   }
 });
 
-var map = new ol.Map({
-  layers: [
-    new ol.layer.Tile({
-      source: new ol.source.Stamen({layer: 'watercolor',})
-    }),
-    new ol.layer.Tile({
-      source: new ol.source.Stamen({layer: 'terrrain-labels',})
-    })    
-     ],
-  target: 'map',
-  view: new ol.View({
-    center: [0, 2500000],
-    zoom: 2,
-    maxZoom: 18,
-  }),
-});
+window.onload = init;
+
+function init(){
+  var map = new ol.Map({
+      target: 'map',
+      layers: [
+      new ol.layer.Tile({
+        source: new ol.source.Stamen({layer: 'watercolor',})
+      }),
+      new ol.layer.Tile({
+        source: new ol.source.Stamen({layer: 'terrrain-labels',})
+      })    
+       ],
+      view: new ol.View({
+      center: ol.proj.fromLonLat([-110.0, 40.0]),
+      zoom: 2,
+      maxZoom: 18
+      })
+  });
+}
 
 var controlIds = ['hue', 'chroma', 'lightness'];
 controlIds.forEach(function (id) {
