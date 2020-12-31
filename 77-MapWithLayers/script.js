@@ -6,6 +6,9 @@ function init(){
       layers: [
       new ol.layer.Tile({
         source: new ol.source.Stamen({layer: 'watercolor',})
+      }),
+      new ol.layer.Tile({
+        source: new ol.source.Stamen({layer: 'terrain-labels'})
       })    
        ],
       view: new ol.View({
