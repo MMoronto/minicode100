@@ -20,6 +20,7 @@ function init(){
   const popupContainerElement = document.getElementById('popup-coordinates')
   const popup = new ol.Overlay({
     element: popupContainerElement
+    positioning: 'center-right'
   })
 
   map.addOverlay(popup);
