@@ -22,6 +22,11 @@ function init(){
     element: popupContainerElement
   })
 
+  map.addOverlay(popup);
+
+  map.on('click', function(e){
+    console.log(e.coordinate);
+  })
 }
 
 
