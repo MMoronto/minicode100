@@ -25,7 +25,7 @@ function init(){
   map.addOverlay(popup);
 
   map.on('click', function(e){
-    console.log(e.coordinate);
+    const clickedCoordinate = e.coordinate;
   })
 }
 
