@@ -16,6 +16,8 @@ function init(){
       ],      
       target: 'js-map'
   })
+  
+  const popupContainerElement = document.getElementById('popup-coordinates')
 
 }
 
