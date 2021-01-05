@@ -26,6 +26,9 @@ function init(){
 
   map.on('click', function(e){
     const clickedCoordinate = e.coordinate;
+    popup.setPosition(undefined);
+    popup.setPosition(clickedCoordinate);
+    popupContainerElement.innerHTML = clickedCoordinate;
   })
 }
 
