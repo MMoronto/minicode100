@@ -46,6 +46,10 @@ function init(){
   })
 
   map.addInteraction(drawInteraction);
+
+  drawInteraction.on('drawend', function(e){
+    console.log("Drawing Finished");
+  })
 }
 
 
