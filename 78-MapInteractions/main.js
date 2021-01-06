@@ -32,6 +32,12 @@ function init(){
     popup.setPosition(clickedCoordinate);
     popupContainerElement.innerHTML = clickedCoordinate;
   })
+
+  //DragRotate Interaction
+  const DragRotateInteraction = new ol.interaction.DragRotate({
+    condition: ol.events.condition.altKeyOnly
+  })
 }
+
 
 
