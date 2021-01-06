@@ -48,7 +48,9 @@ function init(){
   map.addInteraction(drawInteraction);
 
   drawInteraction.on('drawend', function(e){
-    console.log("Drawing Finished");
+    let parser = new ol.format.GeoJSON();
+    let drawnFeatures = parser.writeFeaturesObject([e.feature]);
+    console.log(drawnFeatures);
   })
 }
 
