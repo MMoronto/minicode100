@@ -41,7 +41,7 @@ function init(){
   map.addInteraction(DragRotateInteraction)
 
   const drawInteraction = new ol.interaction.Draw({
-    type: 'polygon'
+    type: 'Polygon'
   })
 
   map.addInteraction(drawInteraction);
