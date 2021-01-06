@@ -14,7 +14,8 @@ function init(){
           source: new ol.source.OSM()
         })   
       ],      
-      target: 'js-map'
+      target: 'js-map',
+      keyboardEventTarget: document
   })
 
   const popupContainerElement = document.getElementById('popup-coordinates')
