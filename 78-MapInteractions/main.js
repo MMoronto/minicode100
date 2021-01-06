@@ -37,6 +37,9 @@ function init(){
   const DragRotateInteraction = new ol.interaction.DragRotate({
     condition: ol.events.condition.altKeyOnly
   })
+
+  map.addInteraction(DragRotateInteraction)
+
 }
 
 
