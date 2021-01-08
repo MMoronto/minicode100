@@ -6,6 +6,7 @@ function init(){
   const fullScreenControl = new ol.control.FullScreen();
   const mousePositionControl = new ol.control.MousePosition();
   const overViewMapControl = new ol.control.OverviewMap({
+    collapsed: false,
     layers: [
       new ol.layer.Tile({
         source: new ol.source.OSM()
