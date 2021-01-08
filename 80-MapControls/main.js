@@ -13,6 +13,7 @@ function init(){
       })
     ]
   })
+  const scaleLineControl = new ol.control.ScaleLine()
 
   const map = new ol.Map({
       view: new ol.View({
@@ -32,7 +33,8 @@ function init(){
       controls: ol.control.defaults().extend([
         fullScreenControl,
         mousePositionControl,
-        overViewMapControl
+        overViewMapControl,
+        scaleLineControl
       ])
   })
 
