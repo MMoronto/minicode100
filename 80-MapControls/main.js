@@ -5,6 +5,13 @@ function init(){
   //Controls
   const fullScreenControl = new ol.control.FullScreen();
   const mousePositionControl = new ol.control.MousePosition();
+  const overViewMapControl = new ol.control.OverviewMap({
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ]
+  })
 
   const map = new ol.Map({
       view: new ol.View({
@@ -23,7 +30,8 @@ function init(){
       keyboardEventTarget: document,
       controls: ol.control.defaults().extend([
         fullScreenControl,
-        mousePositionControl
+        mousePositionControl,
+        overViewMapControl
       ])
   })
 
