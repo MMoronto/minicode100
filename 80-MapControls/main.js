@@ -13,7 +13,9 @@ function init(){
       })
     ]
   })
-  const scaleLineControl = new ol.control.ScaleLine()
+  const scaleLineControl = new ol.control.ScaleLine();
+  const zoomSliderControl = new ol.control.ZoomSlider();
+  const zoomToExtentControl = new ol.control.ZoomToExtent();
 
   const map = new ol.Map({
       view: new ol.View({
@@ -34,7 +36,9 @@ function init(){
         fullScreenControl,
         mousePositionControl,
         overViewMapControl,
-        scaleLineControl
+        scaleLineControl,
+        scaleLineControl,
+        zoomSliderControl
       ])
   })
 
