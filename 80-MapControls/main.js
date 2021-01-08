@@ -38,7 +38,8 @@ function init(){
         overViewMapControl,
         scaleLineControl,
         scaleLineControl,
-        zoomSliderControl
+        zoomSliderControl,
+        zoomToExtentControl
       ])
   })
 
