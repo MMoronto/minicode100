@@ -1,6 +1,11 @@
 window.onload = init;
 
 function init(){
+
+  //Controls
+  const fullScreenControl = new ol.control.FullScreen();
+  const mousePositionControl = new ol.control.MousePosition();
+
   const map = new ol.Map({
       view: new ol.View({
         center: [-110.0, 40.0],
@@ -17,7 +22,8 @@ function init(){
       target: 'js-map',
       keyboardEventTarget: document,
       controls: ol.control.defaults().extend([
-        fullScreenControl
+        fullScreenControl,
+        mousePositionControl
       ])
   })
 
