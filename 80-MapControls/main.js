@@ -15,8 +15,13 @@ function init(){
         })   
       ],      
       target: 'js-map',
-      keyboardEventTarget: document
+      keyboardEventTarget: document,
+      controls: ol.control.defaults().extend([
+
+      ])
   })
+
+  console.log(ol.control.defaults())
 
   const popupContainerElement = document.getElementById('popup-coordinates')
   const popup = new ol.Overlay({
