@@ -17,7 +17,7 @@ function init(){
       target: 'js-map',
       keyboardEventTarget: document,
       controls: ol.control.defaults().extend([
-
+        fullScreenControl
       ])
   })
 
