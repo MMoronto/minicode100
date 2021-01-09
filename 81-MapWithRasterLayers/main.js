@@ -15,6 +15,19 @@ function init(){
       target: 'js-map',
   })
 
+  // Layer Group
+  const layerGroup = new ol.layer.Group({
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM({
+          url: 'https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
+        }),
+        zIndex: 0,
+        visible: false
+      })
+    ]
+  })
+  map.addLayer(layerGroup);
 }
 
 
