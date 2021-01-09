@@ -32,7 +32,13 @@ function init(){
         extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026],
         opacity: 0
       }),
-
+      // Bing Maps Basemap Layer
+      new ol.layer.Tile({
+        source: new ol.source.BingMaps({
+          key: "Air0OfLruh0B_W9_cIKwJ1FxgL1pOOgaDY7LwPeYTQy5ts_W0DQJXiGdxS-Qahyn",
+          imagerySet: 'Aerial' // Road, CanvasDark, CanvasGray, OrdnanceSurvey
+        })
+      })
     ]
   })
   map.addLayer(layerGroup);
