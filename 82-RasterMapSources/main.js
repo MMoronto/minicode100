@@ -44,8 +44,11 @@ function init(){
   })
   map.addLayer(layerGroup);
 
-  map.on('click', function(e){
-    console.log(e.coordinate);
+  // CartoDB BaseMap Layer
+  const cartoDBBaseLayer = new ol.layer.Tile({
+    source: new ol.source.xyz({
+      url: 'https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{scale}.png'
+    })
   })
 }
 
