@@ -66,9 +66,18 @@ function init(){
     source: new ol.source.Stamen({
       layer: 'terrain-labels'
     }),
-    visible: true
+    visible: false
   })
   map.addLayer(stamenBaseLayer);
+
+  const stamenBaseMapLayer = new ol.layer.Tile({
+    source: new ol.source.XYZ({
+      url: 'http://tile.stamen.com/toner/{z}/{x}/{y}.png'
+    }),
+    visible: true
+  })
+
+  map.addLayer(stamenBaseMapLayer);
 }
 
 
