@@ -60,6 +60,15 @@ function init(){
     visible: false
   })
   map.addLayer(tileDebugLayer);
+
+  // Stamen basemap Layer
+  const stamenBaseLayer = new ol.layer.Tile({
+    source: new ol.source.Stamen({
+      layer: 'terrain-labels'
+    }),
+    visible: true
+  })
+  map.addLayer(stamenBaseLayer);
 }
 
 
