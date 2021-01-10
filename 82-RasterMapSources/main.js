@@ -53,6 +53,12 @@ function init(){
   })
 
   map.addLayer(cartoDBBaseLayer);
+
+  // TileDebug
+  const tileDebugLayer = new ol.layer.Tile({
+    source: new ol.source.TileDebug()
+  })
+  map.addLayer(tileDebugLayer);
 }
 
 
