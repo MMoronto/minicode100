@@ -56,7 +56,8 @@ function init(){
 
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
-    source: new ol.source.TileDebug()
+    source: new ol.source.TileDebug(),
+    visible: false
   })
   map.addLayer(tileDebugLayer);
 }
