@@ -78,6 +78,14 @@ function init(){
   })
 
   map.addLayer(stamenBaseMapLayer);
+
+  // tile ArcGIS REST API Layer
+  const tileArcGISLayer = new ol.layer.Tile({
+    source: new ol.source.TileArcGISRest({
+      url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Population_World/MapServer"
+    }),
+    visible: true
+  })
 }
 
 
