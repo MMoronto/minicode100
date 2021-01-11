@@ -86,6 +86,7 @@ function init(){
     }),
     visible: true
   })
+  map.addLayer(tileArcGISLayer);
 }
 
 
