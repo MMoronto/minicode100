@@ -13,7 +13,7 @@ function init(){
           source: new ol.source.OSM(),
           zIndex: 0,
           visible: false,
-          extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026],
+          // extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026],
           opacity: 0.1
         })   
       ],      
@@ -36,9 +36,9 @@ function init(){
       new ol.layer.Tile({
         source: new ol.source.BingMaps({
           key: "Air0OfLruh0B_W9_cIKwJ1FxgL1pOOgaDY7LwPeYTQy5ts_W0DQJXiGdxS-Qahyn",
-          imagerySet: 'CanvasGray' // AerialWithLabels, CanvasDark, Road, OrdnanceSurvey
+          imagerySet: 'AerialWithLabels' // CanvasGray, CanvasDark, Road, OrdnanceSurvey
         }),
-        visible: false
+        visible: true
       })
     ]
   })
@@ -76,7 +76,7 @@ function init(){
       // url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'
       url: 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg'
     }),
-    visible: true
+    visible: false
   })
 
   map.addLayer(stamenBaseMapLayer);
