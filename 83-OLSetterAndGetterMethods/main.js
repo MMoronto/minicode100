@@ -94,10 +94,15 @@ function init(){
   // NOAA WMS Layer
   const NOAAWMSLayer = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:,
-      params:
+      url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/analysis_meteohydro_sfc_qpe_time/MapServer/WMSServer?',
+      params: {
+        LAYERS: 1,
+        FORMAT: 'image/png',
+        TRANSPARENT: true
+      }
     })
   })
+  map.addLayer(NOAAWMSLayer);
 }
 
 
