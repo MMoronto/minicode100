@@ -19,7 +19,7 @@ function init(){
         })   
       ],      
       target: 'js-map',
-      controls: ol.control.defaults({attribution: false})
+      controls: ol.control.defaults({attribution: false}).extend([attributionControl])
   })
 
   // Layer Group
