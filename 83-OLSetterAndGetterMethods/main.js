@@ -1,4 +1,7 @@
 window.onload = init;
+const attributionControl = new ol.control.Attribution({
+  collapsible: true
+})
 
 function init(){
 
