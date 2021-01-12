@@ -15,7 +15,8 @@ function init(){
           source: new ol.source.OSM(),
           zIndex: 0,
           visible: true,
-          opacity: 0.8
+          extent: [12400753.6, -5658730.0, 17174426.3, -980228.5],
+          opacity: 1
         })   
       ],      
       target: 'js-map',
@@ -30,9 +31,8 @@ function init(){
           url: 'https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
         }),
         zIndex: 0,
-        visible: false,
-        extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026],
-        opacity: 0
+        visible: true,
+        opacity: 1
       }),
       // Bing Maps Basemap Layer
       new ol.layer.Tile({
@@ -49,9 +49,10 @@ function init(){
   // CartoDB BaseMap Layer
   const cartoDBBaseLayer = new ol.layer.Tile({
     source: new ol.source.XYZ({
-      url: 'http://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{scale}.png'
+      url: 'http://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{scale}.png',
+      attributions: '© CARTO'
     }),
-    visible: false
+    visible: true
   })
 
   map.addLayer(cartoDBBaseLayer);
@@ -66,19 +67,21 @@ function init(){
   // Stamen basemap Layer
   const stamenBaseLayer = new ol.layer.Tile({
     source: new ol.source.Stamen({
-      layer: 'terrain-labels'
+      layer: 'terrain-labels',
+      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
     }),
-    visible: false
+    visible: true
   })
   map.addLayer(stamenBaseLayer);
 
   const stamenBaseMapLayer = new ol.layer.Tile({
     source: new ol.source.XYZ({
       // url: 'http://tile.stamen.com/toner/{z}/{x}/{y}.png'
-      url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'
+      url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
       // url: 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg'
+      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
     }),
-    visible: true
+    visible: false
   })
 
   map.addLayer(stamenBaseMapLayer);
