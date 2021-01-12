@@ -6,15 +6,13 @@ function init(){
       view: new ol.View({
         center: [-110.0, 40.0],
         zoom: 4,
-        // extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026]
       }),
       layers: [
         new ol.layer.Tile({
           source: new ol.source.OSM(),
           zIndex: 0,
-          visible: false,
-          // extent: [283239.2900911544, 432768.68455942767, 1647964.7192883273, 1590293.5028198026],
-          opacity: 0.1
+          visible: true,
+          opacity: 0.8
         })   
       ],      
       target: 'js-map',
@@ -38,7 +36,7 @@ function init(){
           key: "Air0OfLruh0B_W9_cIKwJ1FxgL1pOOgaDY7LwPeYTQy5ts_W0DQJXiGdxS-Qahyn",
           imagerySet: 'AerialWithLabels' // CanvasGray, CanvasDark, Road, OrdnanceSurvey
         }),
-        visible: true
+        visible: false
       })
     ]
   })
@@ -73,10 +71,10 @@ function init(){
   const stamenBaseMapLayer = new ol.layer.Tile({
     source: new ol.source.XYZ({
       // url: 'http://tile.stamen.com/toner/{z}/{x}/{y}.png'
-      // url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'
-      url: 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg'
+      url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'
+      // url: 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg'
     }),
-    visible: false
+    visible: true
   })
 
   map.addLayer(stamenBaseMapLayer);
@@ -87,22 +85,26 @@ function init(){
       // url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Population_World/MapServer"
       url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer"
     }),
-    visible: true
+    visible: false
   })
   map.addLayer(tileArcGISLayer);
 
   // NOAA WMS Layer
   const NOAAWMSLayer = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/analysis_meteohydro_sfc_qpe_time/MapServer/WMSServer?',
+      // url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/analysis_meteohydro_sfc_qpe_time/MapServer/WMSServer?',
+      url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/forecast_meteoceanhydro_sfc_ndfd_dailymaxairtemp_offsets/MapServer/WMSServer?',
       params: {
-        LAYERS: 1,
+        LAYERS: 5,
         FORMAT: 'image/png',
         TRANSPARENT: true
-      }
+      },
+      // attributions: '<a href=https://nowcoast.noaa.gov/> © NOAA<a/>'
     })
   })
   map.addLayer(NOAAWMSLayer);
+  NOAAWMSLayer.getSource().setAttributions('<a href=https://nowcoast.noaa.gov/> © NOAA<a/>');
+  NOAAWMSLayer.set('maxZoom', 5)
 }
 
 
