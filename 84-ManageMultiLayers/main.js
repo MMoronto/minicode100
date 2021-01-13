@@ -86,6 +86,7 @@ function init(){
       let baseLayerElementValue = this.value;
       baseLayerGroup.getLayers().forEach(function(element, index, array){
         let baseLayerName = element.get('title');
+        element.setVisible(baseLayerName === baseLayerElementValue)
       })
     })
   }
