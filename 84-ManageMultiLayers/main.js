@@ -13,9 +13,8 @@ function init(){
       layers: [
         new ol.layer.Tile({
           source: new ol.source.OSM(),
-          zIndex: 0,
+          zIndex: 1,
           visible: true,
-          extent: [12400753.6, -5658730.0, 17174426.3, -980228.5],
           opacity: 1
         })   
       ],      
@@ -32,7 +31,8 @@ function init(){
         }),
         zIndex: 0,
         visible: true,
-        opacity: 1
+        extent: [12400753.6, -5658730.0, 17174426.3, -980228.5],
+        opacity: 0.1
       }),
       // Bing Maps Basemap Layer
       new ol.layer.Tile({
@@ -40,7 +40,7 @@ function init(){
           key: "Air0OfLruh0B_W9_cIKwJ1FxgL1pOOgaDY7LwPeYTQy5ts_W0DQJXiGdxS-Qahyn",
           imagerySet: 'AerialWithLabels' // CanvasGray, CanvasDark, Road, OrdnanceSurvey
         }),
-        visible: false
+        visible: true
       })
     ]
   })
@@ -54,13 +54,12 @@ function init(){
     }),
     visible: true
   })
-
   map.addLayer(cartoDBBaseLayer);
 
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
     source: new ol.source.TileDebug(),
-    visible: false
+    visible: true
   })
   map.addLayer(tileDebugLayer);
 
@@ -76,30 +75,26 @@ function init(){
 
   const stamenBaseMapLayer = new ol.layer.Tile({
     source: new ol.source.XYZ({
-      // url: 'http://tile.stamen.com/toner/{z}/{x}/{y}.png'
       url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
-      // url: 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg'
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
     }),
-    visible: false
+    visible: true
   })
-
   map.addLayer(stamenBaseMapLayer);
 
   // tile ArcGIS REST API Layer
   const tileArcGISLayer = new ol.layer.Tile({
     source: new ol.source.TileArcGISRest({
-      // url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Population_World/MapServer"
-      url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer"
+      url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer",
+      attributions: 'Copyright© 2008, MSD, PVA, Louisville Water Company, Louisville Metro Government'
     }),
-    visible: false
+    visible: true
   })
   map.addLayer(tileArcGISLayer);
 
   // NOAA WMS Layer
   const NOAAWMSLayer = new ol.layer.Tile({
     source: new ol.source.TileWMS({
-      // url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/analysis_meteohydro_sfc_qpe_time/MapServer/WMSServer?',
       url:'https://nowcoast.noaa.gov/arcgis/services/nowcoast/forecast_meteoceanhydro_sfc_ndfd_dailymaxairtemp_offsets/MapServer/WMSServer?',
       params: {
         LAYERS: 5,
