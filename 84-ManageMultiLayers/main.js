@@ -85,7 +85,7 @@ function init(){
     baseLayerElement.addEventListener('change', function(){
       let baseLayerElementValue = this.value;
       baseLayerGroup.getLayers().forEach(function(element, index, array){
-        console.log(element.get('title'));
+        let baseLayerName = element.get('title');
       })
     })
   }
