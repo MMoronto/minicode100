@@ -80,7 +80,7 @@ function init(){
   map.addLayer(baseLayerGroup);
 
   // Layer Switcher Logic for BaseLayers
-  const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio')
+  const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]')
   for(let baseLayerElement of baseLayerElements){
     baseLayerElement.addEventListener('change', function(){
       let baseLayerElementValue = this.value;
