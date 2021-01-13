@@ -79,6 +79,9 @@ function init(){
   })
   map.addLayer(baseLayerGroup);
 
+  // Layer Switcher Logic for BaseLayers
+  const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio')
+  console.log(baseLayerElements);
 
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
