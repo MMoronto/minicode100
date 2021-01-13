@@ -83,7 +83,10 @@ function init(){
   const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio')
   for(let baseLayerElement of baseLayerElements){
     baseLayerElement.addEventListener('change', function(){
-      console.log(this)
+      let baseLayerElementValue = this.value;
+      baseLayerGroup.getLayers().forEach(function(element, index, array){
+        console.log(element);
+      })
     })
   }
 
