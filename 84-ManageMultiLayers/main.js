@@ -133,7 +133,11 @@ function init(){
 
   // Layer Switcher Logic for Raster Tile Layers
   const tileRasterLayerElements = document.querySelectorAll('.sidebar > input[type=checkbox]')
-  console.log(tileRasterLayerElements);
+  for(let tileRasterLayerElement of tileRasterLayerElements){
+    tileRasterLayerElement.addEventListener('change',function(){
+      
+    })
+  }
 
 }
 
