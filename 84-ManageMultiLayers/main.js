@@ -94,7 +94,8 @@ function init(){
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
     source: new ol.source.TileDebug(),
-    visible: false
+    visible: false,
+    title: 'TileDebugLayer'
   })
 
   // tile ArcGIS REST API Layer
@@ -103,7 +104,8 @@ function init(){
       url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer",
       attributions: 'Copyright© 2008, MSD, PVA, Louisville Water Company, Louisville Metro Government'
     }),
-    visible: false
+    visible: false,
+    title: 'TileArcGISLayer'
   })
 
   // NOAA WMS Layer
@@ -117,7 +119,8 @@ function init(){
       },
       attributions: '<a href=https://nowcoast.noaa.gov/> © NOAA<a/>'
     }),
-    visible: false
+    visible: false,
+    title: 'NOAAWMSLayer'
   })
 }
 
