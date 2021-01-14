@@ -136,6 +136,14 @@ function init(){
   for(let tileRasterLayerElement of tileRasterLayerElements){
     tileRasterLayerElement.addEventListener('change',function(){
       let tileRasterLayerElementValue = this.value;
+      let tileRasterLayer;
+
+      rasterTileLayerGroup.getLayers().forEach(function(element, index, array){
+        if(tileRasterLayerElementValue === element.get('title')){
+          tileRasterLayer =  element;
+        }
+      })
+      this.checked ? tileRasterLayer.setVisible(true) : tileRasterLayer.setVisible(false) 
     })
   }
 
