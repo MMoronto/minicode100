@@ -130,6 +130,11 @@ function init(){
     ]
   })
   map.addLayer(rasterTileLayerGroup);
+
+  // Layer Switcher Logic for Raster Tile Layers
+  const tileRasterLayerElements = document.querySelectorAll('.sidebar > input[type=checkbox]')
+  console.log(tileRasterLayerElements);
+
 }
 
 
