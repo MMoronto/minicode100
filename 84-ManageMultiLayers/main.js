@@ -135,7 +135,7 @@ function init(){
   const tileRasterLayerElements = document.querySelectorAll('.sidebar > input[type=checkbox]')
   for(let tileRasterLayerElement of tileRasterLayerElements){
     tileRasterLayerElement.addEventListener('change',function(){
-      console.log(this.value);
+      let tileRasterLayerElementValue = this.value;
     })
   }
 
