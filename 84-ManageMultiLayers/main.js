@@ -129,6 +129,7 @@ function init(){
       tileDebugLayer, NOAAWMSLayer, tileArcGISLayer
     ]
   })
+  map.addLayer(rasterTileLayerGroup);
 }
 
 
