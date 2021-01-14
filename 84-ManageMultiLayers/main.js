@@ -122,6 +122,13 @@ function init(){
     visible: false,
     title: 'NOAAWMSLayer'
   })
+
+  // Raster Tile Layer Group
+  const rasterTileLayerGroup = new ol.layer.Group({
+    layers:[
+      tileDebugLayer, NOAAWMSLayer, tileArcGISLayer
+    ]
+  })
 }
 
 
