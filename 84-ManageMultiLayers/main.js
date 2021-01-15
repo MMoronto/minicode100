@@ -134,7 +134,7 @@ function init(){
       attributions: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
     }),
     visible: true,
-    title: 'openstreetMapFragmentStatic'
+    title: 'OpenstreetMapFragmentStatic'
   })  
 
   // Raster Tile Layer Group
