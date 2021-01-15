@@ -148,12 +148,15 @@ function init(){
   }
 
   // Static Image OpenstreetMap
-  const openstreetMapFragmentStatic = new ol.layer.image({
+  const openstreetMapFragmentStatic = new ol.layer.Image({
     source: new ol.source.ImageStatic({
       url: './data/static_images/openlayers_static_humanitarian.png',
-      //imageExtent: []
-    })
+      imageExtent: [33980.914615188725, -22317.830773413647, 2500565.598863683, 2501365.313604108],
+      attribution: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
+    }),
+    title: 'openstreetMapFragmentStatic'
   })
+  
   map.on('click', function(e){
     console.log(e.coordinate)
   })
