@@ -147,6 +147,14 @@ function init(){
     })
   }
 
+  // Static Image OpenstreetMap
+  const openstreetMapFragmentStatic = new ol.layer.image({
+    source: new ol.source.ImageStatic({
+      url: './data/static_images/openlayers_static_humanitarian.png',
+      //imageExtent: []
+    })
+  })
+
 }
 
 
