@@ -59,7 +59,7 @@ function init(){
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
     }),
     visible: false,
-    title: 'StamenTerrainWIthLabels'
+    title: 'StamenTerrainWithLabels'
   })
   
   const StamenTerrain = new ol.layer.Tile({
@@ -87,6 +87,9 @@ function init(){
       baseLayerGroup.getLayers().forEach(function(element, index, array){
         let baseLayerName = element.get('title');
         element.setVisible(baseLayerName === baseLayerElementValue)
+        // console.log('baseLayerName: ' + baseLayerName, 'baseLayerElementValue: ' + baseLayerElementValue);
+        // console.log(baseLayerName === baseLayerElementValue);
+        // console.log(element.get('title'), element.get('visible'));
       })
     })
   }
@@ -123,6 +126,16 @@ function init(){
     title: 'NOAAWMSLayer'
   })
 
+  // Static Image OpenstreetMap
+  const openstreetMapFragmentStatic = new ol.layer.Image({
+    source: new ol.source.ImageStatic({
+      url: './data/static_images/openlayers_static_humanitarian.png',
+      imageExtent: [33980.914615188725, -22317.830773413647, 2500565.598863683, 2501365.313604108],
+      attribution: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
+    }),
+    title: 'openstreetMapFragmentStatic'
+  })  
+
   // Raster Tile Layer Group
   const rasterTileLayerGroup = new ol.layer.Group({
     layers:[
@@ -146,20 +159,6 @@ function init(){
       this.checked ? tileRasterLayer.setVisible(true) : tileRasterLayer.setVisible(false) 
     })
   }
-
-  // Static Image OpenstreetMap
-  const openstreetMapFragmentStatic = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-      url: './data/static_images/openlayers_static_humanitarian.png',
-      imageExtent: [33980.914615188725, -22317.830773413647, 2500565.598863683, 2501365.313604108],
-      attribution: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
-    }),
-    title: 'openstreetMapFragmentStatic'
-  })
-  
-  map.on('click', function(e){
-    console.log(e.coordinate)
-  })
 
 }
 
