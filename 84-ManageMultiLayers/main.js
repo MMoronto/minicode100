@@ -137,12 +137,12 @@ function init(){
   })  
 
   // Raster Tile Layer Group
-  const rasterTileLayerGroup = new ol.layer.Group({
+  const rasterLayerGroup = new ol.layer.Group({
     layers:[
-      tileDebugLayer, NOAAWMSLayer, tileArcGISLayer
+      tileDebugLayer, NOAAWMSLayer, tileArcGISLayer, openstreetMapFragmentStatic
     ]
   })
-  map.addLayer(rasterTileLayerGroup);
+  map.addLayer(rasterLayerGroup);
 
   // Layer Switcher Logic for Raster Tile Layers
   const tileRasterLayerElements = document.querySelectorAll('.sidebar > input[type=checkbox]')
@@ -151,7 +151,7 @@ function init(){
       let tileRasterLayerElementValue = this.value;
       let tileRasterLayer;
 
-      rasterTileLayerGroup.getLayers().forEach(function(element, index, array){
+      rasterLayerGroup.getLayers().forEach(function(element, index, array){
         if(tileRasterLayerElementValue === element.get('title')){
           tileRasterLayer =  element;
         }
@@ -161,5 +161,3 @@ function init(){
   }
 
 }
-
-
