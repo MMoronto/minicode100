@@ -97,7 +97,7 @@ function init(){
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
     source: new ol.source.TileDebug(),
-    visible: false,
+    visible: true,
     title: 'TileDebugLayer'
   })
 
@@ -107,7 +107,7 @@ function init(){
       url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer",
       attributions: 'Copyright© 2008, MSD, PVA, Louisville Water Company, Louisville Metro Government'
     }),
-    visible: false,
+    visible: true,
     title: 'TileArcGISLayer'
   })
 
@@ -122,7 +122,7 @@ function init(){
       },
       attributions: '<a href=https://nowcoast.noaa.gov/> © NOAA<a/>'
     }),
-    visible: false,
+    visible: true,
     title: 'NOAAWMSLayer'
   })
 
@@ -131,8 +131,9 @@ function init(){
     source: new ol.source.ImageStatic({
       url: './data/static_images/openlayers_static_humanitarian.png',
       imageExtent: [33980.914615188725, -22317.830773413647, 2500565.598863683, 2501365.313604108],
-      attribution: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
+      attributions: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
     }),
+    visible: true,
     title: 'openstreetMapFragmentStatic'
   })  
 
@@ -161,3 +162,5 @@ function init(){
   }
 
 }
+
+
