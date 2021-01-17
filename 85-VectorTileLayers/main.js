@@ -71,6 +71,18 @@ function init(){
     title: 'StamenTerrain'
   })
 
+  // Base Vector Layers
+  //Vector Tile Layer OpenstreetMap
+  const openStreetrMapVectorTile =  new ol.layer.VectorTile({
+    source: new ol.source.VectorTile({
+      url:'',
+      // format:,
+      // attributions:
+    }),
+    visible: true,
+    // title:
+  })
+
   // Layer Group
   const baseLayerGroup = new ol.layer.Group({
     layers: [
