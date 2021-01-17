@@ -73,17 +73,17 @@ function init(){
 
   // Base Vector Layers
   //Vector Tile Layer OpenstreetMap
-  const openStreetrMapVectorTile =  new ol.layer.VectorTile({
+  const openstreetrMapVectorTile =  new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
       url:'https://api.maptiler.com/tiles/v3-4326/{z}/{x}/{y}.pbf?key=6ODXIGIZVeUbAIOgBEGa',
       format: new ol.format.MVT(),
       attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
     }),
     visible: true
-    // title:
   })
+  map.addLayer(openstreetrMapVectorTile);
 
-  // Layer Group
+  // Base Layer Group
   const baseLayerGroup = new ol.layer.Group({
     layers: [
       openstreetMapStandard, openstreetMapHumanitarian, bingMaps, cartoDBBaseLayer, StamenTerrainWithLabels, StamenTerrain
