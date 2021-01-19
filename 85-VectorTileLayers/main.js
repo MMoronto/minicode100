@@ -8,8 +8,8 @@ function init(){
 
   const map = new ol.Map({
       view: new ol.View({
-        center: [-110.0, 40.0],
-        zoom: 4,
+        center: [0, 0],
+        zoom: 3,
       }),      
       target: 'js-map',
       controls: ol.control.defaults({attribution: false}).extend([attributionControl])
@@ -19,7 +19,7 @@ function init(){
   // Openstreet Map Standard
   const openstreetMapStandard = new ol.layer.Tile({
     source: new ol.source.OSM(),
-    visible: true,
+    visible: false,
     title: 'OSMStandard'
   }) 
 
@@ -56,7 +56,7 @@ function init(){
   const StamenTerrainWithLabels = new ol.layer.Tile({
     source: new ol.source.Stamen({
       layer: 'terrain-labels',
-      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
     visible: false,
     title: 'StamenTerrainWithLabels'
@@ -65,7 +65,7 @@ function init(){
   const StamenTerrain = new ol.layer.Tile({
     source: new ol.source.XYZ({
       url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
-      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
     visible: false,
     title: 'StamenTerrain'
@@ -73,15 +73,15 @@ function init(){
 
   // Base Vector Layers
   //Vector Tile Layer OpenstreetMap
-  const openstreetrMapVectorTile =  new ol.layer.VectorTile({
+  const openstreetMapVectorTile =  new ol.layer.VectorTile({
     source: new ol.source.VectorTile({
-      url:'https://api.maptiler.com/tiles/v3-4326/{z}/{x}/{y}.pbf?key=6ODXIGIZVeUbAIOgBEGa',
+      url:'https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=6ODXIGIZVeUbAIOgBEGa',
       format: new ol.format.MVT(),
-      attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+      attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>'
     }),
     visible: true
   })
-  map.addLayer(openstreetrMapVectorTile);
+  map.addLayer(openstreetMapVectorTile);
 
   // Base Layer Group
   const baseLayerGroup = new ol.layer.Group({
