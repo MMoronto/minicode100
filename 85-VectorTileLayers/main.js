@@ -79,11 +79,18 @@ function init(){
       format: new ol.format.MVT(),
       attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>'
     }),
-    visible: true
+    visible: false,
+    title: 'VectorTileLayerOpenstreetMap'
   })
-  
+
   const openstreetMapVectorTileStyles = 'https://api.maptiler.com/maps/8229f1f8-ae11-4822-be84-245abac1e1c8/style.json?key=6ODXIGIZVeUbAIOgBEGa';
-  olms.apply(map, openstreetMapVectorTileStyles);
+  fetch(openstreetMapVectorTileStyles).then(function(response) {
+    console.log(response);
+    response.json().then(function(glStyle) {
+      console.log(glStyle);
+      olms.applyStyle(openstreetMapVectorTile, glStyle, 'c8d958ad-ff6d-4678-9730-893520ecf11a');
+    });
+  });
   
 
   // Base Layer Group
