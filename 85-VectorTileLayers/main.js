@@ -81,7 +81,6 @@ function init(){
     }),
     visible: true
   })
-  map.addLayer(openstreetMapVectorTile);
   
   const openstreetMapVectorTileStyles = 'https://api.maptiler.com/maps/8229f1f8-ae11-4822-be84-245abac1e1c8/style.json?key=6ODXIGIZVeUbAIOgBEGa';
   olms.apply(map, openstreetMapVectorTileStyles);
