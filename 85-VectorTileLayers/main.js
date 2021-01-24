@@ -19,7 +19,7 @@ function init(){
   // Openstreet Map Standard
   const openstreetMapStandard = new ol.layer.Tile({
     source: new ol.source.OSM(),
-    visible: false,
+    visible: true,
     title: 'OSMStandard'
   }) 
 
@@ -48,7 +48,7 @@ function init(){
       url: 'http://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{scale}.png',
       attributions: '© CARTO'
     }),
-    visible: false,
+    visible: true,
     title: 'CartoDarkAll'
   })  
 
@@ -58,7 +58,7 @@ function init(){
       layer: 'terrain-labels',
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
-    visible: false,
+    visible: true,
     title: 'StamenTerrainWithLabels'
   })
   
@@ -67,7 +67,7 @@ function init(){
       url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
-    visible: false,
+    visible: true,
     title: 'StamenTerrain'
   })
 
@@ -77,7 +77,7 @@ function init(){
     source: new ol.source.VectorTile({
       url:'https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=6ODXIGIZVeUbAIOgBEGa',
       format: new ol.format.MVT(),
-      attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>'
+      attributions: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a>'
     }),
     visible: false,
     title: 'VectorTileLayerOpenstreetMap'
@@ -87,17 +87,18 @@ function init(){
   fetch(openstreetMapVectorTileStyles).then(function(response) {
     response.json().then(function(glStyle) {
       olms.applyStyle(openstreetMapVectorTile, glStyle, 'c8d958ad-ff6d-4678-9730-893520ecf11a');
-    });
-  });
-  
+    })
+  })
+
 
   // Base Layer Group
   const baseLayerGroup = new ol.layer.Group({
     layers: [
-      openstreetMapStandard, openstreetMapHumanitarian, bingMaps, cartoDBBaseLayer, StamenTerrainWithLabels, StamenTerrain
+      openstreetMapStandard, openstreetMapHumanitarian, bingMaps, cartoDBBaseLayer, StamenTerrainWithLabels, StamenTerrain, openstreetMapVectorTile
     ]
   })
   map.addLayer(baseLayerGroup);
+
 
   // Layer Switcher Logic for BaseLayers
   const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]')
@@ -107,9 +108,6 @@ function init(){
       baseLayerGroup.getLayers().forEach(function(element, index, array){
         let baseLayerName = element.get('title');
         element.setVisible(baseLayerName === baseLayerElementValue)
-        // console.log('baseLayerName: ' + baseLayerName, 'baseLayerElementValue: ' + baseLayerElementValue);
-        // console.log(baseLayerName === baseLayerElementValue);
-        // console.log(element.get('title'), element.get('visible'));
       })
     })
   }
