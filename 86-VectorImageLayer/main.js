@@ -156,15 +156,16 @@ function init(){
   })  
 
   // Vector Layers
-    // ECOWAS Countries GeoJSON VectorImage Layer
+  // ECOWAS Countries GeoJSON VectorImage Layer
     const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
       source: new ol.source.Vector({
         url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
         format: new ol.format.GeoJSON()
       }),
-      visible: false
+      visible: false,
+      title: 'ECOWASCountriesGeoJSON'
     })
-    map.addLayer(ECOWASCountriesGeoJSONVectorImage);
+    // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
     // ECOWAS Countries KML
     const ECOWASCountriesKML = new ol.layer.Vector({
@@ -172,7 +173,8 @@ function init(){
         url: './data/vector_data/ECOWAS_countries_KML.kml',
         format: new ol.format.KML()
       }),
-      visible: false
+      visible: false,
+      title: 'ECOWASCountriesKML'
     })
 
   // Raster Tile Layer Group
