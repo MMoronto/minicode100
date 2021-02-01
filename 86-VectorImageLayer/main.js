@@ -179,9 +179,12 @@ function init(){
     // ECOWAS Countries KML
     const ECOWASCountriesKML = new ol.layer.Vector({
       source: new ol.source.Vector({
-        url: './data/vector_data/ECOWAS_countries_KML.kml'
-      })
+        url: './data/vector_data/ECOWAS_countries_KML.kml',
+        format: new ol.format.KML()
+      }),
+      visible: true
     })
+    map.addLayer(ECOWASCountriesKML);
 
   // Raster Tile Layer Group
   const rasterLayerGroup = new ol.layer.Group({
