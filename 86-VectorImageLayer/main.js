@@ -167,14 +167,14 @@ function init(){
   map.addLayer(ECOWASCountriesGeoJSON);
 
     // ECOWAS Countries GeoJSON VectorImage Layer
-    const ECOWASCountriesGeoJSON = new ol.layer.VectorImage({
+    const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
       source: new ol.source.Vector({
         url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
         format: new ol.format.GeoJSON()
       }),
       visible: true
     })
-    map.addLayer(ECOWASCountriesGeoJSON);
+    map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
   // Raster Tile Layer Group
   const rasterLayerGroup = new ol.layer.Group({
