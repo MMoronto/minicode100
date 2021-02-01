@@ -176,6 +176,11 @@ function init(){
     })
     map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
+    // ECOWAS Countries KML
+    const ECOWASCountriesKML = new ol.layer.Vector({
+      
+    })
+
   // Raster Tile Layer Group
   const rasterLayerGroup = new ol.layer.Group({
     layers:[
