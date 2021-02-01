@@ -155,11 +155,14 @@ function init(){
     title: 'OpenstreetMapFragmentStatic'
   })  
 
+  // Vector Layers
+  // ECOWAS Countries
   const ECOWASCountriesGeoJSON = new ol.layer.Vector({
     source: new ol.source.Vector({
       url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
       format: new ol.format.GeoJSON()
-    })
+    }),
+    visible: true
   })  
 
   // Raster Tile Layer Group
