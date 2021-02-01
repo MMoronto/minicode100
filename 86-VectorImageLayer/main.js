@@ -163,7 +163,8 @@ function init(){
       format: new ol.format.GeoJSON()
     }),
     visible: true
-  })  
+  })
+  map.addLayer(ECOWASCountriesGeoJSON);  
 
   // Raster Tile Layer Group
   const rasterLayerGroup = new ol.layer.Group({
