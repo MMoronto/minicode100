@@ -155,6 +155,13 @@ function init(){
     title: 'OpenstreetMapFragmentStatic'
   })  
 
+  const ECOWASCountriesGeoJSON = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
+      format: new ol.format.GeoJSON()
+    })
+  })  
+
   // Raster Tile Layer Group
   const rasterLayerGroup = new ol.layer.Group({
     layers:[
