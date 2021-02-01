@@ -156,7 +156,7 @@ function init(){
   })  
 
   // Vector Layers
-  // ECOWAS Countries
+  // ECOWAS Countries GeoJSON Vector Layer
   const ECOWASCountriesGeoJSON = new ol.layer.Vector({
     source: new ol.source.Vector({
       url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
