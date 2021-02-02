@@ -186,7 +186,8 @@ function init(){
     radius: 20,
     blur: 12,
     gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#000000'],
-    title: 'OnlineFBUsers'
+    title: 'OnlineFBUsers',
+    visible: false
   })
 
   // Layer Group
