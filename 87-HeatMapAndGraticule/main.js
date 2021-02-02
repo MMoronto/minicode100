@@ -185,14 +185,14 @@ function init(){
     }),
     radius: 20,
     blur: 12,
-    gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#000000']
+    gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#000000'],
+    title: 'OnlineFBUsers'
   })
-  map.addLayer(heatMapOnlineFBUsers)
 
   // Layer Group
   const layerGroup = new ol.layer.Group({
     layers:[
-      tileDebugLayer, NOAAWMSLayer, tileArcGISLayer, openstreetMapFragmentStatic, ECOWASCountriesGeoJSONVectorImage, ECOWASCountriesKML
+      tileDebugLayer, NOAAWMSLayer, tileArcGISLayer, openstreetMapFragmentStatic, ECOWASCountriesGeoJSONVectorImage, ECOWASCountriesKML, heatMapOnlineFBUsers
     ]
   })
   map.addLayer(layerGroup);
