@@ -155,29 +155,39 @@ function init(){
     title: 'OpenstreetMapFragmentStatic'
   })  
 
-  // Vector Layers
-  // ECOWAS Countries GeoJSON VectorImage Layer
-    const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
-      source: new ol.source.Vector({
-        url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
-        format: new ol.format.GeoJSON()
-      }),
-      visible: false,
-      title: 'ECOWASCountriesGeoJSON'
-    })
-    // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
+// Vector Layers
+// ECOWAS Countries GeoJSON VectorImage Layer
+  const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
+    source: new ol.source.Vector({
+      url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
+      format: new ol.format.GeoJSON()
+    }),
+    visible: false,
+    title: 'ECOWASCountriesGeoJSON'
+  })
+  // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
-    // ECOWAS Countries KML
-    const ECOWASCountriesKML = new ol.layer.Vector({
-      source: new ol.source.Vector({
-        url: './data/vector_data/ECOWAS_countries_KML.kml',
-        format: new ol.format.KML()
-      }),
-      visible: false,
-      title: 'ECOWASCountriesKML'
-    })
+ // ECOWAS Countries KML
+  const ECOWASCountriesKML = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      url: './data/vector_data/ECOWAS_countries_KML.kml',
+      format: new ol.format.KML()
+    }),
+    visible: false,
+    title: 'ECOWASCountriesKML'
+  })
 
-  // Raster Tile Layer Group
+  // HeatMap
+  const heatMapOnlineFBUsera = new ol.layer.Heatmap({
+    source: new ol.source.Vector({
+      url: './vector_data/onlineFBUsers.geojson',
+      format: new ol.format.GeoJSON()
+    }),
+    radius: 15,
+    blur: 10
+  })
+
+  // Layer Group
   const layerGroup = new ol.layer.Group({
     layers:[
       tileDebugLayer, NOAAWMSLayer, tileArcGISLayer, openstreetMapFragmentStatic, ECOWASCountriesGeoJSONVectorImage, ECOWASCountriesKML
