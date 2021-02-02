@@ -180,11 +180,12 @@ function init(){
   // HeatMap
   const heatMapOnlineFBUsers = new ol.layer.Heatmap({
     source: new ol.source.Vector({
-      url: './vector_data/onlineFBUsers.geojson',
+      url: './data/vector_data/onlineFBUsers.geojson',
       format: new ol.format.GeoJSON()
     }),
-    radius: 15,
-    blur: 10
+    radius: 20,
+    blur: 12,
+    gradient: ['#00f', '#0ff', '#0f0', '#ff0', '#000000']
   })
   map.addLayer(heatMapOnlineFBUsers)
 
