@@ -215,6 +215,9 @@ function init(){
   }
 
   // Vector Feature Popup Information
+  const overlayContentElement = document.querySelector('.overlay-container')
+  const overlayLayer = new ol.Overlay()
+  
   // Vector Feature Popup Logic
   map.on('click', function(e) {
     map.forEachFeatureAtPixel(e.pixel, function(feature, layer){
