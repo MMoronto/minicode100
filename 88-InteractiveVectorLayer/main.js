@@ -231,6 +231,7 @@ function init(){
       let clickedFeatureAdditionInfo = feature.get('additionalinfo');
       overlayLayer.setPosition(clickCoordinate);
       overlayFeatureName.innerHTML = clickedFeatureName;
+      overlayFeatureAdditionInfo.innerHTML = clickedFeatureAdditionInfo;
     })
   })
 
