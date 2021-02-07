@@ -218,7 +218,7 @@ function init(){
   // Vector Feature Popup Logic
   map.on('click', function(e) {
     map.forEachFeatureAtPixel(e.pixel, function(feature, layer){
-      
+      console.log(feature.getKeys());
     })
   })
 
