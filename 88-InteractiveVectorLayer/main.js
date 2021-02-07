@@ -226,8 +226,11 @@ function init(){
   // Vector Feature Popup Logic
   map.on('click', function(e) {
     map.forEachFeatureAtPixel(e.pixel, function(feature, layer){
+      let clickedCoordinate = e.coordinate;
       let clickedFeatureName = feature.get('name');
       let clickedFeatureAdditionInfo = feature.get('additionalinfo');
+      overlayLayer.setPosition(clickCoordinate);
+      overlayFeatureName.innerHTML = clickedFeatureName;
     })
   })
 
