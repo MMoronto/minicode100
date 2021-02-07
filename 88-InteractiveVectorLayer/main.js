@@ -219,7 +219,9 @@ function init(){
   const overlayLayer = new ol.Overlay({
     element: overlayContainerElement
   })
-  map.addOverlay()
+  map.addOverlay(overlayLayer);
+  const overlayFeatureName = document.getElementById('feature-name');
+  const overlayFeatureAdditionInfo = document.getElementById('feature-additional-info');
   
   // Vector Feature Popup Logic
   map.on('click', function(e) {
