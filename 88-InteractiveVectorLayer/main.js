@@ -215,7 +215,7 @@ function init(){
   }
 
   // Vector Feature Popup Information
-  const overlayContentElement = document.querySelector('.overlay-container')
+  const overlayContainerElement = document.querySelector('.overlay-container')
   const overlayLayer = new ol.Overlay({
     element: overlayContainerElement
   })
