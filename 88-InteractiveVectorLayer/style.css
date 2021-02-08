@@ -33,6 +33,16 @@ body {
   margin-left: -80px;
 }
 
+.overlay-container #feature-additional-info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
 .map {
   height:100vh;
