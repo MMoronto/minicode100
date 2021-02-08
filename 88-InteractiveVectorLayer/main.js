@@ -229,7 +229,7 @@ function init(){
       let clickedCoordinate = e.coordinate;
       let clickedFeatureName = feature.get('name');
       let clickedFeatureAdditionInfo = feature.get('additionalinfo');
-      overlayLayer.setPosition(clickCoordinate);
+      overlayLayer.setPosition(clickedCoordinate);
       overlayFeatureName.innerHTML = clickedFeatureName;
       overlayFeatureAdditionInfo.innerHTML = clickedFeatureAdditionInfo;
     })
