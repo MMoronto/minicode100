@@ -157,8 +157,15 @@ function init(){
 
   // Vector Layers
   // Styling of vector features
+  // Style for polygons
   const fillStyle = new ol.style.Fill({
     color: [40, 119, 247, 1]
+  })
+
+  // Style for lines
+  const strokeStyle = new ol.style.Stroke({
+    color: [30, 30, 31, 1],
+    width: 1.2
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
@@ -171,7 +178,7 @@ function init(){
     title: 'ECOWASCountriesGeoJSON'
     style: new ol.style.Style({
       fill: fillStyle,
-      // stroke: ,
+      stroke: strokeStyle,
     })
   })
   // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
