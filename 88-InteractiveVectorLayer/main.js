@@ -168,7 +168,7 @@ function init(){
     width: 1.2,
     lineCap: 'square',
     lineJoin: 'bevel',
-    lineDash: 
+    lineDash: [3, 6]
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
