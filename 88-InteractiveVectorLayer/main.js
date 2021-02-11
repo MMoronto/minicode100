@@ -165,7 +165,10 @@ function init(){
   // Style for lines
   const strokeStyle = new ol.style.Stroke({
     color: [30, 30, 31, 1],
-    width: 1.2
+    width: 1.2,
+    lineCap: 'square',
+    lineJoin: 'bevel',
+    lineDash: 
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
