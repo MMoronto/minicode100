@@ -156,6 +156,21 @@ function init(){
   })  
 
   // Vector Layers
+  // Styling of vector features
+  // Style for polygons
+  const fillStyle = new ol.style.Fill({
+    color: [40, 119, 247, 1]
+  })
+
+  // Style for lines
+  const strokeStyle = new ol.style.Stroke({
+    color: [30, 30, 31, 1],
+    width: 1.2,
+    lineCap: 'square',
+    lineJoin: 'bevel',
+    lineDash: [3, 6]
+  })
+
   // ECOWAS Countries GeoJSON VectorImage Layer
   const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
     source: new ol.source.Vector({
@@ -163,7 +178,11 @@ function init(){
       format: new ol.format.GeoJSON()
     }),
     visible: false,
-    title: 'ECOWASCountriesGeoJSON'
+    title: 'ECOWASCountriesGeoJSON',
+    style: new ol.style.Style({
+      fill: fillStyle,
+      stroke: strokeStyle,
+    })
   })
   // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
@@ -222,7 +241,7 @@ function init(){
   map.addOverlay(overlayLayer);
   const overlayFeatureName = document.getElementById('feature-name');
   const overlayFeatureAdditionInfo = document.getElementById('feature-additional-info');
-
+  
   // Vector Feature Popup Logic
   map.on('click', function(e) {
     overlayLayer.setPosition(undefined);
