@@ -176,7 +176,8 @@ function init(){
       color: [214, 16, 20, 1]
     }),
     stroke: strokeStyle,
-    points: 3
+    points: 3,
+    radius: 10
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
