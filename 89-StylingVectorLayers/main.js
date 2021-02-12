@@ -190,9 +190,9 @@ function init(){
     style: new ol.style.Style({
       fill: fillStyle,
       stroke: strokeStyle,
+      image: regularShape
     })
   })
-  // map.addLayer(ECOWASCountriesGeoJSONVectorImage);
 
   // ECOWAS Countries KML
   const ECOWASCountriesKML = new ol.layer.Vector({
