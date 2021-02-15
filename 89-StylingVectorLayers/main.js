@@ -176,8 +176,14 @@ function init(){
       color: [214, 16, 20, 1]
     }),
     stroke: strokeStyle,
-    points: 3,
-    radius: 10
+    points: 7,
+    radius1: 10,
+    radius2: 5,
+    rotation: 0.5
+  })
+
+  const circleStyle = new ol.style.Circle({
+    fill:
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
