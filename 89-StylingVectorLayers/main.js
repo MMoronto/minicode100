@@ -186,7 +186,9 @@ function init(){
     fill: new ol.style.Fill({
       color: [245, 49, 5, 1]
     }),
-    radius: 7
+    radius: 7,
+    stroke: strokeStyle,
+    image: regularShape
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
@@ -200,7 +202,7 @@ function init(){
     style: new ol.style.Style({
       fill: fillStyle,
       stroke: strokeStyle,
-      image: regularShape
+      image: circleStyle
     })
   })
 
