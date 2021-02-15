@@ -183,7 +183,10 @@ function init(){
   })
 
   const circleStyle = new ol.style.Circle({
-    fill:
+    fill: new ol.style.Fill({
+      color: [245, 49, 5, 1]
+    }),
+    radius: 7
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
