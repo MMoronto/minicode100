@@ -184,7 +184,11 @@ function init(){
 
   // Icon Marker Style
   const iconMarkerStyle = new ol.style.Icon({
-    src:
+    src: '.data/static_images/marker.png',
+    size: [100, 100],
+    offset: [0, 0],
+    opacity: 1,
+    scale: 0.5
   })
 
   const circleStyle = new ol.style.Circle({
@@ -193,7 +197,7 @@ function init(){
     }),
     radius: 7,
     stroke: strokeStyle,
-    image: regularShape
+    // image: regularShape
   })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
@@ -207,7 +211,7 @@ function init(){
     style: new ol.style.Style({
       fill: fillStyle,
       stroke: strokeStyle,
-      image: circleStyle
+      image: iconMarkerStyle
     })
   })
 
