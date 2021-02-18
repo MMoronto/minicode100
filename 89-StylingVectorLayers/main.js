@@ -182,6 +182,11 @@ function init(){
     rotation: 0.5
   })
 
+  // Icon Marker Style
+  const iconMarkerStyle = new ol.style.Icon({
+    src:
+  })
+
   const circleStyle = new ol.style.Circle({
     fill: new ol.style.Fill({
       color: [245, 49, 5, 1]
