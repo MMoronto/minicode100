@@ -184,7 +184,7 @@ function init(){
 
   // Icon Marker Style
   const iconMarkerStyle = new ol.style.Icon({
-    src: '.data/static_images/marker.png',
+    src: './data/static_images/marker.png',
     size: [100, 100],
     offset: [0, 0],
     opacity: 1,
