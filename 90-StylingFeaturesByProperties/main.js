@@ -157,48 +157,6 @@ function init(){
 
   // Vector Layers
   // Styling of vector features
-  // Style for polygons
-  const fillStyle = new ol.style.Fill({
-    color: [40, 119, 247, 1]
-  })
-
-  // Style for lines
-  const strokeStyle = new ol.style.Stroke({
-    color: [30, 30, 31, 1],
-    width: 1.2,
-    // lineCap: 'square',
-    // lineJoin: 'bevel',
-    // lineDash: [3, 6]
-  })
-
-  const regularShape = new ol.style.RegularShape({
-    fill: new ol.style.Fill({
-      color: [214, 16, 20, 1]
-    }),
-    stroke: strokeStyle,
-    points: 7,
-    radius1: 10,
-    radius2: 5,
-    rotation: 0.5
-  })
-
-  // Icon Marker Style
-  const iconMarkerStyle = new ol.style.Icon({
-    src: './data/static_images/marker.png',
-    size: [100, 100],
-    offset: [0, 0],
-    opacity: 1,
-    scale: 0.5
-  })
-
-  const circleStyle = new ol.style.Circle({
-    fill: new ol.style.Fill({
-      color: [245, 49, 5, 1]
-    }),
-    radius: 7,
-    stroke: strokeStyle
-    // image: regularShape
-  })
 
   // ECOWAS Countries GeoJSON VectorImage Layer
   const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
