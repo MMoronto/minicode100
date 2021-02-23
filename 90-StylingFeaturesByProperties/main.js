@@ -170,6 +170,13 @@ function init(){
       })
     })
   })
+  // Line Style
+  const lineStringStyle = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: [59, 59, 59, 1],
+      width: 2
+    })
+  })
 
   const ECOWASCountriesStyle = function(feature) {
     let geometryType = feature.getGeometry().getType();
@@ -180,7 +187,7 @@ function init(){
     }
 
     if(geometryType === 'LineString'){
-
+      feature.setStyle([lineStringStyle])
     }
 
     if (geometryType === 'Polygon'){
