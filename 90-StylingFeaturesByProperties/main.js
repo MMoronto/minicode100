@@ -157,9 +157,35 @@ function init(){
 
   // Vector Layers
   // Styling of vector features
+  // Point Style
+  const pointStyle = new ol.style.Style({
+    image: new ol.style.Circle({
+      fill: new ol.style.Fill({
+        color: [246, 11, 14, 1]
+      }),
+      radius: 8,
+      stroke: new ol.style.Stroke({
+        color: [246, 11, 14, 2],
+        width: 2
+      })
+    })
+  })
+
   const ECOWASCountriesStyle = function(feature) {
     let geometryType = feature.getGeometry().getType();
     let incomeProperty = feature.get('income');
+
+    if(geometryType === 'Point'){
+      feature.setStyle([pointStyle]);
+    }
+
+    if(geometryType === 'LineString'){
+
+    }
+
+    if (geometryType === 'Polygon'){
+
+    }
   }
 
   // ECOWAS Countries GeoJSON VectorImage Layer
