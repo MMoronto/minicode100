@@ -178,6 +178,20 @@ function init(){
     })
   })
 
+  // Polygon Style
+  // Blue polygons
+  const blueCountriesStyle = new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: [56, 41, 194, 1]
+    })
+  })
+  // Purple polygons
+  const purpleCountriesStyle = new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: [164, 63, 204, 1]
+    })
+  })
+
   const ECOWASCountriesStyle = function(feature) {
     let geometryType = feature.getGeometry().getType();
     let incomeProperty = feature.get('income');
@@ -191,7 +205,12 @@ function init(){
     }
 
     if (geometryType === 'Polygon'){
-
+      if(incomeProperty === 'Blue'){
+        feature.setStyle([blueCountriesStyle])
+      };
+      if(incomeProperty === "Purple"){
+        feature.setStyle([purpleCountriesStyle])
+      }
     }
   }
 
