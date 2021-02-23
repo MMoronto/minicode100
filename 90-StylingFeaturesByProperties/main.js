@@ -158,7 +158,8 @@ function init(){
   // Vector Layers
   // Styling of vector features
   const ECOWASCountriesStyle = function(feature) {
-    console.log(feature);
+    let geometryType = feature.getGeometry().getType();
+    let incomeProperty = feature.get('income');
   }
 
   // ECOWAS Countries GeoJSON VectorImage Layer
