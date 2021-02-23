@@ -157,6 +157,9 @@ function init(){
 
   // Vector Layers
   // Styling of vector features
+  const ECOWASCountriesStyle = function(feature) {
+    console.log(feature);
+  }
 
   // ECOWAS Countries GeoJSON VectorImage Layer
   const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
@@ -166,11 +169,7 @@ function init(){
     }),
     visible: false,
     title: 'ECOWASCountriesGeoJSON',
-    style: new ol.style.Style({
-      fill: fillStyle,
-      stroke: strokeStyle,
-      image: iconMarkerStyle
-    })
+    style: ECOWASCountriesStyle
   })
 
   // ECOWAS Countries KML
