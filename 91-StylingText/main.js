@@ -198,7 +198,7 @@ function init(){
 
     // Text Styles
     let featureID = feature.get('ID');
-    let featureISString = featureID.toString();
+    let featureIDString = featureID.toString();
 
     let textStyles = new ol.style.Style({
       text: new ol.style.Text({
