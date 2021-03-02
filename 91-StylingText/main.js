@@ -196,20 +196,34 @@ function init(){
     let geometryType = feature.getGeometry().getType();
     let incomeProperty = feature.get('income');
 
+    // Text Styles
+    let featureID = feature.get('ID');
+    let featureISString = featureID.toString();
+
+    let textStyles = new ol.style.Style({
+      text: new ol.style.Text({
+        text: featureIDString,
+        scale: 1.5,
+        fill: new ol.style.Fill({
+          color: [18, 19, 18, 1]
+        })
+      })
+    });
+
     if(geometryType === 'Point'){
-      feature.setStyle([pointStyle]);
+      feature.setStyle([pointStyle, textStyles]);
     }
 
     if(geometryType === 'LineString'){
-      feature.setStyle([lineStringStyle])
+      feature.setStyle([lineStringStyle, textStyles])
     }
 
     if (geometryType === 'Polygon'){
       if(incomeProperty === 'Blue'){
-        feature.setStyle([blueCountriesStyle])
+        feature.setStyle([blueCountriesStyle, textStyles])
       };
       if(incomeProperty === "Purple"){
-        feature.setStyle([purpleCountriesStyle])
+        feature.setStyle([purpleCountriesStyle, textStyles])
       }
     }
   }
@@ -217,8 +231,8 @@ function init(){
   // ECOWAS Countries GeoJSON VectorImage Layer
   const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
     source: new ol.source.Vector({
-      // url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
-      url: './data/vector_data/road-CL-extracts.geojson',
+      url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
+      // url: './data/vector_data/road-CL-extracts.geojson',
       format: new ol.format.GeoJSON()
     }),
     visible: false,
