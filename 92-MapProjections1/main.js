@@ -10,9 +10,13 @@ function init(){
       view: new ol.View({
         center: [0, 0],
         zoom: 3,
+        projection: 'EPSG:4326'
       }),      
       target: 'js-map',
       controls: ol.control.defaults({attribution: false}).extend([attributionControl])
+  })
+  map.on('click', function(e){
+    console.log(e.coordinate);
   })
 
   // Base Layers
