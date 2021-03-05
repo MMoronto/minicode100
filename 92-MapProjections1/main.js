@@ -5,12 +5,15 @@ const attributionControl = new ol.control.Attribution({
 })
 
 function init(){
+  // EPSG: for Nigeria
+  proj4.defs("EPSG:32632","+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs");
+  ol.proj.proj4.register(proj4);
 
   const map = new ol.Map({
       view: new ol.View({
         center: [0, 0],
         zoom: 3,
-        projection: 'EPSG:4326'
+        projection: 'EPSG:32632'
       }),      
       target: 'js-map',
       controls: ol.control.defaults({attribution: false}).extend([attributionControl])
