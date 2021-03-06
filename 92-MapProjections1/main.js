@@ -11,8 +11,8 @@ function init(){
 
   const map = new ol.Map({
       view: new ol.View({
-        center: [0, 0],
-        zoom: 3,
+        center: ol.proj.fromLonLat([7.395390, 9.071273]),
+        zoom: 10,
         projection: 'EPSG:32632'
       }),      
       target: 'js-map',
