@@ -17,7 +17,7 @@ function init(){
   const map = new ol.Map({
       view: new ol.View({
         center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
-        zoom: 10,
+        zoom: 1.05,
         projection: 'EPSG:32632',
         extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
       }),      
@@ -32,7 +32,7 @@ function init(){
   // Openstreet Map Standard
   const openstreetMapStandard = new ol.layer.Tile({
     source: new ol.source.OSM(),
-    visible: true,
+    visible: false,
     title: 'OSMStandard'
   }) 
 
@@ -71,7 +71,7 @@ function init(){
       layer: 'terrain-labels',
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
-    visible: true,
+    visible: false,
     title: 'StamenTerrainWithLabels'
   })
   
@@ -80,7 +80,7 @@ function init(){
       url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
     }),
-    visible: true,
+    visible: false,
     title: 'StamenTerrain'
   })
 
@@ -128,7 +128,7 @@ function init(){
   // TileDebug
   const tileDebugLayer = new ol.layer.Tile({
     source: new ol.source.TileDebug(),
-    visible: true,
+    visible: false,
     title: 'TileDebugLayer'
   })
 
@@ -138,7 +138,7 @@ function init(){
       url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_LandRecords_Louisville/MapServer",
       attributions: 'Copyright© 2008, MSD, PVA, Louisville Water Company, Louisville Metro Government'
     }),
-    visible: true,
+    visible: false,
     title: 'TileArcGISLayer'
   })
 
@@ -153,7 +153,7 @@ function init(){
       },
       attributions: '<a href=https://nowcoast.noaa.gov/> © NOAA<a/>'
     }),
-    visible: true,
+    visible: false,
     title: 'NOAAWMSLayer'
   })
 
@@ -164,7 +164,7 @@ function init(){
       imageExtent: [33980.914615188725, -22317.830773413647, 2500565.598863683, 2501365.313604108],
       attributions: '<a href=https://www.openstreetmap.org/copyright/>© OpenStreetMap contributors<a/>' 
     }),
-    visible: true,
+    visible: false,
     title: 'OpenstreetMapFragmentStatic'
   })  
 
@@ -241,13 +241,26 @@ function init(){
     }
   }
 
+  //Nigerian Cities EPSG:27700
+  const NigerianCities = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      url: './data/vector_data/nigerian_cities_EPSG_27700.geojson',
+      format: new ol.format.GeoJSON({
+        dataProjection: 'EPSG:27700'
+      })
+    }),
+    visible: true,
+    title: 'NigerianCities',
+  })
+  map.addLayer(NigerianCities)
+
   // ECOWAS Countries GeoJSON VectorImage Layer
   const ECOWASCountriesGeoJSONVectorImage = new ol.layer.VectorImage({
     source: new ol.source.Vector({
       url: './data/vector_data/ECOWAS_countries_GEOJSON.geojson',
       format: new ol.format.GeoJSON()
     }),
-    visible: false,
+    visible: true,
     title: 'ECOWASCountriesGeoJSON',
     style: ECOWASCountriesStyle
   })
