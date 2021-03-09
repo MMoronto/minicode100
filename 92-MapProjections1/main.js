@@ -5,14 +5,14 @@ const attributionControl = new ol.control.Attribution({
 })
 
 function init(){
-  // EPSG: for Nigeria
+  // EPSG:32632 for Nigeria
   proj4.defs("EPSG:32632","+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs");
   // EPSG:27700 for the UK
   proj4.defs("EPSG:27700","+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs");
   ol.proj.proj4.register(proj4);
 
-  console.log(ol.proj.toLonLat([8.5418701171875,
-    11.96947107333601], 'EPSG:27700'));
+  // console.log(ol.proj.fromLonLat([5.6195068359375,
+  //   6.330312851437491], 'EPSG:27700'));
 
   const map = new ol.Map({
       view: new ol.View({
