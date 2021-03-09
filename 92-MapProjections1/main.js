@@ -12,7 +12,7 @@ function init(){
   ol.proj.proj4.register(proj4);
 
   console.log(ol.proj.toLonLat([8.5418701171875,
-    11.96947107333601], 'EPSG:32632'));
+    11.96947107333601], 'EPSG:27700'));
 
   const map = new ol.Map({
       view: new ol.View({
