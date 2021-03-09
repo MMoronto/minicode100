@@ -251,6 +251,18 @@ function init(){
     }),
     visible: true,
     title: 'NigerianCities',
+    style: new ol.style.Style({
+      image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+          color: [15, 15, 15, 1]
+        }),
+        radius: 10,
+        stroke: new ol.style.Stroke({
+          color: [15, 15, 15, 1],
+          width: 2
+        })
+      })
+    })
   })
   map.addLayer(NigerianCities)
 
