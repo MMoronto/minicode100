@@ -41,7 +41,7 @@ function init(){
     source: new ol.source.OSM({
       url: 'https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
     }),
-    visible: false,
+    visible: true,
     title: 'OSMHumanitarian'
   })
 
@@ -61,7 +61,7 @@ function init(){
       url: 'http://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{scale}.png',
       attributions: '© CARTO'
     }),
-    visible: true,
+    visible: false,
     title: 'CartoDarkAll'
   })  
 
