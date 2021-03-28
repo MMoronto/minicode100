@@ -351,7 +351,10 @@ function init(){
       }      
     })
   })
-
+  // Select Interaction - For Styling Selected Points
+  const selectInteraction = new ol.interaction.Select({
+    condition
+  })
 }
 
 
