@@ -353,7 +353,14 @@ function init(){
   })
   // Select Interaction - For Styling Selected Points
   const selectInteraction = new ol.interaction.Select({
-    condition
+    condition: ol.events.condition.singleClick,
+    style: new ol.style.Style({
+      image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+          color: [247, 28, 11, 1]
+        })
+      })
+    })
   })
 }
 
