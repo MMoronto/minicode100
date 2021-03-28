@@ -358,10 +358,16 @@ function init(){
       image: new ol.style.Circle({
         fill: new ol.style.Fill({
           color: [247, 28, 11, 1]
+        }),
+        radius: 14,
+        stroke: new ol.style.Stroke({
+          color: [247, 28, 11, 1],
+          width: 4
         })
       })
     })
   })
+  map.addInteraction(selectInteraction);
 }
 
 
