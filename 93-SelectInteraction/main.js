@@ -19,7 +19,7 @@ function init(){
         center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
         zoom: 1.05,
         projection: 'EPSG:32632',
-        extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
+        // extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
       }),      
       target: 'js-map',
       controls: ol.control.defaults({attribution: false}).extend([attributionControl])
@@ -355,16 +355,16 @@ function init(){
   const selectInteraction = new ol.interaction.Select({
     condition: ol.events.condition.singleClick,
     layers: function(layer){
-      return layer.get('title') === 'NigerianCities'
+      return [layer.get('title') === 'NigerianCities', layer.get('title') === 'ECOWASCountriesGeoJSONVectorImage']
     },
     style: new ol.style.Style({
       image: new ol.style.Circle({
         fill: new ol.style.Fill({
-          color: [247, 28, 11, 1]
+          color: [247, 147, 11, 1]
         }),
         radius: 14,
         stroke: new ol.style.Stroke({
-          color: [247, 28, 11, 1],
+          color: [247, 147, 11, 1],
           width: 4
         })
       })
