@@ -355,7 +355,7 @@ function init(){
   const selectInteraction = new ol.interaction.Select({
     condition: ol.events.condition.singleClick,
     layers: function(layer){
-      return layer.get('title' === 'NigerianCities')
+      return layer.get('title') === 'NigerianCities'
     },
     style: new ol.style.Style({
       image: new ol.style.Circle({
