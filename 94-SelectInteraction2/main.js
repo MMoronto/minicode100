@@ -372,7 +372,8 @@ function init(){
   // })
   // map.addInteraction(selectInteraction);
 
-  const selectInteractionV2 = new ol.interaction.Select()
+  const selectInteractionV2 = new ol.interaction.Select();
+  map.addInteraction(selectInteractionV2);
 }
 
 
