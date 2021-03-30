@@ -375,7 +375,19 @@ function init(){
   selectInteractionV2.on('select', function(e){
     let selectedFeature = e.selected;
     if(e.selected.length > 0 && selectedFeature[0].getGeometry().getType() === 'Point'){
-      console.log(e.selected)
+      selectedFeature[0].setStyle(
+        new ol.style.Style({
+              image: new ol.style.Circle({
+                fill: new ol.style.Fill({
+                  color: [247, 147, 11, 1]
+                }),
+                radius: 14,
+                stroke: new ol.style.Stroke({
+                  color: [247, 147, 11, 1],
+                  width: 4
+                })
+              })
+            }))
     };
   })
 }
