@@ -373,7 +373,8 @@ function init(){
   const selectInteractionV2 = new ol.interaction.Select();
   map.addInteraction(selectInteractionV2);
   selectInteractionV2.on('select', function(e){
-    if(e.selected.length > 0 ){
+    let selectedFeature = e.selected;
+    if(e.selected.length > 0 && selectedFeature[0].getGeometry().getType() === 'Point'){
       console.log(e.selected)
     };
   })
