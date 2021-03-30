@@ -24,9 +24,6 @@ function init(){
       target: 'js-map',
       controls: ol.control.defaults({attribution: false}).extend([attributionControl])
   })
-  map.on('click', function(e){
-    console.log(e.coordinate);
-  })
 
   // Base Layers
   // Openstreet Map Standard
@@ -374,6 +371,9 @@ function init(){
 
   const selectInteractionV2 = new ol.interaction.Select();
   map.addInteraction(selectInteractionV2);
+  selectInteractionV2.on('select', function(e){
+    console.log(e);
+  })
 }
 
 
