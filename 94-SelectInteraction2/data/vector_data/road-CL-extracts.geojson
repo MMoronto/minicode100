@@ -1,0 +1,1914 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-02-25T19:53:28Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/246569216",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Ostiense, Roma, Italia Oct 31, 2020 02-48-43 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4789476,
+          41.8637486
+        ]
+      },
+      "id": "node/246569216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/246661220",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Parco Cavallo Pazzo.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4882252,
+          41.8655343
+        ]
+      },
+      "id": "node/246661220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/248743358",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Fincati.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4839082,
+          41.8635286
+        ]
+      },
+      "id": "node/248743358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/249331968",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via A Volta, Roma, Italia Feb 25, 2021 11-05-43 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4786064,
+          41.879092
+        ]
+      },
+      "id": "node/249331968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/250889343",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4813732,
+          41.8757984
+        ]
+      },
+      "id": "node/250889343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773253",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Pullino.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4842267,
+          41.8653322
+        ]
+      },
+      "id": "node/251773253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773254",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Parco dei Caduti del Mare.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4841937,
+          41.864776
+        ]
+      },
+      "id": "node/251773254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773259",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Vettor Fausto.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4867437,
+          41.863234
+        ]
+      },
+      "id": "node/251773259"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773306",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Piazza Masdea.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4880385,
+          41.863013
+        ]
+      },
+      "id": "node/251773306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773348",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.485289,
+          41.885391
+        ]
+      },
+      "id": "node/251773348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251773349",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4827727,
+          41.8870009
+        ]
+      },
+      "id": "node/251773349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251792639",
+        "amenity": "drinking_water",
+        "created_by": "JOSM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4836676,
+          41.8885804
+        ]
+      },
+      "id": "node/251792639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/253704799",
+        "amenity": "drinking_water",
+        "image": "https://europeanwaterproject.org/photos/2020/EWP253704799.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4789111,
+          41.8660956
+        ]
+      },
+      "id": "node/253704799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/253704800",
+        "amenity": "drinking_water",
+        "created_by": "JOSM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4784597,
+          41.8669876
+        ]
+      },
+      "id": "node/253704800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/253704801",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4787997,
+          41.8670141
+        ]
+      },
+      "id": "node/253704801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/253704802",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "tap": "push_button"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5030463,
+          41.8835007
+        ]
+      },
+      "id": "node/253704802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/254523696",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Piazza Giovanni da Narrazzano.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4901209,
+          41.8685428
+        ]
+      },
+      "id": "node/254523696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255020920",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5020893,
+          41.8713583
+        ]
+      },
+      "id": "node/255020920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255117810",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5081547,
+          41.8869339
+        ]
+      },
+      "id": "node/255117810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255332025",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone piazza giuseppe sapeto.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4913528,
+          41.8629583
+        ]
+      },
+      "id": "node/255332025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256170031",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Appia Antica, Roma, Italia Sep 20, 2020 05-25-19 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5028108,
+          41.8673275
+        ]
+      },
+      "id": "node/256170031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256170032",
+        "amenity": "drinking_water",
+        "fountain": "sarcophagus",
+        "historic": "sarcophagus",
+        "historic:civilization": "ancient_roman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5017974,
+          41.8731861
+        ]
+      },
+      "id": "node/256170032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256816899",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5079843,
+          41.8767672
+        ]
+      },
+      "id": "node/256816899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259865501",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone, Parco della Resistenza dell'Otto Settembre, Roma, Italia Feb 25, 2021 11-07-39 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.479667,
+          41.8777468
+        ]
+      },
+      "id": "node/259865501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/264897052",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4809552,
+          41.8883027
+        ]
+      },
+      "id": "node/264897052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/265837380",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5038415,
+          41.8865531
+        ]
+      },
+      "id": "node/265837380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266773743",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4841127,
+          41.8825142
+        ]
+      },
+      "id": "node/266773743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266773744",
+        "amenity": "drinking_water",
+        "fountain": "roman_travertine_block"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4803272,
+          41.8850606
+        ]
+      },
+      "id": "node/266773744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266788725",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "man_made": "water_tap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4787677,
+          41.8720513
+        ]
+      },
+      "id": "node/266788725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266962468",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Piazza Gian Lorenzo Bernini, Roma, Italia Dec 26, 2020 11-55-59 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4864779,
+          41.8782724
+        ]
+      },
+      "id": "node/266962468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266962469",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Piazza Gian Lorenzo Bernini, Roma, Italia Dec 26, 2020 12-00-20 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4854788,
+          41.8778028
+        ]
+      },
+      "id": "node/266962469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266962641",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4868237,
+          41.8814832
+        ]
+      },
+      "id": "node/266962641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/266965232",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone, Viale Aventino, Roma, Italia Nov 04, 2020 09-28-54 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4875256,
+          41.8833501
+        ]
+      },
+      "id": "node/266965232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/267158306",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5083996,
+          41.8848636
+        ]
+      },
+      "id": "node/267158306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/267944268",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5065262,
+          41.8774301
+        ]
+      },
+      "id": "node/267944268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270194436",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5089736,
+          41.873905
+        ]
+      },
+      "id": "node/270194436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270198478",
+        "amenity": "drinking_water",
+        "fountain": "roman_wolf",
+        "image": "File:Roman wolf fountain, Parco del Celio, Roma, Italia Sep 01, 2020 12-32-47 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.494358,
+          41.8855249
+        ]
+      },
+      "id": "node/270198478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270198479",
+        "amenity": "drinking_water",
+        "fountain": "roman_wolf",
+        "image": "File:Roman Wolf Fountain, Villa Celimontana, Roma, Italia Sep 01, 2020 12-41-19 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4947844,
+          41.8837598
+        ]
+      },
+      "id": "node/270198479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270198480",
+        "amenity": "drinking_water",
+        "fountain": "roman_wolf",
+        "image": "File:Roman wolf fountain, Celio, Roma, Italia Sep 01, 2020 12-03-35 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4932314,
+          41.8854777
+        ]
+      },
+      "id": "node/270198480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270287292",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Parco Scott.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.501917,
+          41.8657236
+        ]
+      },
+      "id": "node/270287292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270287296",
+        "amenity": "drinking_water",
+        "fountain": "roman_wolf",
+        "image": "File:Fontanella area cani, Parco Scott.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5023183,
+          41.8657699
+        ]
+      },
+      "id": "node/270287296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270287297",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Parco Scott 16 01 40 286000.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5002265,
+          41.8664793
+        ]
+      },
+      "id": "node/270287297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270287332",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Parco Scott, Parco Regionale dell'Appia Antica, Roma, Italia Sep 06, 2020 03-03-04 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5026369,
+          41.8646372
+        ]
+      },
+      "id": "node/270287332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276548701",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.506154,
+          41.8745254
+        ]
+      },
+      "id": "node/276548701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276552067",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5062574,
+          41.880431
+        ]
+      },
+      "id": "node/276552067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276553156",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5074856,
+          41.8755935
+        ]
+      },
+      "id": "node/276553156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276553272",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Roberto Scott.jpeg",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5027919,
+          41.8629749
+        ]
+      },
+      "id": "node/276553272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276555834",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5076153,
+          41.8890538
+        ]
+      },
+      "id": "node/276555834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280155143",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5009036,
+          41.889461
+        ]
+      },
+      "id": "node/280155143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281348402",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4949159,
+          41.8810457
+        ]
+      },
+      "id": "node/281348402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281348403",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.499945,
+          41.8762653
+        ]
+      },
+      "id": "node/281348403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281348404",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone, Parco degli Scipioni, Roma, Italia Sep 08, 2020 04-51-13 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5012652,
+          41.8757912
+        ]
+      },
+      "id": "node/281348404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281351520",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Magnaghi.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.488946,
+          41.8641679
+        ]
+      },
+      "id": "node/281351520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281643625",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.504027,
+          41.875699
+        ]
+      },
+      "id": "node/281643625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/302112951",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5028633,
+          41.8824822
+        ]
+      },
+      "id": "node/302112951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/302112953",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5043822,
+          41.8796954
+        ]
+      },
+      "id": "node/302112953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/309569715",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853099,
+          41.8749397
+        ]
+      },
+      "id": "node/309569715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319116317",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5015671,
+          41.8799635
+        ]
+      },
+      "id": "node/319116317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/388924805",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5079271,
+          41.8784002
+        ]
+      },
+      "id": "node/388924805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/388983995",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4949446,
+          41.8869371
+        ]
+      },
+      "id": "node/388983995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/388984003",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.494519,
+          41.8877413
+        ]
+      },
+      "id": "node/388984003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/393466818",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4893529,
+          41.8749607
+        ]
+      },
+      "id": "node/393466818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/410773095",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Numidia, Roma, Italia Sep 01, 2020 01-00-10 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.501202,
+          41.8790366
+        ]
+      },
+      "id": "node/410773095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/410773096",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5023735,
+          41.878405
+        ]
+      },
+      "id": "node/410773096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/464002538",
+        "amenity": "drinking_water",
+        "bottle": "yes",
+        "fountain": "nasone",
+        "image": "File:Nasone 10 01 51 518000.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4914783,
+          41.8669112
+        ]
+      },
+      "id": "node/464002538"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469752582",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5029448,
+          41.8903641
+        ]
+      },
+      "id": "node/469752582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/495080456",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5073919,
+          41.8846507
+        ]
+      },
+      "id": "node/495080456"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/495113023",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone piazza Biffi.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4904341,
+          41.8665974
+        ]
+      },
+      "id": "node/495113023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/497353710",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4801727,
+          41.8844827
+        ]
+      },
+      "id": "node/497353710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508307504",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone, via Beccari, Roma, Italia Sep 08, 2020 05-44-50 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.490431,
+          41.8755739
+        ]
+      },
+      "id": "node/508307504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/551785500",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4997696,
+          41.8829156
+        ]
+      },
+      "id": "node/551785500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/551832306",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5045821,
+          41.8783991
+        ]
+      },
+      "id": "node/551832306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/551832340",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5033509,
+          41.878846
+        ]
+      },
+      "id": "node/551832340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/566512925",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4801291,
+          41.8695541
+        ]
+      },
+      "id": "node/566512925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/685457655",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4867108,
+          41.8902623
+        ]
+      },
+      "id": "node/685457655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/685461877",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4875779,
+          41.8891234
+        ]
+      },
+      "id": "node/685461877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/685465031",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4912644,
+          41.8793236
+        ]
+      },
+      "id": "node/685465031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/685465032",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone, Viale delle Terme di Caracalla, Roma, Italia Sep 01, 2020 10-57-05 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4915911,
+          41.8829819
+        ]
+      },
+      "id": "node/685465032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/871790386",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Piazza Michele da Carbonara, Roma, Italia Sep 06, 2020 02-12-22 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4914226,
+          41.8655394
+        ]
+      },
+      "id": "node/871790386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/953890053",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4879526,
+          41.8887986
+        ]
+      },
+      "id": "node/953890053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/953909059",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4968765,
+          41.8889852
+        ]
+      },
+      "id": "node/953909059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1142436425",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4874778,
+          41.8758112
+        ]
+      },
+      "id": "node/1142436425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1157932638",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4954695,
+          41.8867552
+        ]
+      },
+      "id": "node/1157932638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1170494282",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4942213,
+          41.8900377
+        ]
+      },
+      "id": "node/1170494282"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1228199662",
+        "amenity": "drinking_water",
+        "capacity": "2",
+        "fountain": "stone_block",
+        "image": "File:Fountain Viale Metronio, Parco Egerio, Roma, Italia Sep 01, 2020 12-59-32 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5010015,
+          41.8790442
+        ]
+      },
+      "id": "node/1228199662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1228398937",
+        "amenity": "drinking_water",
+        "fountain": "stone_block",
+        "image": "File:Fountain Viale Metronio, Roma, Italia Sep 01, 2020 12-50-54 PM.jpeg",
+        "noref": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4991854,
+          41.8812186
+        ]
+      },
+      "id": "node/1228398937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1228398969",
+        "amenity": "drinking_water",
+        "fountain": "stone_block",
+        "image": "File:Fountain Viale Metronio, Roma, Italia Sep 01, 2020 12-52-28 PM.jpeg",
+        "noref": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4995028,
+          41.880763
+        ]
+      },
+      "id": "node/1228398969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1412552556",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5069638,
+          41.8876892
+        ]
+      },
+      "id": "node/1412552556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1606505050",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone via Ostiense, Roma, Italia Nov 29, 2020 04-40-41 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4798625,
+          41.871787
+        ]
+      },
+      "id": "node/1606505050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1606507254",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.478496,
+          41.8705733
+        ]
+      },
+      "id": "node/1606507254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1701085924",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5072327,
+          41.8901521
+        ]
+      },
+      "id": "node/1701085924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1701226235",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5019658,
+          41.8890191
+        ]
+      },
+      "id": "node/1701226235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1703615330",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Via Pellegrino Matteucci, Roma, Italia Jan 04, 2021 01-26-12 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4835607,
+          41.8716891
+        ]
+      },
+      "id": "node/1703615330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1703615332",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.481745,
+          41.8786545
+        ]
+      },
+      "id": "node/1703615332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1703615337",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.480806,
+          41.8814962
+        ]
+      },
+      "id": "node/1703615337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1786266531",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5056194,
+          41.8825717
+        ]
+      },
+      "id": "node/1786266531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2420554497",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4969689,
+          41.8794579
+        ]
+      },
+      "id": "node/2420554497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2724305949",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5020523,
+          41.8877205
+        ]
+      },
+      "id": "node/2724305949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743701013",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4834654,
+          41.8745565
+        ]
+      },
+      "id": "node/2743701013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3112892431",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4876524,
+          41.8775739
+        ]
+      },
+      "id": "node/3112892431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3785014818",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4934389,
+          41.8873381
+        ]
+      },
+      "id": "node/3785014818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3786621294",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4927208,
+          41.8867114
+        ]
+      },
+      "id": "node/3786621294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4826144910",
+        "amenity": "drinking_water",
+        "fountain": "drinking",
+        "image": "File:Fontanella Parco dei Caduti del Mare.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4839051,
+          41.8656815
+        ]
+      },
+      "id": "node/4826144910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4847967785",
+        "amenity": "drinking_water",
+        "fixme": "verify"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5045574,
+          41.8823007
+        ]
+      },
+      "id": "node/4847967785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5222950839",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone Giardino Alessandro Malaspina, Roma, Italia Jan 04, 2021 11-43-53 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4921738,
+          41.869954
+        ]
+      },
+      "id": "node/5222950839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5314059440",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone piazza di San Gregorio, Roma, Italia Sep 01, 2020 11-51-42 AM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.490124,
+          41.8863528
+        ]
+      },
+      "id": "node/5314059440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5426719922",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4781407,
+          41.888539
+        ]
+      },
+      "id": "node/5426719922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5578072257",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.484602,
+          41.8699652
+        ]
+      },
+      "id": "node/5578072257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5747437099",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.478712,
+          41.8849679
+        ]
+      },
+      "id": "node/5747437099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5801329944",
+        "amenity": "drinking_water",
+        "description:de": "Wasserbrunnen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4885132,
+          41.8881076
+        ]
+      },
+      "id": "node/5801329944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5890483036",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5086907,
+          41.8804707
+        ]
+      },
+      "id": "node/5890483036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6002420460",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone in Giardino Alessandro Malaspina 21 53 20 899000.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4958809,
+          41.8698681
+        ]
+      },
+      "id": "node/6002420460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6427696156",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.482795,
+          41.8720971
+        ]
+      },
+      "id": "node/6427696156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6462027289",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5092844,
+          41.883979
+        ]
+      },
+      "id": "node/6462027289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7203154248",
+        "amenity": "drinking_water",
+        "fountain": "nasone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4955486,
+          41.8882028
+        ]
+      },
+      "id": "node/7203154248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7786889623",
+        "amenity": "drinking_water",
+        "fountain": "nasone",
+        "image": "File:Nasone via Ignazio Persico.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4870785,
+          41.8657445
+        ]
+      },
+      "id": "node/7786889623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7786937033",
+        "amenity": "drinking_water",
+        "fountain": "drinking",
+        "image": "File:Fontanella Parco dei Caduti del Mare2.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4838711,
+          41.8655494
+        ]
+      },
+      "id": "node/7786937033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7864731499",
+        "amenity": "drinking_water",
+        "fountain": "stone_block",
+        "image": "File:Fountain Largo Samuele Alatri, Roma, Italia Sep 01, 2020 12-52-56 PM.jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4996059,
+          41.880627
+        ]
+      },
+      "id": "node/7864731499"
+    }
+  ]
+}
