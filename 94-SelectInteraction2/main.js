@@ -16,7 +16,8 @@ function init(){
 
   const map = new ol.Map({
       view: new ol.View({
-        center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
+        // center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
+        center: [0,0],
         zoom: 1.05,
         projection: 'EPSG:32632',
         // extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
@@ -372,7 +373,9 @@ function init(){
   const selectInteractionV2 = new ol.interaction.Select();
   map.addInteraction(selectInteractionV2);
   selectInteractionV2.on('select', function(e){
-    console.log(e);
+    if(e.selected.length > 0 ){
+      console.log(e.selected)
+    };
   })
 }
 
