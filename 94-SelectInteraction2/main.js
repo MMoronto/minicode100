@@ -18,8 +18,8 @@ function init(){
       view: new ol.View({
         // center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
         center: [0,0],
-        zoom: 1.05,
-        projection: 'EPSG:32632',
+        zoom: 3,
+        // projection: 'EPSG:32632',
         // extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
       }),      
       target: 'js-map',
