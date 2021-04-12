@@ -48,3 +48,13 @@ body {
   height:100vh;
   width: 100vw;
 }
+
+/* Controls */
+
+.ol-control button{
+  background-color: rgba(30, 115, 65, 0.4)
+}
+
+.ol-control button:hover{
+  background-color: rgba(30, 115, 65, 1)
+}
