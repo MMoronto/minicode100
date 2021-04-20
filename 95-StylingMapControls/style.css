@@ -68,3 +68,7 @@ body {
   left: unset;
   right: 15px;
 }
+
+.ol-zoom .ol-zoom-in{
+  border-radius: 40%;
+}
