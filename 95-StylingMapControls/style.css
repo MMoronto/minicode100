@@ -58,3 +58,13 @@ body {
 .ol-control button:hover{
   background-color: rgba(30, 115, 65, 1)
 }
+
+.ol-control button:focus{
+  background-color: rgba(30, 115, 65, 0.8)
+}
+
+.ol-zoom{
+  /* margin-left: 10px; */
+  left: unset;
+  right: 15px;
+}
