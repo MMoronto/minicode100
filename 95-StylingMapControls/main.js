@@ -394,10 +394,15 @@ function init(){
 
   // Map Controls
   const scaleLineControl = new ol.control.scaleLine({
-
+    units: 'us',
+    minWidth: 200,
+    bar: true,
+    steps: 6,
+    text: true
   }) 
 
-  map.addControl()
+  map.addControl(scaleLineControl);
 }
+
 
 
