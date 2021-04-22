@@ -387,9 +387,15 @@ function init(){
                   width: 4
                 })
               })
-            }))
+            })
+          )
     };
   })
+
+  // Map Controls
+  const scaleLineControl = new ol.control.scaleLine({
+
+  }) 
 }
 
 
