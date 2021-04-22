@@ -402,6 +402,12 @@ function init(){
   }) 
 
   map.addControl(scaleLineControl);
+
+  const overViewMapControl = new ol.control.OverviewMap({
+
+  })
+
+  map.addControl(overViewMapControl)
 }
 
 
