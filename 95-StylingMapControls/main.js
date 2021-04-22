@@ -396,6 +396,8 @@ function init(){
   const scaleLineControl = new ol.control.scaleLine({
 
   }) 
+
+  map.addControl()
 }
 
 
