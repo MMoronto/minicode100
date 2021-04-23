@@ -70,5 +70,9 @@ body {
 }
 
 .ol-zoom .ol-zoom-in{
-  border-radius: 40%;
+  border-radius: 15%;
+}
+
+.ol-zoom .ol-zoom-out{
+  border-radius: 15%;
 }
