@@ -76,3 +76,7 @@ body {
 .ol-zoom .ol-zoom-out{
   border-radius: 15%;
 }
+
+ol.overviewmap{
+  bottom: 60px;
+}
