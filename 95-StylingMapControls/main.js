@@ -404,7 +404,12 @@ function init(){
   map.addControl(scaleLineControl);
 
   const overViewMapControl = new ol.control.OverviewMap({
-
+    tipLabel: 'Custom Overview Map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ]
   })
 
   map.addControl(overViewMapControl)
