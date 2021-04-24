@@ -19,11 +19,12 @@ function init(){
         // center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
         center: [0,0],
         zoom: 3,
+        rotation: 0,
         // projection: 'EPSG:32632',
         // extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
       }),      
       target: 'js-map',
-      controls: ol.control.defaults({attribution: false}).extend([attributionControl])
+      controls: ol.control.defaults({attribution: true}).extend([attributionControl])
   })
 
   // Base Layers
