@@ -418,6 +418,9 @@ function init(){
   // Switch ON/OFF Controls Logic
   const controlButtonElements = document.querySelectorAll('.sidebar > button[type=button]')
   console.log(controlButtonElements);
+  for(let controlButton of controlButtonElements){
+    console.log(controlButton);
+  }
 }
 
 
