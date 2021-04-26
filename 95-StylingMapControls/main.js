@@ -427,9 +427,14 @@ function init(){
             map.removeControl(controlElement);
           }
         })
+        buttonElement.className = buttonElement.className.replace(
+          'btn-success', 'btn-default'
+        );
       }
     })
   }
+
+}
 
 }
 
