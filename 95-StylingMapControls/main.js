@@ -422,7 +422,9 @@ function init(){
     controlButton.addEventListener('click', function(e){
       let buttonElement = e.target;
       if(buttonElement.className === 'btn-success'){
-        console.log('btn-success')
+        map.getControls().forEach(function(controlElement){
+          console.log(controlElement);
+        })
       }
     })
   }
