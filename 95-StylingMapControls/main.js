@@ -423,7 +423,9 @@ function init(){
       let buttonElement = e.target;
       if(buttonElement.className === 'btn-success'){
         map.getControls().forEach(function(controlElement){
-          console.log(controlElement);
+          if(controlElement instanceof ol.control[buttonElement.innerHTML]){
+            console.log(controlElement);
+          }
         })
       }
     })
