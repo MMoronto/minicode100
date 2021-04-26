@@ -420,7 +420,7 @@ function init(){
   console.log(controlButtonElements);
   for(let controlButton of controlButtonElements){
     controlButton.addEventListener('click', function(e){
-      console.log(e.target);
+      let buttonElement = e.target;
     })
   }
 }
