@@ -421,6 +421,9 @@ function init(){
   for(let controlButton of controlButtonElements){
     controlButton.addEventListener('click', function(e){
       let buttonElement = e.target;
+      if(buttonElement.className === 'btn-success'){
+        console.log('btn-success')
+      }
     })
   }
 }
