@@ -75,7 +75,7 @@ body {
 .ol-zoom{
   /* margin-left: 10px; */
   left: 15px;
-  right: 15px;
+  right: 15px
 }
 
 .ol-zoom .ol-zoom-in{
@@ -88,4 +88,12 @@ body {
 
 ol.overviewmap{
   bottom: 60px;
+}
+
+.btn-success{
+  background-color:rgba(4, 138, 66);
+}
+
+.btn-default{
+  background-color:rgba(255, 255, 255);
 }
