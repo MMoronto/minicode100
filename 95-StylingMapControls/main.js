@@ -419,7 +419,9 @@ function init(){
   const controlButtonElements = document.querySelectorAll('.sidebar > button[type=button]')
   console.log(controlButtonElements);
   for(let controlButton of controlButtonElements){
-    console.log(controlButton);
+    controlButton.addEventListener('click', function(e){
+      console.log(e.target);
+    })
   }
 }
 
