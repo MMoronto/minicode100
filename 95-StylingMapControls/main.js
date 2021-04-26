@@ -424,12 +424,13 @@ function init(){
       if(buttonElement.className === 'btn-success'){
         map.getControls().forEach(function(controlElement){
           if(controlElement instanceof ol.control[buttonElement.innerHTML]){
-            console.log(controlElement);
+            map.removeControl(controlElement);
           }
         })
       }
     })
   }
+
 }
 
 
