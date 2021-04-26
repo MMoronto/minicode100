@@ -394,7 +394,7 @@ function init(){
   })
 
   // Map Controls
-  const scaleLineControl = new ol.control.scaleLine({
+  const scaleLineControl = new ol.control.ScaleLine({
     units: 'us',
     minWidth: 200,
     bar: true,
@@ -419,6 +419,7 @@ function init(){
   const controlButtonElements = document.querySelectorAll('.sidebar > button[type=button]')
   console.log(controlButtonElements);
 }
+
 
 
 
