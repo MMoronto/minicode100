@@ -35,7 +35,7 @@ function init(){
   })
 
   const zoomControl = new ol.control.Zoom()
-  
+
   const mapControls = [attributionControl, scaleLineControl, overViewMapControl, zoomControl]
 
   const map = new ol.Map({
@@ -48,7 +48,7 @@ function init(){
         // extent: ol.proj.transformExtent([2.66, 4.15, 14.74, 13.99], 'EPSG:4326', 'EPSG:32632')
       }),      
       target: 'js-map',
-      controls: ol.control.defaults({attribution: true}).extend([attributionControl])
+      controls: ol.control.defaults({attribution: false}).extend(mapControls)
   })
 
   // Base Layers
