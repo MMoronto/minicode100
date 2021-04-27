@@ -436,9 +436,11 @@ function init(){
         mapControls.forEach(function(controlElement){
           if(controlElement instanceof ol.control[buttonElement.innerHTML]){
             map.addControl(controlElement);
-            console.log(controlElement);
-          };
+          }
         })
+        buttonElement.className = buttonElement.className.replace(
+          'btn-default', 'btn-success'
+        );
       }
     })
   }
