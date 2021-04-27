@@ -1,8 +1,4 @@
 window.onload = init;
-// Attribution Control
-const attributionControl = new ol.control.Attribution({
-  collapsible: true
-})
 
 function init(){
   // EPSG:32632 for Nigeria
@@ -15,6 +11,12 @@ function init(){
   //   6.330312851437491], 'EPSG:27700'));
 
   // Map Controls
+
+  // Attribution Control
+  const attributionControl = new ol.control.Attribution({
+    collapsible: true
+  })
+
   const scaleLineControl = new ol.control.ScaleLine({
     units: 'us',
     minWidth: 200,
