@@ -358,38 +358,20 @@ function init(){
       let clickedCoordinate = e.coordinate;
       let clickedFeatureName = feature.get('name');
       let clickedFeatureAdditionInfo = feature.get('additionalinfo');
-      if(clickedFeatureName && clickedFeatureAdditionInfo != undefined){
+      // if(clickedFeatureName && clickedFeatureAdditionInfo != undefined){
         overlayLayer.setPosition(clickedCoordinate);
         overlayFeatureName.innerHTML = clickedFeatureName;
         overlayFeatureAdditionInfo.innerHTML = clickedFeatureAdditionInfo;
       // }
-      // },
-      //   layerFilter: function(layerCandidate){
-      //     return layerCandidate.get('title') === 'ECOWASCountriesGeoJSONVectorImage'
+      },
+      {
+        layerFilter: function(layerCandidate){
+          return layerCandidate.get('title') === 'ECOWASCountriesGeoJSONVectorImage'
       }      
     })
   })
-  // // Select Interaction - For Styling Selected Points
-  // const selectInteraction = new ol.interaction.Select({
-  //   condition: ol.events.condition.singleClick,
-  //   layers: function(layer){
-  //     return [layer.get('title') === 'NigerianCities', layer.get('title') === 'ECOWASCountriesGeoJSONVectorImage']
-  //   },
-  //   style: new ol.style.Style({
-  //     image: new ol.style.Circle({
-  //       fill: new ol.style.Fill({
-  //         color: [247, 147, 11, 1]
-  //       }),
-  //       radius: 14,
-  //       stroke: new ol.style.Stroke({
-  //         color: [247, 147, 11, 1],
-  //         width: 4
-  //       })
-  //     })
-  //   })
-  // })
-  // map.addInteraction(selectInteraction);
-
+  
+  // Select Interaction - For Styling Selected Points
   const selectInteractionV2 = new ol.interaction.Select();
   map.addInteraction(selectInteractionV2);
   selectInteractionV2.on('select', function(e){
