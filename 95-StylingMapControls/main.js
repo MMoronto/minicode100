@@ -14,6 +14,24 @@ function init(){
   // console.log(ol.proj.fromLonLat([5.6195068359375,
   //   6.330312851437491], 'EPSG:27700'));
 
+  // Map Controls
+  const scaleLineControl = new ol.control.ScaleLine({
+    units: 'us',
+    minWidth: 200,
+    bar: true,
+    steps: 6,
+    text: true
+  }) 
+
+  const overViewMapControl = new ol.control.OverviewMap({
+    tipLabel: 'Custom Overview Map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ]
+  })
+
   const map = new ol.Map({
       view: new ol.View({
         // center: ol.proj.fromLonLat([7.395390, 9.071273], 'EPSG:32632'),
@@ -393,28 +411,6 @@ function init(){
     };
   })
 
-  // Map Controls
-  const scaleLineControl = new ol.control.ScaleLine({
-    units: 'us',
-    minWidth: 200,
-    bar: true,
-    steps: 6,
-    text: true
-  }) 
-
-  map.addControl(scaleLineControl);
-
-  const overViewMapControl = new ol.control.OverviewMap({
-    tipLabel: 'Custom Overview Map',
-    layers: [
-      new ol.layer.Tile({
-        source: new ol.source.OSM()
-      })
-    ]
-  })
-
-  map.addControl(overViewMapControl)
-
   // Switch ON/OFF Controls Logic
   const controlButtonElements = document.querySelectorAll('.sidebar > button[type=button]')
   console.log(controlButtonElements);
@@ -430,14 +426,13 @@ function init(){
         buttonElement.className = buttonElement.className.replace(
           'btn-success', 'btn-default'
         );
+      } else {
+        
       }
     })
   }
 
 }
-
-}
-
 
 
 
