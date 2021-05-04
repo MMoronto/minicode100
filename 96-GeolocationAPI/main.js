@@ -422,6 +422,15 @@ function init(){
     })
   }
 
+ // Geolocation API
+const geolocation = new ol.Geolocation({
+  tracking: true,
+  trackingOptions: {
+    enableHeightAccuracy: true
+  },
+  projection: 'EPSG:32632'
+})
+
 }
 
 
