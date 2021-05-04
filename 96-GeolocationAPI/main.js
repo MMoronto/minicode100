@@ -423,14 +423,17 @@ function init(){
   }
 
 // Geolocation API
-const viewProjection = map.getView().getProjection()
-console.log(viewProjection);
+const viewProjection = map.getView().getProjection();
 const geolocation = new ol.Geolocation({
   tracking: true,
   trackingOptions: {
     enableHeightAccuracy: true
   },
   projection: viewProjection
+})
+
+geolocation.on('change:position', function(e){
+  console.log(e.target.getPosition);
 })
 
 }
