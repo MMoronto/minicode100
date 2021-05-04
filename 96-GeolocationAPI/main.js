@@ -430,7 +430,7 @@ const geolocation = new ol.Geolocation({
   trackingOptions: {
     enableHeightAccuracy: true
   },
-  projection: 'EPSG:32632'
+  projection: viewProjection
 })
 
 }
