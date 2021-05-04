@@ -433,7 +433,7 @@ const geolocation = new ol.Geolocation({
 })
 
 geolocation.on('change:position', function(e){
-  console.log(e.target.getPosition);
+  console.log(e.target.getPosition());
 })
 
 }
