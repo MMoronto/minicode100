@@ -437,7 +437,7 @@ geolocation.on('change:position', function(e){
   let geolocation = this.getPosition();
   let LongLatGeolocation = ol.proj.toLonLat(geolocation, viewProjection);
   map.getView().setCenter(geolocation);
-  geolocationElement.innerHTML = 'Longitude and Latitude: ' + LongLatGeolocation;
+  geolocationElement.innerHTML = 'Longitude: ' + LongLatGeolocation[0] + ', ' + 'Latitude: ' + LongLatGeolocation[1];
 })
 
 }
