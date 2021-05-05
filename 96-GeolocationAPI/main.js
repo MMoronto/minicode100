@@ -432,10 +432,12 @@ const geolocation = new ol.Geolocation({
   projection: viewProjection
 })
 
+const geolocationElement = document.getElementById('geolocation');
 geolocation.on('change:position', function(e){
   let geolocation = this.getPosition();
   let LongLatGeolocation = ol.proj.toLonLat(geolocation, viewProjection);
   map.getView().setCenter(geolocation);
+  geolocationElement.innerHTML = 'Longitude and Latitude: ' + LongLatGeolocation;
 })
 
 }
